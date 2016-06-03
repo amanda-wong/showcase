@@ -455,14 +455,11 @@ a {
     outline: 0; }
 
 /* Menus */
-#logo {
-  text-transform: uppercase;
-  font: "bebas_neue", sans-serif; }
-
 .main-navigation {
-  display: -ms-flexbox;
-  display: flex;
-  margin: 0 auto; }
+  clear: both;
+  display: block;
+  float: left;
+  width: 100%; }
   .main-navigation ul {
     display: none;
     list-style: none;
