@@ -1,7 +1,7 @@
 {
-  "name": "redstarter",
+  "name": "showcase",
   "version": "1.0.0",
-  "description": "A starter theme for RED students, based on Underscores.",
+  "description": "Amanda Wong's portfolio theme",
   "main": "gulpfile.js",
   "dependencies": {},
   "devDependencies": {
@@ -25,12 +25,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/redacademy/redstarter.git"
+    "url": "git+https://github.com/amanda-wong/showcase.git"
   },
-  "author": "mandiwise",
+  "author": "amandawong",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/redacademy/redstarter/issues"
+    "url": "https://github.com/redacademy/showcase/issues"
   },
-  "homepage": "https://github.com/redacademy/redstarter#readme"
+  "homepage": "https://github.com/amanda-wong/showcase#readme"
 }
