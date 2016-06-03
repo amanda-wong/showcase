@@ -1,15 +1,16 @@
 /*!
-Theme Name: Showcase Theme
-Theme URI:
-Author: Amanda Wong
-Author URI: http://www.amandawong.ca
-Description: This is a beautiful fully responsive WordPress theme that allows users to showcase the work they have done. 
+Theme Name: RED Starter Theme
+Theme URI: http://underscores.me/
+Author: RED Academy
+Author URI: http://www.redacademy.com
+Description: A WordPress starter theme for RED Academy students.
 Version: 1.0.0
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Tags:
 
-
+This theme, like WordPress, is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned with others.
 
 RED Starter Theme is based on Underscores http://underscores.me/, (C) 2012-2015 Automattic, Inc.
 Underscores is distributed under the terms of the GNU GPL v2 or later.
@@ -221,6 +222,42 @@ th {
 /*--------------------------------------------------------------
 # Embedded Fonts
 --------------------------------------------------------------*/
+/* -----------------------------------Fonts -----------------------------------*/
+@font-face {
+  font-family: 'open_sans';
+  src: url("../../assets/fonts/open_sans/opensans-bold-webfont.eot");
+  src: url("../../assets/fonts/open_sans/opensans-bold-webfont.eot?#iefix") format("embedded-opentype"), url("../../assets/fonts/open_sans/opensans-bold-webfont.woff2") format("woff2"), url("../../assets/fonts/open_sans/opensans-bold-webfont.woff") format("woff"), url("../../assets/fonts/open_sans/opensans-bold-webfont.ttf") format("truetype"), url("../../assets/fonts/open_sans/opensans-bold-webfont.svg#open_sansbold") format("svg");
+  font-weight: 700;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'open_sans';
+  src: url("../../assets/fonts/open_sans/opensans-italic-webfont.eot");
+  src: url("../../assets/fonts/open_sans/opensans-italic-webfont.eot?#iefix") format("embedded-opentype"), url("../../assets/fonts/open_sans/opensans-italic-webfont.woff2") format("woff2"), url("../../assets/fonts/open_sans/opensans-italic-webfont.woff") format("woff"), url("../../assets/fonts/open_sans/opensans-italic-webfont.ttf") format("truetype"), url("../../assets/fonts/open_sans/opensans-italic-webfont.svg#open_sansitalic") format("svg");
+  font-weight: normal;
+  font-style: italic; }
+
+@font-face {
+  font-family: 'open_sans';
+  src: url("../../assets/fonts/open_sans/opensans-regular-webfont.eot");
+  src: url("../../assets/fonts/open_sans/opensans-regular-webfont.eot?#iefix") format("embedded-opentype"), url("../../assets/fonts/open_sans/opensans-regular-webfont.woff2") format("woff2"), url("../../assets/fonts/open_sans/opensans-regular-webfont.woff") format("woff"), url("../../assets/fonts/open_sans/opensans-regular-webfont.ttf") format("truetype"), url("../../assets/fonts/open_sans/opensans-regular-webfont.svg#open_sansregular") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'open_sans';
+  src: url("../../assets/fonts/open_sans/opensans-semibold-webfont.eot");
+  src: url("../../assets/fonts/open_sans/opensans-semibold-webfont.eot?#iefix") format("embedded-opentype"), url("../../assets/fonts/open_sans/opensans-semibold-webfont.woff2") format("woff2"), url("../../assets/fonts/open_sans/opensans-semibold-webfont.woff") format("woff"), url("../../assets/fonts/open_sans/opensans-semibold-webfont.ttf") format("truetype"), url("../../assets/fonts/open_sans/opensans-semibold-webfont.svg#open_sanssemibold") format("svg");
+  font-weight: 600;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'bebas_neue';
+  src: url("../../assets/fonts/bebas/bebasneue_bold-webfont.eot");
+  src: url("../../assets/fonts/bebas/bebasneue_bold-webfont.eot?#iefix") format("embedded-opentype"), url("../../assets/fonts/bebas/bebasneue_bold-webfont.woff2") format("woff2"), url("../../assets/fonts/bebas/bebasneue_bold-webfont.woff") format("woff"), url("../../assets/fonts/bebas/bebasneue_bold-webfont.ttf") format("truetype"), url("../../assets/fonts/bebas/bebasneue_bold-webfont.svg#bebas_neuebold") format("svg");
+  font-weight: bold;
+  font-style: normal; }
+
 /*--------------------------------------------------------------
 # Typography
 --------------------------------------------------------------*/
