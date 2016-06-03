@@ -26,6 +26,10 @@ a {
 
 /* Menus */
 
+#logo {
+	text-transform: uppercase;
+	font: $font__title;
+}
 .main-navigation {
 	display: flex;
 	margin: 0 auto;
