@@ -455,12 +455,16 @@ a {
 
 /* Menus */
 .main-navigation {
-  clear: both;
-  display: block;
-  float: left;
-  width: 100%; }
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: justify;
+      justify-content: space-between;
+  width: 90%;
+  margin: 0 auto; }
+  .main-navigation #logo {
+    font-family: "bebas_neue", sans-serif;
+    font-size: 2rem; }
   .main-navigation ul {
-    display: none;
     list-style: none;
     margin: 0;
     padding-left: 0; }
@@ -486,7 +490,7 @@ a {
     float: left;
     position: relative; }
   .main-navigation a {
-    display: block;
+    padding: 10px;
     text-decoration: none; }
 
 /* Small menu. */
