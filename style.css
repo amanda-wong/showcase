@@ -457,13 +457,20 @@ a {
 .main-navigation {
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column;
   -ms-flex-pack: justify;
       justify-content: space-between;
   width: 90%;
   margin: 0 auto; }
   .main-navigation #logo {
     font-family: "bebas_neue", sans-serif;
-    font-size: 3.5rem; }
+    font-size: 2.5rem;
+    text-decoration: none;
+    text-align: center;
+    color: rgba(255, 255, 255, 0.5); }
+    .main-navigation #logo:hover {
+      color: #fff; }
   .main-navigation ul {
     list-style: none;
     margin: 0;
@@ -489,16 +496,20 @@ a {
   .main-navigation li {
     float: left;
     position: relative; }
-  .main-navigation .main-menu-container {
+  .main-navigation .menu-main-container {
     display: -ms-flexbox;
     display: flex;
     -ms-flex-align: center;
-        align-items: center; }
-  .main-navigation a {
-    padding: 10px;
-    text-decoration: none;
-    font-family: "bebas_neue", sans-serif;
-    font-size: 1.8rem; }
+        align-items: center;
+    margin: 0 auto; }
+    .main-navigation .menu-main-container a {
+      padding: 10px;
+      text-decoration: none;
+      font-family: "bebas_neue", sans-serif;
+      font-size: 1.3rem;
+      color: rgba(255, 255, 255, 0.5); }
+      .main-navigation .menu-main-container a:hover {
+        color: #fff; }
 
 /* Small menu. */
 .menu-toggle,
@@ -702,3 +713,7 @@ object {
 # Page Templates
 --------------------------------------------------------------*/
 /* Front page */
+.home .page-hero {
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../assets/images/bag-and-hands-landing.jpg");
+  background-size: cover;
+  height: 50vh; }
