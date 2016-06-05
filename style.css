@@ -476,6 +476,9 @@ a {
     @media (min-width: 600px) {
       .main-navigation #logo {
         font-size: 3rem; } }
+    @media (min-width: 1024px) {
+      .main-navigation #logo {
+        font-size: 3.5rem; } }
     .main-navigation #logo:hover {
       color: #fff; }
   .main-navigation ul {
@@ -503,6 +506,17 @@ a {
   .main-navigation li {
     float: left;
     position: relative; }
+  @media (min-width: 600px) {
+    .main-navigation .menu-main-container li:last-child a {
+      border: 2px solid rgba(128, 128, 128, 0.5);
+      border-radius: 4%;
+      margin-left: 0.5rem; } }
+  @media (min-width: 600px) and (min-width: 1024px) {
+    .main-navigation .menu-main-container li:last-child a {
+      margin-left: 0.6rem; } }
+  @media (min-width: 600px) {
+      .main-navigation .menu-main-container li:last-child a:hover {
+        border: 2px solid #fff; } }
   .main-navigation .menu-main-container {
     display: -ms-flexbox;
     display: flex;
@@ -513,7 +527,7 @@ a {
       .main-navigation .menu-main-container {
         margin: 0; } }
     .main-navigation .menu-main-container a {
-      padding: 10px;
+      padding: 0.3rem 0.8rem;
       text-decoration: none;
       font-family: "bebas_neue", sans-serif;
       font-size: 1.3rem;
@@ -521,6 +535,9 @@ a {
       @media (min-width: 600px) {
         .main-navigation .menu-main-container a {
           font-size: 1.6rem; } }
+      @media (min-width: 1024px) {
+        .main-navigation .menu-main-container a {
+          font-size: 1.8rem; } }
       .main-navigation .menu-main-container a:hover {
         color: #fff; }
 

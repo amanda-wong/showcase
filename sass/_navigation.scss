@@ -44,6 +44,9 @@ a {
 		@include tablet {
 			font-size: 3rem;
 		}
+		@include desktop {
+			font-size: 3.5rem;
+		}
 	    &:hover {
 	        color: #fff;
 	    }
@@ -102,6 +105,20 @@ a {
 		}
 	}
 
+	.menu-main-container li:last-child a {
+		@include tablet {
+			border: 2px solid rgba(128, 128, 128, 0.5);
+			border-radius: 4%;
+			margin-left: 0.5rem;
+			@include desktop {
+				margin-left: 0.6rem;
+			}
+		    &:hover {
+		        border: 2px solid #fff;
+		    }
+		}
+	}
+
 	.menu-main-container {   //Main nav items
 		display: flex;
 		align-items: center;
@@ -110,13 +127,16 @@ a {
 			margin: 0;
 		}
 		a {
-			padding: 10px;
+			padding: 0.3rem 0.8rem;
 			text-decoration: none;
 			font-family: $font__title;
 			font-size: 1.3rem;
 			color: rgba(255,255,255,0.5);
 			@include tablet {
 				font-size: 1.6rem;
+			}
+			@include desktop {
+				font-size: 1.8rem;
 			}
 			&:hover {
 				color: #fff;
