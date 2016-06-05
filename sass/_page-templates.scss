@@ -9,5 +9,8 @@
          url('../assets/images/bag-and-hands-landing.jpg');
          background-size: cover;
          height: 50vh;
+         @include  tablet {
+             height: 100vh;
+         }
     }
 }
