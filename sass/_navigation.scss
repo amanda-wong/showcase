@@ -28,12 +28,20 @@ a {
 
 .main-navigation {
 	display: flex;
+	flex-direction: column;
 	justify-content: space-between;
 	width: 90%;
 	margin: 0 auto;
 	#logo {
 		font-family: $font__title;
-		font-size: 3.5rem;
+		font-size: 2.5rem;
+		text-decoration: none;
+		text-align: center;
+		color: rgba(255,255,255, 0.5);
+	    &:hover {
+	        color: #fff;
+	    }
+
 	}
 
 	ul {
@@ -88,16 +96,21 @@ a {
 		}
 	}
 
-	.main-menu-container {
+	.menu-main-container {
 		display: flex;
 		align-items: center;
-	}
+		margin: 0 auto;
+		a {
+			padding: 10px;
+			text-decoration: none;
+			font-family: $font__title;
+			font-size: 1.3rem;
+			color: rgba(255,255,255,0.5);
+			&:hover {
+				color: #fff;
+			}
+		}
 
-	a {
-		padding: 10px;
-		text-decoration: none;
-		font-family: $font__title;
-		font-size: 1.8rem;
 	}
 
 	.current_page_item > a,
