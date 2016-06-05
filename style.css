@@ -463,7 +463,7 @@ a {
   margin: 0 auto; }
   .main-navigation #logo {
     font-family: "bebas_neue", sans-serif;
-    font-size: 2rem; }
+    font-size: 3.5rem; }
   .main-navigation ul {
     list-style: none;
     margin: 0;
@@ -489,9 +489,16 @@ a {
   .main-navigation li {
     float: left;
     position: relative; }
+  .main-navigation .main-menu-container {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+        align-items: center; }
   .main-navigation a {
     padding: 10px;
-    text-decoration: none; }
+    text-decoration: none;
+    font-family: "bebas_neue", sans-serif;
+    font-size: 1.8rem; }
 
 /* Small menu. */
 .menu-toggle,

@@ -33,7 +33,7 @@ a {
 	margin: 0 auto;
 	#logo {
 		font-family: $font__title;
-		font-size: 2rem;
+		font-size: 3.5rem;
 	}
 
 	ul {
@@ -87,9 +87,17 @@ a {
 		&.focus > a {
 		}
 	}
+
+	.main-menu-container {
+		display: flex;
+		align-items: center;
+	}
+
 	a {
 		padding: 10px;
 		text-decoration: none;
+		font-family: $font__title;
+		font-size: 1.8rem;
 	}
 
 	.current_page_item > a,
