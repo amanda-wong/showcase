@@ -224,8 +224,8 @@ th {
 --------------------------------------------------------------*/
 @font-face {
   font-family: 'open_sans';
-  src: url("../build/assets/fonts/open_sans/opensans-bold-webfont.eot");
-  src: url("../build/assets/fonts/open_sans/opensans-bold-webfont.eot?#iefix") format("embedded-opentype"), url("../build/assets/fonts/open_sans/opensans-bold-webfont.woff2") format("woff2"), url("../build/assets/fonts/open_sans/opensans-bold-webfont.woff") format("woff"), url("../build/assets/fonts/open_sans/opensans-bold-webfont.ttf") format("truetype"), url("../build/assets/fonts/open_sans/opensans-bold-webfont.svg#open_sansbold") format("svg");
+  src: url("../assets/fonts/open_sans/opensans-bold-webfont.eot");
+  src: url("../assets/fonts/open_sans/opensans-bold-webfont.eot?#iefix") format("embedded-opentype"), url("../assets/fonts/open_sans/opensans-bold-webfont.woff2") format("woff2"), url("../assets/fonts/open_sans/opensans-bold-webfont.woff") format("woff"), url("../assets/fonts/open_sans/opensans-bold-webfont.ttf") format("truetype"), url("../assets/fonts/open_sans/opensans-bold-webfont.svg#open_sansbold") format("svg");
   font-weight: 700;
   font-style: normal; }
 
@@ -750,3 +750,53 @@ object {
   @media (min-width: 600px) {
     .home .page-hero {
       height: 100vh; } }
+
+footer {
+  height: 200px;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+      justify-content: center;
+  -ms-flex-align: center;
+      align-items: center;
+  -ms-flex-direction: column;
+      flex-direction: column; }
+  footer h3 {
+    font-family: "bebas_neue", sans-serif;
+    font-weight: bold;
+    font-size: 25px; }
+  footer .social-icon-wrap {
+    margin-bottom: 20px;
+    width: 300px;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: center;
+        justify-content: center; }
+    footer .social-icon-wrap a {
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-pack: center;
+          justify-content: center;
+      -ms-flex-align: center;
+          align-items: center;
+      padding: 20px;
+      width: 20px;
+      height: 20px;
+      margin: 10px;
+      border-radius: 50%;
+      border: 3px solid #000; }
+      footer .social-icon-wrap a:hover {
+        background-color: #000; }
+        footer .social-icon-wrap a:hover i {
+          color: #fff; }
+      footer .social-icon-wrap a i {
+        color: #000; }
+  footer .copyright {
+    color: #808080;
+    font-size: 14px;
+    width: 150px;
+    text-align: center;
+    line-height: 1rem; }
+    @media (min-width: 600px) {
+      footer .copyright {
+        width: 300px; } }
