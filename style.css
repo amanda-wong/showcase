@@ -596,8 +596,7 @@ footer .site-info {
       flex-direction: column; }
   footer .site-info h3 {
     font-family: "bebas_neue", sans-serif;
-    font-weight: bold;
-    font-size: 1.3rem; }
+    font-weight: bold; }
   footer .site-info .social-icon-wrap {
     margin-bottom: 20px;
     width: 300px;
