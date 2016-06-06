@@ -21,6 +21,16 @@ a {
 	text-decoration: none;
 }
 
+h3 {
+	font-size: 1.3rem;
+	@include tablet {
+		font-size: 1.6rem;
+	}
+	@include desktop {
+		font-size: 1.8rem;
+	}
+}
+
 blockquote, q {
 	quotes: "" "";
 
