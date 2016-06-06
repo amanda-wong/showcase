@@ -629,7 +629,11 @@ footer .site-info {
     line-height: 1rem; }
     @media (min-width: 600px) {
       footer .site-info .copyright {
-        width: 300px; } }
+        width: 300px;
+        margin-bottom: 20px; } }
+    @media (min-width: 1024px) {
+      footer .site-info .copyright {
+        margin-bottom: 30px; } }
 
 /*--------------------------------------------------------------
 # Accessibility

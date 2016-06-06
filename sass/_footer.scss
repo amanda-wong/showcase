@@ -42,6 +42,10 @@ footer .site-info {
         line-height: 1rem;
         @include tablet {
             width: 300px;
+            margin-bottom: 20px;
+        }
+        @include desktop {
+            margin-bottom: 30px;
         }
     }
 }
