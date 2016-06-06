@@ -584,7 +584,6 @@ a {
   width: 50%; }
 
 footer .site-info {
-  width: 100vw;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-pack: center;
