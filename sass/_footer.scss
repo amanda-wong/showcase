@@ -1,6 +1,5 @@
 footer .site-info {
     width: 100vw;
-    height: 200px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -8,9 +7,10 @@ footer .site-info {
     h3 {
         font-family: $font__title;
         font-weight: bold;
+        margin-bottom: 10px;
     }
     .social-icon-wrap {
-        margin-bottom: 20px;
+        margin-bottom: 10px;
         width: 300px;
         display: flex;
         justify-content: center;
@@ -18,10 +18,10 @@ footer .site-info {
             display: flex;
             justify-content: center;
             align-items: center;
-            padding: 20px;
-            width: 20px;
-            height: 20px;
-            margin: 10px;
+            padding: 18px;
+            width: 15px;
+            height: 15px;
+            margin: 8px;
             border-radius: 50%;
             border: 3px solid #000;
             &:hover {
@@ -39,7 +39,6 @@ footer .site-info {
     .copyright {
         color: #808080;
         font-size: 14px;
-        width: 150px;
         text-align: center;
         line-height: 1rem;
         @include tablet {
