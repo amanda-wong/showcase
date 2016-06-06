@@ -807,7 +807,8 @@ object {
 .home .page-hero {
   background: linear-gradient(to right, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../assets/images/bag-and-hands-landing.jpg");
   background-size: cover;
-  height: 50vh; }
+  background-position: center center;
+  height: 70vh; }
   @media (min-width: 600px) {
     .home .page-hero {
       height: 100vh; } }
