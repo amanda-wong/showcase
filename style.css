@@ -575,7 +575,8 @@ a {
   width: 50%; }
 
 footer .site-info {
-  height: 20vh;
+  width: 100vw;
+  height: 200px;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-pack: center;
@@ -587,7 +588,7 @@ footer .site-info {
   footer .site-info h3 {
     font-family: "bebas_neue", sans-serif;
     font-weight: bold;
-    font-size: 25px; }
+    font-size: 1.3rem; }
   footer .site-info .social-icon-wrap {
     margin-bottom: 20px;
     width: 300px;
