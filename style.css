@@ -464,9 +464,6 @@ a {
     outline: 0; }
 
 /* Menus */
-.post-type-archive-projects #logo {
-  color: rgba(128, 128, 128, 0.4); }
-
 .main-navigation {
   display: -ms-flexbox;
   display: flex;
@@ -555,6 +552,21 @@ a {
       .main-navigation .menu-main-container a:hover {
         color: #fff;
         transition: all 1s; }
+
+.post-type-archive-projects #logo {
+  color: rgba(0, 0, 0, 0.3); }
+  .post-type-archive-projects #logo:hover {
+    color: #000; }
+
+.post-type-archive-projects .menu-main-container a {
+  color: rgba(0, 0, 0, 0.3); }
+  .post-type-archive-projects .menu-main-container a:hover {
+    color: #000; }
+
+.post-type-archive-projects .menu-main-container li:last-child a {
+  border: 2px solid rgba(0, 0, 0, 0.3); }
+  .post-type-archive-projects .menu-main-container li:last-child a:hover {
+    border: 2px solid #000; }
 
 /* Small menu. */
 .menu-toggle,
