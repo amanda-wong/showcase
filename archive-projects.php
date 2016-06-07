@@ -12,14 +12,7 @@ get_header(); ?>
 
 		<?php if ( have_posts() ) : ?>
 
-			<header class="page-header">
-				<?php
-					the_archive_title( '<h1 class="page-title">', '</h1>' );
-					the_archive_description( '<div class="taxonomy-description">', '</div>' );
-				?>
-			</header><!-- .page-header -->
-
-			<?php /* Start the Loop */ ?>
+			<div class="block-container">
 			<?php while ( have_posts() ) : the_post(); ?>
 
 				<a href="<?php get_permalink() ?>">
@@ -30,7 +23,7 @@ get_header(); ?>
 				</a>
 
 			<?php endwhile; ?>
-
+			</div>
 			<?php the_posts_navigation(); ?>
 
 		<?php else : ?>
