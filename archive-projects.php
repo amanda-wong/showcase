@@ -17,7 +17,7 @@ get_header(); ?>
 
 				<a href="<?php get_permalink() ?>">
                     <div>
-                        <h3><?php get_the_title() ?></h3>
+                        <h3><?php the_title(); ?></h3>
                         <p><?php echo CFS()->get('project_type') ?></p>
 				    </div>
 				</a>
