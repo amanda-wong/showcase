@@ -464,6 +464,9 @@ a {
     outline: 0; }
 
 /* Menus */
+.post-type-archive-projects #logo {
+  color: rgba(128, 128, 128, 0.4); }
+
 .main-navigation {
   display: -ms-flexbox;
   display: flex;
@@ -482,7 +485,7 @@ a {
     font-size: 2.5rem;
     text-decoration: none;
     text-align: center;
-    color: rgba(255, 255, 255, 0.5); }
+    color: rgba(255, 255, 255, 0.4); }
     @media (min-width: 600px) {
       .main-navigation #logo {
         font-size: 3rem; } }
@@ -519,7 +522,7 @@ a {
     position: relative; }
   @media (min-width: 600px) {
     .main-navigation .menu-main-container li:last-child a {
-      border: 2px solid rgba(128, 128, 128, 0.5);
+      border: 2px solid rgba(255, 255, 255, 0.4);
       border-radius: 4%;
       margin-left: 0.5rem; } }
   @media (min-width: 600px) and (min-width: 1024px) {
@@ -542,7 +545,7 @@ a {
       text-decoration: none;
       font-family: "bebas_neue", sans-serif;
       font-size: 1.3rem;
-      color: rgba(255, 255, 255, 0.5); }
+      color: rgba(255, 255, 255, 0.4); }
       @media (min-width: 600px) {
         .main-navigation .menu-main-container a {
           font-size: 1.6rem; } }
