@@ -2,7 +2,7 @@
 /**
  * The template for displaying archive pages.
  *
- * @package RED_Starter_Theme
+ * @package Showcase
  */
 
 get_header(); ?>
@@ -16,7 +16,7 @@ get_header(); ?>
 			<?php while ( have_posts() ) : the_post(); ?>
 
 				<a href="<?php get_permalink() ?>">
-                    <div>
+                    <div class="project-image">
                         <h3><?php the_title(); ?></h3>
                         <p><?php echo CFS()->get('project_type') ?></p>
 				    </div>
