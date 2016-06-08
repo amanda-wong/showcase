@@ -27,10 +27,17 @@
     justify-content: center;
     align-items: center;
     width: 80%;
+    @include tablet {
+        height: 75vh;
+    }
     h4 {
         font-family: 'open_sans', sans-serif;
         color: #fff;
         text-align: center;
+        @include tablet {
+            font-size: 1.8rem;
+            margin-bottom: 20px;
+        }
     }
     a {
         font-family: $font__title;
@@ -39,6 +46,6 @@
         text-transform: uppercase;
         color: #fff;
         border-radius: 3%;
-        font-size: 1.3rem;
+        font-size: 1.6rem;
     }
 }

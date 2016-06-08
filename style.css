@@ -843,10 +843,17 @@ object {
   -ms-flex-align: center;
       align-items: center;
   width: 80%; }
+  @media (min-width: 600px) {
+    .welcome-message {
+      height: 75vh; } }
   .welcome-message h4 {
     font-family: 'open_sans', sans-serif;
     color: #fff;
     text-align: center; }
+    @media (min-width: 600px) {
+      .welcome-message h4 {
+        font-size: 1.8rem;
+        margin-bottom: 20px; } }
   .welcome-message a {
     font-family: "bebas_neue", sans-serif;
     border: 3px solid #fff;
@@ -854,4 +861,4 @@ object {
     text-transform: uppercase;
     color: #fff;
     border-radius: 3%;
-    font-size: 1.3rem; }
+    font-size: 1.6rem; }
