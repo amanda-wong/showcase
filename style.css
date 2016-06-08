@@ -835,14 +835,25 @@ object {
       height: 100vh; } }
 
 .welcome-message {
-  height: 40vh;
+  height: 45vh;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column;
   -ms-flex-pack: center;
       justify-content: center;
   -ms-flex-align: center;
       align-items: center;
   width: 80%; }
   .welcome-message h4 {
-    font-family: 'helvetica', sans-serif;
-    text-transform: uppercase; }
+    font-family: 'open_sans', sans-serif;
+    color: #fff;
+    text-align: center; }
+  .welcome-message a {
+    font-family: "bebas_neue", sans-serif;
+    border: 2px solid #fff;
+    padding: 0.3rem 0.8rem;
+    text-transform: uppercase;
+    color: #fff;
+    border-radius: 3%;
+    font-size: 1.3rem; }

@@ -21,13 +21,24 @@
 }
 
 .welcome-message {
-    height: 40vh;
+    height: 45vh;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     width: 80%;
     h4 {
-        font-family: 'helvetica', sans-serif;
+        font-family: 'open_sans', sans-serif;
+        color: #fff;
+        text-align: center;
+    }
+    a {
+        font-family: $font__title;
+        border: 2px solid #fff;
+        padding: 0.3rem 0.8rem;
         text-transform: uppercase;
+        color: #fff;
+        border-radius: 3%;
+        font-size: 1.3rem;
     }
 }
