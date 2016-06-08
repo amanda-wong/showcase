@@ -112,7 +112,8 @@ a {
 			margin: 0;
 		}
 		a {
-			padding: 0.3rem 0.8rem;
+			padding-bottom: 5px;
+			margin: 0.3rem 0.8rem;
 			text-decoration: none;
 			font-family: $font__title;
 			font-size: 1.3rem;
@@ -134,12 +135,12 @@ a {
 	.current_page_item > a,
 	.current-menu-item > a,
 	.current_page_ancestor > a {
-		border: 2px solid #fff;
+		border-bottom: 3px solid #fff;
 		color: #fff;
 		border-radius: 3%;
 		&:hover {
 			color: #fff;
-			border: 2px solid #fff;
+			border-bottom: 3px solid #fff;
 			border-radius: 3%;
 		}
 	}

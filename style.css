@@ -525,7 +525,8 @@ a {
       .main-navigation .menu-main-container {
         margin: 0; } }
     .main-navigation .menu-main-container a {
-      padding: 0.3rem 0.8rem;
+      padding-bottom: 5px;
+      margin: 0.3rem 0.8rem;
       text-decoration: none;
       font-family: "bebas_neue", sans-serif;
       font-size: 1.3rem;
@@ -542,14 +543,14 @@ a {
   .main-navigation .current_page_item > a,
   .main-navigation .current-menu-item > a,
   .main-navigation .current_page_ancestor > a {
-    border: 2px solid #fff;
+    border-bottom: 3px solid #fff;
     color: #fff;
     border-radius: 3%; }
     .main-navigation .current_page_item > a:hover,
     .main-navigation .current-menu-item > a:hover,
     .main-navigation .current_page_ancestor > a:hover {
       color: #fff;
-      border: 2px solid #fff;
+      border-bottom: 3px solid #fff;
       border-radius: 3%; }
 
 .post-type-archive-projects #logo {
