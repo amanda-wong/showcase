@@ -5,9 +5,10 @@
 
 			get_header(); ?>
 			<div class="welcome-message">
-				<h3>Hi, I'm Amanda. I'm a front-end developer!<br>
-					Check out some <a href="/projects">Projects</a> coded by me.
-				</h3>
+				<h4>Hi, I'm Amanda. I'm a front-end developer!<br>
+					Come check out some of my work.
+				</h4>
+				<a href="/projects">Projects</a>
 			</div>
 		</div>
 	</main><!-- #main -->
