@@ -824,7 +824,7 @@ object {
       justify-content: center; }
 
 .home .page-hero {
-  background: linear-gradient(to right, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../assets/images/desktop-a-landing.jpg");
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("../assets/images/desktop-a-landing.jpg");
   background-size: cover;
   background-position: center center;
   height: 70vh; }
@@ -842,18 +842,21 @@ object {
       justify-content: center;
   -ms-flex-align: center;
       align-items: center;
-  width: 80%; }
+  width: 90%; }
   @media (min-width: 600px) {
     .welcome-message {
       height: 75vh; } }
   .welcome-message h4 {
     font-family: 'open_sans', sans-serif;
     color: #fff;
-    text-align: center; }
+    text-align: center;
+    margin-bottom: 20px; }
     @media (min-width: 600px) {
       .welcome-message h4 {
-        font-size: 1.8rem;
-        margin-bottom: 20px; } }
+        font-size: 1.8rem; } }
+    @media (min-width: 1024px) {
+      .welcome-message h4 {
+        font-size: 2.2rem; } }
   .welcome-message a {
     font-family: "bebas_neue", sans-serif;
     border: 3px solid #fff;
@@ -861,4 +864,10 @@ object {
     text-transform: uppercase;
     color: #fff;
     border-radius: 3%;
-    font-size: 1.6rem; }
+    font-size: 1.3rem; }
+    @media (min-width: 600px) {
+      .welcome-message a {
+        font-size: 1.6rem; } }
+    @media (min-width: 1024px) {
+      .welcome-message a {
+        font-size: 1.8rem; } }

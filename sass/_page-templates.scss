@@ -9,7 +9,7 @@
         justify-content: center;
     }
     .page-hero {
-        background: linear-gradient( to right, rgba(0,0,0,0.3), rgba(0,0,0,0.3)),
+        background: linear-gradient( to right, rgba(0,0,0,0.7), rgba(0,0,0,0.7)),
          url('../assets/images/desktop-a-landing.jpg');
         background-size: cover;
         background-position: center center;
@@ -26,7 +26,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 80%;
+    width: 90%;
     @include tablet {
         height: 75vh;
     }
@@ -34,9 +34,12 @@
         font-family: 'open_sans', sans-serif;
         color: #fff;
         text-align: center;
+        margin-bottom: 20px;
         @include tablet {
             font-size: 1.8rem;
-            margin-bottom: 20px;
+        }
+        @include desktop {
+            font-size: 2.2rem;
         }
     }
     a {
@@ -46,6 +49,12 @@
         text-transform: uppercase;
         color: #fff;
         border-radius: 3%;
-        font-size: 1.6rem;
+        font-size: 1.3rem;
+        @include tablet {
+            font-size: 1.6rem;
+        }
+        @include desktop {
+            font-size: 1.8rem;
+        }
     }
 }
