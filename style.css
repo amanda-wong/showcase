@@ -544,7 +544,15 @@ a {
   .main-navigation .current_page_item > a,
   .main-navigation .current-menu-item > a,
   .main-navigation .current_page_ancestor > a {
-    color: orange; }
+    border: 2px solid #fff;
+    color: #fff;
+    border-radius: 3%; }
+    .main-navigation .current_page_item > a:hover,
+    .main-navigation .current-menu-item > a:hover,
+    .main-navigation .current_page_ancestor > a:hover {
+      color: #fff;
+      border: 2px solid #fff;
+      border-radius: 3%; }
 
 .post-type-archive-projects #logo {
   color: rgba(0, 0, 0, 0.3); }

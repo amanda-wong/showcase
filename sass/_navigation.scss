@@ -138,8 +138,14 @@ a {
 	.current_page_item > a,
 	.current-menu-item > a,
 	.current_page_ancestor > a {
-		// border: 2px solid rgba(255,255,255, 0.4);
-		color: orange;
+		border: 2px solid #fff;
+		color: #fff;
+		border-radius: 3%;
+		&:hover {
+			color: #fff;
+			border: 2px solid #fff;
+			border-radius: 3%;
+		}
 	}
 }
 
