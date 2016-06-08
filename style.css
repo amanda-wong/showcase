@@ -483,16 +483,13 @@ a {
     font-size: 2.5rem;
     text-decoration: none;
     text-align: center;
-    color: rgba(255, 255, 255, 0.5); }
+    color: #fff; }
     @media (min-width: 600px) {
       .main-navigation #logo {
         font-size: 3rem; } }
     @media (min-width: 1024px) {
       .main-navigation #logo {
         font-size: 3.5rem; } }
-    .main-navigation #logo:hover {
-      color: #fff;
-      transition: all 1s; }
   .main-navigation ul {
     list-style: none;
     margin: 0;
