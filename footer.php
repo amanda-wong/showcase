@@ -13,7 +13,10 @@
 				<div class="site-info">
 		            <h3>- Let's get social -</h3>
 		            <div class="social-icon-wrap">
-		                <a href="https://www.linkedin.com/in/missamandawong" target="_blank">
+						<a href="https://www.github.com/amanda-wong/" target="_blank">
+		                    <i class="fa fa-github" aria-hidden="true"></i>
+		                </a>
+						<a href="https://www.linkedin.com/in/missamandawong" target="_blank">
 		                    <i class="fa fa-linkedin" aria-hidden="true"></i>
 		                </a>
 		                <a href="https://www.facebook.com/amanda.wong.184" target="_blank">
@@ -24,9 +27,6 @@
 		                </a>
 		                <a href="https://www.instagram.com/missamandawong/" target="_blank">
 		                    <i class="fa fa-instagram" aria-hidden="true"></i>
-		                </a>
-						<a href="https://www.github.com/amanda-wong/" target="_blank">
-		                    <i class="fa fa-github" aria-hidden="true"></i>
 		                </a>
 		            </div>
 		            <div class="copyright">
