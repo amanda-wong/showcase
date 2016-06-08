@@ -849,7 +849,7 @@ object {
     text-align: center; }
   .welcome-message a {
     font-family: "bebas_neue", sans-serif;
-    border: 2px solid #fff;
+    border: 3px solid #fff;
     padding: 0.3rem 0.8rem;
     text-transform: uppercase;
     color: #fff;
