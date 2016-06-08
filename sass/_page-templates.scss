@@ -4,6 +4,10 @@
 
 /* Front page */
 .home {
+    .site-content {
+        display: flex;
+        justify-content: center;
+    }
     .page-hero {
         background: linear-gradient( to right, rgba(0,0,0,0.3), rgba(0,0,0,0.3)),
          url('../assets/images/desktop-a-landing.jpg');
@@ -13,5 +17,17 @@
         @include  tablet {
             height: 100vh;
         }
+    }
+}
+
+.welcome-message {
+    height: 40vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    h4 {
+        font-family: 'helvetica', sans-serif;
+        text-transform: uppercase;
     }
 }

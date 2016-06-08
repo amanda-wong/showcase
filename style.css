@@ -472,6 +472,7 @@ a {
   -ms-flex-pack: justify;
       justify-content: space-between;
   width: 90%;
+  padding-top: 0.8rem;
   margin: 0 auto; }
   @media (min-width: 600px) {
     .main-navigation {
@@ -482,7 +483,7 @@ a {
     font-size: 2.5rem;
     text-decoration: none;
     text-align: center;
-    color: rgba(255, 255, 255, 0.4); }
+    color: rgba(255, 255, 255, 0.5); }
     @media (min-width: 600px) {
       .main-navigation #logo {
         font-size: 3rem; } }
@@ -531,7 +532,7 @@ a {
       text-decoration: none;
       font-family: "bebas_neue", sans-serif;
       font-size: 1.3rem;
-      color: rgba(255, 255, 255, 0.4); }
+      color: rgba(255, 255, 255, 0.5); }
       @media (min-width: 600px) {
         .main-navigation .menu-main-container a {
           font-size: 1.6rem; } }
@@ -818,6 +819,12 @@ object {
 # Page Templates
 --------------------------------------------------------------*/
 /* Front page */
+.home .site-content {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+      justify-content: center; }
+
 .home .page-hero {
   background: linear-gradient(to right, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../assets/images/desktop-a-landing.jpg");
   background-size: cover;
@@ -826,3 +833,16 @@ object {
   @media (min-width: 600px) {
     .home .page-hero {
       height: 100vh; } }
+
+.welcome-message {
+  height: 40vh;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+      justify-content: center;
+  -ms-flex-align: center;
+      align-items: center;
+  width: 80%; }
+  .welcome-message h4 {
+    font-family: 'helvetica', sans-serif;
+    text-transform: uppercase; }
