@@ -517,17 +517,6 @@ a {
   .main-navigation li {
     float: left;
     position: relative; }
-  @media (min-width: 600px) {
-    .main-navigation .menu-main-container li:last-child a {
-      border: 2px solid rgba(255, 255, 255, 0.4);
-      border-radius: 4%;
-      margin-left: 0.5rem; } }
-  @media (min-width: 600px) and (min-width: 1024px) {
-    .main-navigation .menu-main-container li:last-child a {
-      margin-left: 0.6rem; } }
-  @media (min-width: 600px) {
-      .main-navigation .menu-main-container li:last-child a:hover {
-        border: 2px solid #fff; } }
   .main-navigation .menu-main-container {
     display: -ms-flexbox;
     display: flex;
@@ -552,6 +541,10 @@ a {
       .main-navigation .menu-main-container a:hover {
         color: #fff;
         transition: all 1s; }
+  .main-navigation .current_page_item > a,
+  .main-navigation .current-menu-item > a,
+  .main-navigation .current_page_ancestor > a {
+    border: 2px solid rgba(255, 255, 255, 0.4); }
 
 .post-type-archive-projects #logo {
   color: rgba(0, 0, 0, 0.3); }
@@ -562,11 +555,6 @@ a {
   color: rgba(0, 0, 0, 0.3); }
   .post-type-archive-projects .menu-main-container a:hover {
     color: #000; }
-
-.post-type-archive-projects .menu-main-container li:last-child a {
-  border: 2px solid rgba(0, 0, 0, 0.3); }
-  .post-type-archive-projects .menu-main-container li:last-child a:hover {
-    border: 2px solid #000; }
 
 /* Small menu. */
 .menu-toggle,
