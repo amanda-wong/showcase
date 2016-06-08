@@ -1,6 +1,6 @@
 <?php
 /**
- * The template for displaying archive pages.
+ * Template Name: Projects Archive Page
  *
  * @package Showcase
  */
