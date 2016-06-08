@@ -8,7 +8,7 @@
 				<h4>Hi, I'm Amanda. I'm a front-end developer!<br>
 					Come check out some of my work.
 				</h4>
-				<a href="/projects">Projects</a>
+				<a href="/portfolio">Portfolio</a>
 			</div>
 		</div>
 	</main><!-- #main -->
