@@ -25,6 +25,9 @@
 		                <a href="https://www.instagram.com/missamandawong/" target="_blank">
 		                    <i class="fa fa-instagram" aria-hidden="true"></i>
 		                </a>
+						<a href="https://www.github.com/amanda-wong/" target="_blank">
+		                    <i class="fa fa-github" aria-hidden="true"></i>
+		                </a>
 		            </div>
 		            <div class="copyright">
 		                Copyright &copy; <span id="year"></span> Amanda Wong
