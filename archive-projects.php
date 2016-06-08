@@ -14,7 +14,6 @@ get_header(); ?>
 
 			<div class="block-container">
 			<?php while ( have_posts() ) : the_post(); ?>
-
 				<a href="<?php get_permalink() ?>">
                     <div class="project-image">
                         <h3><?php the_title(); ?></h3>
