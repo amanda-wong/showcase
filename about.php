@@ -9,7 +9,7 @@
 		<div class="page-hero">
 			<?php get_header(); ?>
             <div class="hero-content">
-                <?php CFS()->get('hero_content') ?>
+                <?php echo CFS()->get('hero_content'); ?> 
             </div>
 		</div>
 	</main><!-- #main -->
