@@ -8,8 +8,8 @@
 	<main id="main" class="site-main" role="main">
 		<div class="page-hero">
 			<?php get_header(); ?>
-            <div class="about-excerpt">
-                
+            <div class="hero-content">
+                <?php CFS()->get('hero_content') ?>
             </div>
 		</div>
 	</main><!-- #main -->
