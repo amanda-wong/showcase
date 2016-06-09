@@ -881,3 +881,11 @@ object {
   @media (min-width: 600px) {
     .page-template-about .page-hero {
       height: 100vh; } }
+
+.hero-content {
+  font-family: 'open_sans', sans-serif;
+  font-style: italic;
+  color: #fff;
+  width: 60%;
+  text-align: center;
+  margin: 50px 0 0 10px; }
