@@ -8,9 +8,10 @@
 	<main id="main" class="site-main" role="main">
 		<div class="page-hero">
 			<?php get_header(); ?>
+            <div class="about-excerpt">
+                
+            </div>
 		</div>
-        <div class="">
-        </div>
 	</main><!-- #main -->
 </div><!-- #primary -->
 
