@@ -2,7 +2,7 @@
 # Page Templates
 --------------------------------------------------------------*/
 
-/* Front page */
+/* (1) Home Page */
 .home {
     .site-content {
         display: flex;
@@ -55,6 +55,21 @@
         }
         @include desktop {
             font-size: 1.8rem;
+        }
+    }
+}
+
+/* (4) About Page */
+
+.page-template-about {
+    .page-hero {
+        background: linear-gradient( to right, rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
+         url('../assets/images/mypicture-landing.jpg');
+        background-size: cover;
+        background-position: center center;
+        height: 70vh;
+        @include  tablet {
+            height: 100vh;
         }
     }
 }

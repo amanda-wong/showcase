@@ -816,7 +816,7 @@ object {
 /*--------------------------------------------------------------
 # Page Templates
 --------------------------------------------------------------*/
-/* Front page */
+/* (1) Home Page */
 .home .site-content {
   display: -ms-flexbox;
   display: flex;
@@ -871,3 +871,13 @@ object {
     @media (min-width: 1024px) {
       .welcome-message a {
         font-size: 1.8rem; } }
+
+/* (4) About Page */
+.page-template-about .page-hero {
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../assets/images/mypicture-landing.jpg");
+  background-size: cover;
+  background-position: center center;
+  height: 70vh; }
+  @media (min-width: 600px) {
+    .page-template-about .page-hero {
+      height: 100vh; } }
