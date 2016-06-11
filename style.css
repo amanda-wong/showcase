@@ -857,20 +857,23 @@ object {
     @media (min-width: 1024px) {
       .welcome-message h4 {
         font-size: 2.2rem; } }
-  .welcome-message a {
-    font-family: "bebas_neue", sans-serif;
-    border: 3px solid #fff;
-    padding: 0.3rem 0.8rem;
-    text-transform: uppercase;
-    color: #fff;
-    border-radius: 3%;
-    font-size: 1.3rem; }
-    @media (min-width: 600px) {
-      .welcome-message a {
-        font-size: 1.6rem; } }
-    @media (min-width: 1024px) {
-      .welcome-message a {
-        font-size: 1.8rem; } }
+
+.fp-cta, .about-cta {
+  font-family: "bebas_neue", sans-serif;
+  border: 3px solid #fff;
+  padding: 0.3rem 0.8rem;
+  text-transform: uppercase;
+  color: #fff;
+  border-radius: 3%;
+  font-size: 1.3rem; }
+  .fp-cta:visited, .fp-cta:hover, .about-cta:visited, .about-cta:hover {
+    color: #fff; }
+  @media (min-width: 600px) {
+    .fp-cta, .about-cta {
+      font-size: 1.6rem; } }
+  @media (min-width: 1024px) {
+    .fp-cta, .about-cta {
+      font-size: 1.8rem; } }
 
 /* (4) About Page */
 .page-template-about .page-hero {
@@ -883,9 +886,27 @@ object {
       height: 100vh; } }
 
 .hero-content {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  -ms-flex-pack: center;
+      justify-content: center;
   font-family: 'open_sans', sans-serif;
   font-style: italic;
   color: #fff;
-  width: 60%;
   text-align: center;
-  margin: 50px 0 0 10px; }
+  width: 80%;
+  height: 60%;
+  padding: 0 10%; }
+  @media (min-width: 600px) {
+    .hero-content {
+      font-size: 1.6rem;
+      width: 70%;
+      height: 80%; } }
+  .hero-content .about-cta {
+    font-style: normal;
+    margin: 10px auto 0; }
+    @media (min-width: 600px) {
+      .hero-content .about-cta {
+        margin-top: 20px; } }
