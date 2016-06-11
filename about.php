@@ -16,6 +16,14 @@
                 </a>
             </div>
 		</div>
+        <section class="about-me-story">
+
+        </section>
+        <section class="instagram">
+            <ul id="image-load">
+
+            </ul>
+        </section>
 	</main><!-- #main -->
 </div><!-- #primary -->
 
