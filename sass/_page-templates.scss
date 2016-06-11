@@ -46,14 +46,20 @@
 
 .fp-cta, .about-cta {
     font-family: $font__title;
+    // background-color: #fff;
     border: 3px solid #fff;
     padding: 0.3rem 0.8rem;
     text-transform: uppercase;
     color: #fff;
     border-radius: 3%;
     font-size: 1.3rem;
-    &:visited, &:hover {
+    &:visited {
         color: #fff;
+    }
+    &:hover, &:focus {
+        color: #fff;
+        transition: all 0.2s;
+        transform: scale(0.9);
     }
     @include tablet {
         font-size: 1.6rem;

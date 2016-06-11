@@ -866,8 +866,12 @@ object {
   color: #fff;
   border-radius: 3%;
   font-size: 1.3rem; }
-  .fp-cta:visited, .fp-cta:hover, .about-cta:visited, .about-cta:hover {
+  .fp-cta:visited, .about-cta:visited {
     color: #fff; }
+  .fp-cta:hover, .fp-cta:focus, .about-cta:hover, .about-cta:focus {
+    color: #fff;
+    transition: all 0.2s;
+    transform: scale(0.9); }
   @media (min-width: 600px) {
     .fp-cta, .about-cta {
       font-size: 1.6rem; } }
