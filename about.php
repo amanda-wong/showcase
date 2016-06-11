@@ -9,7 +9,11 @@
 		<div class="page-hero">
 			<?php get_header(); ?>
             <div class="hero-content">
-                <?php echo CFS()->get('hero_content'); ?> 
+                <?php echo CFS()->get('hero_content'); ?>
+                <a href="assets/images/amanda-resume.pdf" download
+                class="about-cta">
+                    Download Resume
+                </a>
             </div>
 		</div>
 	</main><!-- #main -->
