@@ -26,6 +26,8 @@ a {
 /* Menus */
 
 //Pages with hero images (Front-page, maybe About, Blog)
+
+
 //Pages without hero images (Projects)
 
 .main-navigation {
@@ -137,16 +139,14 @@ a {
 	.current_page_ancestor > a {
 		border-bottom: 3px solid #fff;
 		color: #fff;
-		border-radius: 3%;
 		&:hover {
 			color: #fff;
 			border-bottom: 3px solid #fff;
-			border-radius: 3%;
 		}
 	}
 }
 
-.post-type-archive-projects {
+.post-type-archive-projects, .page-template-contact {
 	#logo {
 		color: rgba(0,0,0, 0.3);
 		&:hover {
@@ -159,6 +159,17 @@ a {
 			&:hover {
 				color: #000;
 			}
+		}
+	}
+
+	.current_page_item > a,
+	.current-menu-item > a,
+	.current_page_ancestor > a {
+		border-bottom: 3px solid #000;
+		color: #000;
+		&:hover {
+			color: #fff;
+			border-bottom: 3px solid #000;
 		}
 	}
 }

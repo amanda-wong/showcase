@@ -544,24 +544,37 @@ a {
   .main-navigation .current-menu-item > a,
   .main-navigation .current_page_ancestor > a {
     border-bottom: 3px solid #fff;
-    color: #fff;
-    border-radius: 3%; }
+    color: #fff; }
     .main-navigation .current_page_item > a:hover,
     .main-navigation .current-menu-item > a:hover,
     .main-navigation .current_page_ancestor > a:hover {
       color: #fff;
-      border-bottom: 3px solid #fff;
-      border-radius: 3%; }
+      border-bottom: 3px solid #fff; }
 
-.post-type-archive-projects #logo {
+.post-type-archive-projects #logo, .page-template-contact #logo {
   color: rgba(0, 0, 0, 0.3); }
-  .post-type-archive-projects #logo:hover {
+  .post-type-archive-projects #logo:hover, .page-template-contact #logo:hover {
     color: #000; }
 
-.post-type-archive-projects .menu-main-container a {
+.post-type-archive-projects .menu-main-container a, .page-template-contact .menu-main-container a {
   color: rgba(0, 0, 0, 0.3); }
-  .post-type-archive-projects .menu-main-container a:hover {
+  .post-type-archive-projects .menu-main-container a:hover, .page-template-contact .menu-main-container a:hover {
     color: #000; }
+
+.post-type-archive-projects .current_page_item > a,
+.post-type-archive-projects .current-menu-item > a,
+.post-type-archive-projects .current_page_ancestor > a, .page-template-contact .current_page_item > a,
+.page-template-contact .current-menu-item > a,
+.page-template-contact .current_page_ancestor > a {
+  border-bottom: 3px solid #000;
+  color: #000; }
+  .post-type-archive-projects .current_page_item > a:hover,
+  .post-type-archive-projects .current-menu-item > a:hover,
+  .post-type-archive-projects .current_page_ancestor > a:hover, .page-template-contact .current_page_item > a:hover,
+  .page-template-contact .current-menu-item > a:hover,
+  .page-template-contact .current_page_ancestor > a:hover {
+    color: #fff;
+    border-bottom: 3px solid #000; }
 
 /* Small menu. */
 .menu-toggle,
