@@ -25,11 +25,7 @@ a {
 
 /* Menus */
 
-//Pages with hero images (Front-page, maybe About, Blog)
-
-
-//Pages without hero images (Projects)
-
+//Dark pages (Light Nav)
 .main-navigation {
 	display: flex;
 	flex-direction: column;
@@ -146,6 +142,7 @@ a {
 	}
 }
 
+// Light pages (Dark Nav)
 .post-type-archive-projects, .page-template-contact {
 	#logo {
 		color: rgba(0,0,0, 0.3);
