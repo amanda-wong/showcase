@@ -552,9 +552,7 @@ a {
       border-bottom: 3px solid #fff; }
 
 .post-type-archive-projects #logo, .page-template-contact #logo {
-  color: rgba(0, 0, 0, 0.3); }
-  .post-type-archive-projects #logo:hover, .page-template-contact #logo:hover {
-    color: #000; }
+  color: #000; }
 
 .post-type-archive-projects .menu-main-container a, .page-template-contact .menu-main-container a {
   color: rgba(0, 0, 0, 0.3); }

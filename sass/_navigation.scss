@@ -145,10 +145,7 @@ a {
 // Light pages (Dark Nav)
 .post-type-archive-projects, .page-template-contact {
 	#logo {
-		color: rgba(0,0,0, 0.3);
-		&:hover {
-			color: #000;
-		}
+		color: #000;
 	}
 	.menu-main-container {
 		a {
