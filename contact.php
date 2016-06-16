@@ -9,9 +9,7 @@
 		<div class="page-hero">
 			<?php get_header(); ?>
             <div class="hero-content">
-                <div class="">
-
-                </div>
+                <h1 class="contact-greeting">Say Hello</h1>
                 <form name="contact_form" class="contact-form" action="/process_form.php" method="post">
                     <input type="text" name="name" id="name" placeholder="Name" value="">
                     <input type="text" name="subject" id="subject" placeholder="Subject" value="">
