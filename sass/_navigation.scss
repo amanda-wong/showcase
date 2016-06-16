@@ -28,21 +28,22 @@ a {
 //Dark pages (Light Nav)
 .main-navigation {
 	display: flex;
-	flex-direction: column;
-	justify-content: space-between;
+	flex-direction: row;
+	justify-content: flex-start;
 	align-items: center;
 	width: 90%;
 	padding-top: 0.8rem;
 	margin: 0 auto;
+	position: relative;
 	.mobile-menu-button {
+		position: absolute;
+		left: 5px;
+		top: 30px;
 		font-size: 25px;
 		color: #fff;
 		&:hover {
 			cursor: pointer;
 		}
-	}
-	@include tablet {
-		flex-direction: row;
 	}
 	#logo {
 		font-family: $font__title;
@@ -50,6 +51,7 @@ a {
 		text-decoration: none;
 		text-align: center;
 		color: #fff;
+		margin-left: 50px;
 		@include tablet {
 			font-size: 3rem;
 		}

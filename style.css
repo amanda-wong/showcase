@@ -467,30 +467,31 @@ a {
 .main-navigation {
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-direction: column;
-      flex-direction: column;
-  -ms-flex-pack: justify;
-      justify-content: space-between;
+  -ms-flex-direction: row;
+      flex-direction: row;
+  -ms-flex-pack: start;
+      justify-content: flex-start;
   -ms-flex-align: center;
       align-items: center;
   width: 90%;
   padding-top: 0.8rem;
-  margin: 0 auto; }
+  margin: 0 auto;
+  position: relative; }
   .main-navigation .mobile-menu-button {
+    position: absolute;
+    left: 5px;
+    top: 30px;
     font-size: 25px;
     color: #fff; }
     .main-navigation .mobile-menu-button:hover {
       cursor: pointer; }
-  @media (min-width: 600px) {
-    .main-navigation {
-      -ms-flex-direction: row;
-          flex-direction: row; } }
   .main-navigation #logo {
     font-family: "bebas_neue", sans-serif;
     font-size: 2.5rem;
     text-decoration: none;
     text-align: center;
-    color: #fff; }
+    color: #fff;
+    margin-left: 50px; }
     @media (min-width: 600px) {
       .main-navigation #logo {
         font-size: 3rem; } }
