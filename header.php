@@ -23,10 +23,11 @@
 			<header id="masthead" class="site-header" role="banner">
 				<nav id="site-navigation" class="main-navigation" role="navigation">
 
-						<a id="logo" href="/">Amanda Wong</a>
-						<a class="mobile-menu-button">
-							<i class="fa fa-bars" aria-hidden="true"></i>
-						</a>
+					<a class="mobile-menu-button">
+						<i class="fa fa-bars" aria-hidden="true"></i>
+					</a>
+					<a id="logo" href="/">Amanda Wong</a>
+
 						<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu' ) ); ?>
 
 				</nav><!-- #site-navigation -->
