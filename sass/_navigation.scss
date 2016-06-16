@@ -52,7 +52,7 @@ a {
 		}
 	}
 	#logo {
-		font-family: $font__title;
+		font-family: $font__form_elements;
 		font-size: 2.5rem;
 		text-decoration: none;
 		text-align: center;
@@ -130,7 +130,7 @@ a {
 			padding-bottom: 5px;
 			margin: 0.3rem 0.8rem;
 			text-decoration: none;
-			font-family: $font__title;
+			font-family: $font__form_elements;
 			font-size: 1.3rem;
 			color: rgba(255,255,255,0.5);
 			@include tablet {
