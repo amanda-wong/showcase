@@ -931,8 +931,44 @@ object {
   background: linear-gradient(to right, rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7)), url("../assets/images/notebook-pen-landing.jpg");
   background-size: cover;
   background-position: center center;
-  height: 70vh;
   width: 100%; }
-  @media (min-width: 600px) {
-    .page-template-contact .page-hero {
-      height: 100vh; } }
+
+.page-template-contact .hero-content {
+  padding: 30px 0; }
+
+.contact-greeting {
+  font-family: helvetica;
+  text-align: center;
+  font-size: 1.3rem;
+  font-weight: 700; }
+
+.contact-form {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  -ms-flex-pack: justify;
+      justify-content: space-between;
+  -ms-flex-align: center;
+      align-items: center;
+  margin: 10px 20px; }
+  .contact-form [type="text"], .contact-form [type="email"], .contact-form textarea {
+    width: 100%;
+    margin-bottom: 10px;
+    font-size: 16px;
+    padding: 5px 10px;
+    font-family: 'open_sans', sans-serif; }
+  .contact-form [type="button"] {
+    width: 100px;
+    height: 40px;
+    text-transform: uppercase;
+    box-shadow: none;
+    border: none;
+    background-color: #ffd700;
+    text-shadow: none;
+    font-family: 'open_sans', sans-serif;
+    font-weight: 600; }
+    .contact-form [type="button"]:hover, .contact-form [type="button"]:focus {
+      background-color: #ccac00;
+      box-shadow: none;
+      outline: none; }
