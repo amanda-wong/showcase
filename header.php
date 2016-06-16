@@ -22,14 +22,17 @@
 
 			<header id="masthead" class="site-header" role="banner">
 				<nav id="site-navigation" class="main-navigation" role="navigation">
-
 					<a class="mobile-menu-button">
 						<i class="fa fa-bars" aria-hidden="true"></i>
 					</a>
+					<div id="mobile-menu-container">
+						<div class="mobile-logo-container">
+							<a id="mobile-logo" href="/">Amanda Wong</a>
+						</div>
+						<?php wp_nav_menu( array( 'theme_location' => 'mobile', 'menu_id' => 'mobile-menu' ) ); ?>
+					</div>
 					<a id="logo" href="/">Amanda Wong</a>
-
-						<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu' ) ); ?>
-
+					<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu' ) ); ?>
 				</nav><!-- #site-navigation -->
 			</header><!-- #masthead -->
 
