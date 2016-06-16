@@ -25,7 +25,7 @@
 
 						<a id="logo" href="/">Amanda Wong</a>
 						<a class="mobile-menu-button">
-							<i class="fa fa-times" aria-hidden="true"></i>
+							<i class="fa fa-bars" aria-hidden="true"></i>
 						</a>
 						<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu' ) ); ?>
 
