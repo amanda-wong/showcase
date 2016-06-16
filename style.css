@@ -477,6 +477,10 @@ a {
   padding-top: 0.8rem;
   margin: 0 auto;
   position: relative; }
+  @media (min-width: 600px) {
+    .main-navigation {
+      -ms-flex-pack: justify;
+          justify-content: space-between; } }
   .main-navigation .mobile-menu-button {
     position: absolute;
     left: 5px;
@@ -485,6 +489,9 @@ a {
     color: #fff; }
     .main-navigation .mobile-menu-button:hover {
       cursor: pointer; }
+    @media (min-width: 600px) {
+      .main-navigation .mobile-menu-button {
+        display: none; } }
   .main-navigation #logo {
     font-family: "bebas_neue", sans-serif;
     font-size: 2.5rem;
@@ -494,7 +501,8 @@ a {
     margin-left: 50px; }
     @media (min-width: 600px) {
       .main-navigation #logo {
-        font-size: 3rem; } }
+        font-size: 3rem;
+        margin: 0; } }
     @media (min-width: 1024px) {
       .main-navigation #logo {
         font-size: 3.5rem; } }
@@ -581,6 +589,25 @@ a {
   .page-template-contact .current_page_ancestor > a:hover {
     color: #fff;
     border-bottom: 3px solid #000; }
+
+/* Mobile menu. */
+#mobile-menu-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: #fff;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column; }
+  #mobile-menu-container .mobile-logo-container {
+    background-color: #f8f8f8; }
+
+#mobile-menu ul {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column; }
 
 /* Small menu. */
 .menu-toggle,

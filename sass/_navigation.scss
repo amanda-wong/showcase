@@ -35,6 +35,9 @@ a {
 	padding-top: 0.8rem;
 	margin: 0 auto;
 	position: relative;
+	@include tablet {
+		justify-content: space-between;
+	}
 	.mobile-menu-button {
 		position: absolute;
 		left: 5px;
@@ -43,6 +46,9 @@ a {
 		color: #fff;
 		&:hover {
 			cursor: pointer;
+		}
+		@include tablet {
+			display: none;
 		}
 	}
 	#logo {
@@ -54,6 +60,7 @@ a {
 		margin-left: 50px;
 		@include tablet {
 			font-size: 3rem;
+			margin: 0;
 		}
 		@include desktop {
 			font-size: 3.5rem;
@@ -176,6 +183,25 @@ a {
 			border-bottom: 3px solid #000;
 		}
 	}
+}
+
+/* Mobile menu. */
+
+#mobile-menu-container {
+	position: fixed;
+	top: 0;
+	left: 0;
+	background-color: #fff;
+	display: flex;
+	flex-direction: column;
+	.mobile-logo-container {
+		background-color: #f8f8f8;
+	}
+}
+
+#mobile-menu ul {
+	display: flex;
+	flex-direction: column;
 }
 
 
