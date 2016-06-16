@@ -5,9 +5,9 @@
 
 			get_header(); ?>
 			<div class="welcome-message">
-				<h4>Hi, I'm Amanda. I'm a front-end developer!<br>
+				<h1>Hi, I'm Amanda. I'm a front-end developer!<br>
 					Come check out some of my work.
-				</h4>
+				</h1>
 				<a href="/portfolio" class="fp-cta">Portfolio</a>
 			</div>
 		</div>
