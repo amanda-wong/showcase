@@ -900,7 +900,7 @@ object {
     .page-template-about .page-hero {
       height: 100vh; } }
 
-.hero-content {
+.page-template-about .hero-content {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-direction: column;
@@ -915,15 +915,15 @@ object {
   height: 60%;
   padding: 0 10%; }
   @media (min-width: 600px) {
-    .hero-content {
+    .page-template-about .hero-content {
       font-size: 1.6rem;
       width: 70%;
       height: 80%; } }
-  .hero-content .about-cta {
+  .page-template-about .hero-content .about-cta {
     font-style: normal;
     margin: 10px auto 0; }
     @media (min-width: 600px) {
-      .hero-content .about-cta {
+      .page-template-about .hero-content .about-cta {
         margin-top: 20px; } }
 
 /* (5) Contact Page */
@@ -931,7 +931,8 @@ object {
   background: linear-gradient(to right, rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7)), url("../assets/images/notebook-pen-landing.jpg");
   background-size: cover;
   background-position: center center;
-  height: 70vh; }
+  height: 70vh;
+  width: 100%; }
   @media (min-width: 600px) {
     .page-template-contact .page-hero {
       height: 100vh; } }
