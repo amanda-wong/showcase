@@ -45,14 +45,13 @@
 }
 
 .fp-cta, .about-cta {
-    font-family: $font__title;
-    // background-color: #fff;
+    font-family: $font__main;
     border: 3px solid #fff;
-    padding: 0.3rem 0.8rem;
+    padding: 0.7rem 1.1rem;
     text-transform: uppercase;
     color: #fff;
-    border-radius: 3%;
-    font-size: 1.3rem;
+    border-radius: 4%;
+    font-size: 0.8rem;
     &:visited {
         color: #fff;
     }
@@ -62,10 +61,10 @@
         transform: scale(0.9);
     }
     @include tablet {
-        font-size: 1.6rem;
+        font-size: 1.1rem;
     }
     @include desktop {
-        font-size: 1.8rem;
+        font-size: 1.3rem;
     }
 }
 

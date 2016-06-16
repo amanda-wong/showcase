@@ -870,13 +870,13 @@ object {
         font-size: 2.2rem; } }
 
 .fp-cta, .about-cta {
-  font-family: "bebas_neue", sans-serif;
+  font-family: "open_sans", sans-serif;
   border: 3px solid #fff;
-  padding: 0.3rem 0.8rem;
+  padding: 0.7rem 1.1rem;
   text-transform: uppercase;
   color: #fff;
-  border-radius: 3%;
-  font-size: 1.3rem; }
+  border-radius: 4%;
+  font-size: 0.8rem; }
   .fp-cta:visited, .about-cta:visited {
     color: #fff; }
   .fp-cta:hover, .fp-cta:focus, .about-cta:hover, .about-cta:focus {
@@ -885,10 +885,10 @@ object {
     transform: scale(0.9); }
   @media (min-width: 600px) {
     .fp-cta, .about-cta {
-      font-size: 1.6rem; } }
+      font-size: 1.1rem; } }
   @media (min-width: 1024px) {
     .fp-cta, .about-cta {
-      font-size: 1.8rem; } }
+      font-size: 1.3rem; } }
 
 /* (4) About Page */
 .page-template-about .page-hero {
