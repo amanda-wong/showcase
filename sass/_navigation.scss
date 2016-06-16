@@ -30,9 +30,17 @@ a {
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
+	align-items: center;
 	width: 90%;
 	padding-top: 0.8rem;
 	margin: 0 auto;
+	.mobile-menu-button {
+		font-size: 25px;
+		color: #fff;
+		&:hover {
+			cursor: pointer;
+		}
+	}
 	@include tablet {
 		flex-direction: row;
 	}
@@ -103,10 +111,10 @@ a {
 	}
 
 	.menu-main-container {   //Main nav items
-		display: flex;
-		align-items: center;
-		margin: 0 auto;
+		display: none;
 		@include tablet {
+			display: flex;
+			align-items: center;
 			margin: 0;
 		}
 		a {
