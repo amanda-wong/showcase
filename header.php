@@ -27,7 +27,7 @@
 					</a>
 					<div id="mobile-menu-container">
 						<div class="mobile-logo-container">
-							<a id="mobile-logo" href="/">AW</a>
+							<a id="mobile-logo" href="/">Amanda</a>
 							<a>
 								<i class="fa fa-times" aria-hidden="true"></i>
 							</a>
