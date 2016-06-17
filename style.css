@@ -558,14 +558,6 @@ a {
         color: #fff;
         transition: all 1s; }
 
-.post-type-archive-projects #logo, .page-template-contact #logo {
-  color: #000; }
-
-.post-type-archive-projects .menu-main-container a, .page-template-contact .menu-main-container a {
-  color: rgba(0, 0, 0, 0.3); }
-  .post-type-archive-projects .menu-main-container a:hover, .page-template-contact .menu-main-container a:hover {
-    color: #000; }
-
 /* Mobile menu. */
 #mobile-menu-container {
   position: fixed;
@@ -626,18 +618,26 @@ a {
     color: #fff;
     border-bottom: 3px solid #fff; }
 
-.post-type-archive-projects #primary-menu .current_page_item > a,
-.post-type-archive-projects #primary-menu .current-menu-item > a,
-.post-type-archive-projects #primary-menu .current_page_ancestor > a, .page-template-contact #primary-menu .current_page_item > a,
-.page-template-contact #primary-menu .current-menu-item > a,
-.page-template-contact #primary-menu .current_page_ancestor > a {
+.post-type-archive-projects #logo, .page-template-contact #logo {
+  color: #000; }
+
+.post-type-archive-projects .menu-main-container #primary-menu a, .page-template-contact .menu-main-container #primary-menu a {
+  color: rgba(0, 0, 0, 0.3); }
+  .post-type-archive-projects .menu-main-container #primary-menu a:hover, .page-template-contact .menu-main-container #primary-menu a:hover {
+    color: #000; }
+
+.post-type-archive-projects .menu-main-container #primary-menu .current_page_item > a,
+.post-type-archive-projects .menu-main-container #primary-menu .current-menu-item > a,
+.post-type-archive-projects .menu-main-container #primary-menu .current_page_ancestor > a, .page-template-contact .menu-main-container #primary-menu .current_page_item > a,
+.page-template-contact .menu-main-container #primary-menu .current-menu-item > a,
+.page-template-contact .menu-main-container #primary-menu .current_page_ancestor > a {
   border-bottom: 3px solid #000;
   color: #000; }
-  .post-type-archive-projects #primary-menu .current_page_item > a:hover,
-  .post-type-archive-projects #primary-menu .current-menu-item > a:hover,
-  .post-type-archive-projects #primary-menu .current_page_ancestor > a:hover, .page-template-contact #primary-menu .current_page_item > a:hover,
-  .page-template-contact #primary-menu .current-menu-item > a:hover,
-  .page-template-contact #primary-menu .current_page_ancestor > a:hover {
+  .post-type-archive-projects .menu-main-container #primary-menu .current_page_item > a:hover,
+  .post-type-archive-projects .menu-main-container #primary-menu .current-menu-item > a:hover,
+  .post-type-archive-projects .menu-main-container #primary-menu .current_page_ancestor > a:hover, .page-template-contact .menu-main-container #primary-menu .current_page_item > a:hover,
+  .page-template-contact .menu-main-container #primary-menu .current-menu-item > a:hover,
+  .page-template-contact .menu-main-container #primary-menu .current_page_ancestor > a:hover {
     color: #fff;
     border-bottom: 3px solid #000; }
 

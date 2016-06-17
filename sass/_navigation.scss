@@ -149,25 +149,6 @@ a {
 	}
 }
 
-
-
-
-
-// Light pages (Dark Nav)
-.post-type-archive-projects, .page-template-contact {
-	#logo {
-		color: #000;
-	}
-	.menu-main-container {
-		a {
-			color: rgba(0,0,0, 0.3);
-			&:hover {
-				color: #000;
-			}
-		}
-	}
-}
-
 /* Mobile menu. */
 
 #mobile-menu-container {
@@ -246,7 +227,16 @@ a {
 
 // light pages (dark menu)
 .post-type-archive-projects, .page-template-contact {
-	#primary-menu {
+	#logo {
+		color: #000;
+	}
+	.menu-main-container #primary-menu {
+		a {
+			color: rgba(0,0,0, 0.3);
+			&:hover {
+				color: #000;
+			}
+		}
 		.current_page_item > a,
 		.current-menu-item > a,
 		.current_page_ancestor > a {
