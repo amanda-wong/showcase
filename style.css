@@ -467,7 +467,7 @@ a {
 /* -----------------------Tablet and Desktop Menus ----------------------------*/
 .main-navigation #logo, .main-navigation #mobile-logo {
   font-family: "bebas_neue", sans-serif;
-  font-size: 1.8rem;
+  font-size: 2rem;
   text-decoration: none; }
 
 .menu-main-container #primary-menu a, .menu-main-container #mobile-menu a {
