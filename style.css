@@ -613,10 +613,23 @@ a {
   -ms-flex-direction: column;
       flex-direction: column; }
   #mobile-menu li a {
-    background-color: rgba(0, 0, 0, 0.5);
     padding: 4px 30px 4px 15px;
     text-align: left;
     margin: 0; }
+    #mobile-menu li a:hover {
+      transition: all 1s; }
+
+.home #mobile-menu li a {
+  background-color: #000;
+  color: rgba(255, 255, 255, 0.5); }
+  .home #mobile-menu li a:hover {
+    color: #fff; }
+
+.post-type-archive-projects #mobile-menu li a, .page-template-contact #mobile-menu li a {
+  background-color: #fff;
+  color: rgba(0, 0, 0, 0.3); }
+  .post-type-archive-projects #mobile-menu li a:hover, .page-template-contact #mobile-menu li a:hover {
+    color: #000; }
 
 /* --------------------------------Small menu --------------------------------  */
 footer .site-info {
