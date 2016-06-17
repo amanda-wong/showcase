@@ -510,9 +510,6 @@ a {
       .main-navigation .mobile-menu-button {
         display: none; } }
   .main-navigation #logo {
-    font-family: "bebas_neue", sans-serif;
-    font-size: 2.5rem;
-    text-decoration: none;
     text-align: center;
     color: #fff;
     margin-left: 50px; }
@@ -576,6 +573,15 @@ a {
   .home #primary-menu .current_page_ancestor > a:hover {
     color: #fff;
     border-bottom: 3px solid #fff; }
+
+.home #mobile-menu .current_page_item > a,
+.home #mobile-menu .current-menu-item > a,
+.home #mobile-menu .current_page_ancestor > a {
+  color: red; }
+  .home #mobile-menu .current_page_item > a:hover,
+  .home #mobile-menu .current-menu-item > a:hover,
+  .home #mobile-menu .current_page_ancestor > a:hover {
+    color: red; }
 
 .post-type-archive-projects #logo, .page-template-contact #logo {
   color: #000; }
