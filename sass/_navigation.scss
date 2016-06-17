@@ -214,6 +214,7 @@ a {
 	align-items: center;
 	padding: 0 15px;
 	height: 43px;
+	margin-bottom: 2px;
 	i {
 		font-size: 25px;
 		&:hover {
@@ -224,7 +225,7 @@ a {
 
 #mobile-menu-container {
 	position: fixed;
-	top: 0;
+	top: 21px;
 	left: 0;
 	background-color: transparent;
 }

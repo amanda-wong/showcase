@@ -609,7 +609,8 @@ a {
   -ms-flex-align: center;
       align-items: center;
   padding: 0 15px;
-  height: 43px; }
+  height: 43px;
+  margin-bottom: 2px; }
   .mobile-logo-container i {
     font-size: 25px; }
     .mobile-logo-container i:hover {
@@ -617,7 +618,7 @@ a {
 
 #mobile-menu-container {
   position: fixed;
-  top: 0;
+  top: 21px;
   left: 0;
   background-color: transparent; }
 
