@@ -28,7 +28,7 @@ a {
 .main-navigation {
 	#logo, #mobile-logo {
 		font-family: $font__form_elements;
-		font-size: 2.5rem;
+		font-size: 3rem;
 		text-decoration: none;
 	}
 }
@@ -207,6 +207,12 @@ a {
 }
 
 /* ------------------------------- Mobile menu ---------------------------------*/
+
+.mobile-logo-container {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
 
 #mobile-menu-container {
 	position: fixed;

@@ -467,7 +467,7 @@ a {
 /* -----------------------Tablet and Desktop Menus ----------------------------*/
 .main-navigation #logo, .main-navigation #mobile-logo {
   font-family: "bebas_neue", sans-serif;
-  font-size: 2.5rem;
+  font-size: 3rem;
   text-decoration: none; }
 
 .menu-main-container #primary-menu a, .menu-main-container #mobile-menu a {
@@ -601,6 +601,14 @@ a {
     border-bottom: 3px solid #000; }
 
 /* ------------------------------- Mobile menu ---------------------------------*/
+.mobile-logo-container {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -ms-flex-align: center;
+      align-items: center; }
+
 #mobile-menu-container {
   position: fixed;
   top: 0;
