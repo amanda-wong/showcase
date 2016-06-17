@@ -608,6 +608,10 @@ a {
       justify-content: space-around;
   -ms-flex-align: center;
       align-items: center; }
+  .mobile-logo-container i {
+    font-size: 25px; }
+    .mobile-logo-container i:hover {
+      cursor: pointer; }
 
 #mobile-menu-container {
   position: fixed;

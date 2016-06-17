@@ -212,6 +212,12 @@ a {
 	display: flex;
 	justify-content: space-around;
 	align-items: center;
+	i {
+		font-size: 25px;
+		&:hover {
+			cursor: pointer;
+		}
+	}
 }
 
 #mobile-menu-container {
