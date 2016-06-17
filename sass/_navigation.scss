@@ -38,7 +38,7 @@ a {
 		a {
 			text-decoration: none;
 			font-family: $font__form_elements;
-			font-size: 1.5rem;
+			font-size: 1.8rem;
 			@include tablet {
 				font-size: 1.6rem;
 			}
@@ -213,6 +213,7 @@ a {
 	justify-content: space-between;
 	align-items: center;
 	padding: 0 15px;
+	height: 35px;
 	i {
 		font-size: 25px;
 		&:hover {
@@ -246,7 +247,12 @@ a {
 .home  {
 	.mobile-logo-container {
 		background-color: #000;
-		height: 60px;
+		#mobile-logo {
+			color: #fff;
+		}
+		i {
+			color: red;
+		}
 	}
 	#mobile-menu li a  {
 		background-color: #000;

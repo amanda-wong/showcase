@@ -473,7 +473,7 @@ a {
 .menu-main-container #primary-menu a, .menu-main-container #mobile-menu a {
   text-decoration: none;
   font-family: "bebas_neue", sans-serif;
-  font-size: 1.5rem; }
+  font-size: 1.8rem; }
   @media (min-width: 600px) {
     .menu-main-container #primary-menu a, .menu-main-container #mobile-menu a {
       font-size: 1.6rem; } }
@@ -608,7 +608,8 @@ a {
       justify-content: space-between;
   -ms-flex-align: center;
       align-items: center;
-  padding: 0 15px; }
+  padding: 0 15px;
+  height: 35px; }
   .mobile-logo-container i {
     font-size: 25px; }
     .mobile-logo-container i:hover {
@@ -633,8 +634,11 @@ a {
       transition: all 1s; }
 
 .home .mobile-logo-container {
-  background-color: #000;
-  height: 60px; }
+  background-color: #000; }
+  .home .mobile-logo-container #mobile-logo {
+    color: #fff; }
+  .home .mobile-logo-container i {
+    color: red; }
 
 .home #mobile-menu li a {
   background-color: #000;
