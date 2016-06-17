@@ -28,7 +28,9 @@
 					<div id="mobile-menu-container">
 						<div class="mobile-logo-container">
 							<a id="mobile-logo" href="/">AW</a>
-							<i class="fa fa-times" aria-hidden="true"></i>
+							<a>
+								<i class="fa fa-times" aria-hidden="true"></i>
+							</a>
 						</div>
 						<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'mobile-menu' ) ); ?>
 					</div>
