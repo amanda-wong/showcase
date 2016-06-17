@@ -28,7 +28,7 @@ a {
 .main-navigation {
 	#logo, #mobile-logo {
 		font-family: $font__form_elements;
-		font-size: 3rem;
+		font-size: 1.8rem;
 		text-decoration: none;
 	}
 }
@@ -207,11 +207,12 @@ a {
 }
 
 /* ------------------------------- Mobile menu ---------------------------------*/
-
+//Generic mobile styles across pages
 .mobile-logo-container {
 	display: flex;
-	justify-content: space-around;
+	justify-content: space-between;
 	align-items: center;
+	padding: 0 15px;
 	i {
 		font-size: 25px;
 		&:hover {
@@ -240,7 +241,13 @@ a {
 	}
 }
 
+
+//Specific styles according to page
 .home  {
+	.mobile-logo-container {
+		background-color: #000;
+		height: 60px;
+	}
 	#mobile-menu li a  {
 		background-color: #000;
 		color: rgba(255,255,255,0.5);

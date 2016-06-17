@@ -467,7 +467,7 @@ a {
 /* -----------------------Tablet and Desktop Menus ----------------------------*/
 .main-navigation #logo, .main-navigation #mobile-logo {
   font-family: "bebas_neue", sans-serif;
-  font-size: 3rem;
+  font-size: 1.8rem;
   text-decoration: none; }
 
 .menu-main-container #primary-menu a, .menu-main-container #mobile-menu a {
@@ -604,10 +604,11 @@ a {
 .mobile-logo-container {
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  -ms-flex-pack: justify;
+      justify-content: space-between;
   -ms-flex-align: center;
-      align-items: center; }
+      align-items: center;
+  padding: 0 15px; }
   .mobile-logo-container i {
     font-size: 25px; }
     .mobile-logo-container i:hover {
@@ -630,6 +631,10 @@ a {
     margin: 0; }
     #mobile-menu li a:hover {
       transition: all 1s; }
+
+.home .mobile-logo-container {
+  background-color: #000;
+  height: 60px; }
 
 .home #mobile-menu li a {
   background-color: #000;
