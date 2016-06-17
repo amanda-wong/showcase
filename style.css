@@ -470,6 +470,17 @@ a {
   font-size: 1.9rem;
   text-decoration: none; }
 
+.main-navigation .mobile-menu-button {
+  position: absolute;
+  left: 5px;
+  top: 23px;
+  font-size: 25px; }
+  .main-navigation .mobile-menu-button:hover {
+    cursor: pointer; }
+  @media (min-width: 600px) {
+    .main-navigation .mobile-menu-button {
+      display: none; } }
+
 .menu-main-container #primary-menu a, .menu-main-container #mobile-menu a {
   text-decoration: none;
   font-family: "bebas_neue", sans-serif;
@@ -498,17 +509,6 @@ a {
     .main-navigation {
       -ms-flex-pack: justify;
           justify-content: space-between; } }
-  .main-navigation .mobile-menu-button {
-    position: absolute;
-    left: 5px;
-    top: 23px;
-    font-size: 25px;
-    color: #fff; }
-    .main-navigation .mobile-menu-button:hover {
-      cursor: pointer; }
-    @media (min-width: 600px) {
-      .main-navigation .mobile-menu-button {
-        display: none; } }
   .main-navigation #logo {
     text-align: center;
     color: #fff;
@@ -654,6 +654,9 @@ a {
     #mobile-menu li a:hover {
       transition: all 1s; }
 
+.home .mobile-menu-button {
+  color: #fff; }
+
 .home .mobile-logo-container {
   background-color: #000; }
   .home .mobile-logo-container #mobile-logo {
@@ -666,6 +669,9 @@ a {
   color: rgba(255, 255, 255, 0.5); }
   .home #mobile-menu li a:hover {
     color: #fff; }
+
+.post-type-archive-projects .mobile-menu-button, .page-template-contact .mobile-menu-button {
+  color: #000; }
 
 .post-type-archive-projects .mobile-logo-container, .page-template-contact .mobile-logo-container {
   background-color: #fff; }

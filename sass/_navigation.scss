@@ -32,6 +32,18 @@ a {
 		font-size: 1.9rem;
 		text-decoration: none;
 	}
+	.mobile-menu-button {
+		position: absolute;
+		left: 5px;
+		top: 23px;
+		font-size: 25px;
+		&:hover {
+			cursor: pointer;
+		}
+		@include tablet {
+			display: none;
+		}
+	}
 }
 
 //Generic menu styles
@@ -63,20 +75,6 @@ a {
 	position: relative;
 	@include tablet {
 		justify-content: space-between;
-	}
-
-	.mobile-menu-button {
-		position: absolute;
-		left: 5px;
-		top: 23px;
-		font-size: 25px;
-		color: #fff;
-		&:hover {
-			cursor: pointer;
-		}
-		@include tablet {
-			display: none;
-		}
 	}
 
 	#logo {
@@ -268,6 +266,9 @@ a {
 
 //Specific styles according to page
 .home  {
+	.mobile-menu-button{
+		color: #fff;
+	}
 	.mobile-logo-container {
 		background-color: #000;
 		#mobile-logo {
@@ -277,6 +278,7 @@ a {
 			color: red;
 		}
 	}
+
 	#mobile-menu li a  {
 		background-color: #000;
 		color: rgba(255,255,255,0.5);
@@ -287,6 +289,9 @@ a {
 }
 
 .post-type-archive-projects, .page-template-contact {
+	.mobile-menu-button{
+		color: #000;
+	}
 	.mobile-logo-container {
 		background-color: #fff;
 		#mobile-logo {
