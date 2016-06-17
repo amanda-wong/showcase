@@ -532,16 +532,16 @@ a {
   .main-navigation li {
     float: left;
     position: relative; }
-  .main-navigation .menu-main-container {
+  .main-navigation .menu-main-container #primary-menu {
     display: none; }
     @media (min-width: 600px) {
-      .main-navigation .menu-main-container {
+      .main-navigation .menu-main-container #primary-menu {
         display: -ms-flexbox;
         display: flex;
         -ms-flex-align: center;
             align-items: center;
         margin: 0; } }
-    .main-navigation .menu-main-container a {
+    .main-navigation .menu-main-container #primary-menu a {
       padding-bottom: 5px;
       margin: 0.3rem 0.8rem;
       text-decoration: none;
@@ -549,24 +549,14 @@ a {
       font-size: 1.3rem;
       color: rgba(255, 255, 255, 0.5); }
       @media (min-width: 600px) {
-        .main-navigation .menu-main-container a {
+        .main-navigation .menu-main-container #primary-menu a {
           font-size: 1.6rem; } }
       @media (min-width: 1024px) {
-        .main-navigation .menu-main-container a {
+        .main-navigation .menu-main-container #primary-menu a {
           font-size: 1.8rem; } }
-      .main-navigation .menu-main-container a:hover {
+      .main-navigation .menu-main-container #primary-menu a:hover {
         color: #fff;
         transition: all 1s; }
-  .main-navigation .current_page_item > a,
-  .main-navigation .current-menu-item > a,
-  .main-navigation .current_page_ancestor > a {
-    border-bottom: 3px solid #fff;
-    color: #fff; }
-    .main-navigation .current_page_item > a:hover,
-    .main-navigation .current-menu-item > a:hover,
-    .main-navigation .current_page_ancestor > a:hover {
-      color: #fff;
-      border-bottom: 3px solid #fff; }
 
 .post-type-archive-projects #logo, .page-template-contact #logo {
   color: #000; }
@@ -576,39 +566,23 @@ a {
   .post-type-archive-projects .menu-main-container a:hover, .page-template-contact .menu-main-container a:hover {
     color: #000; }
 
-.post-type-archive-projects .current_page_item > a,
-.post-type-archive-projects .current-menu-item > a,
-.post-type-archive-projects .current_page_ancestor > a, .page-template-contact .current_page_item > a,
-.page-template-contact .current-menu-item > a,
-.page-template-contact .current_page_ancestor > a {
-  border-bottom: 3px solid #000;
-  color: #000; }
-  .post-type-archive-projects .current_page_item > a:hover,
-  .post-type-archive-projects .current-menu-item > a:hover,
-  .post-type-archive-projects .current_page_ancestor > a:hover, .page-template-contact .current_page_item > a:hover,
-  .page-template-contact .current-menu-item > a:hover,
-  .page-template-contact .current_page_ancestor > a:hover {
-    color: #fff;
-    border-bottom: 3px solid #000; }
-
 /* Mobile menu. */
 #mobile-menu-container {
   position: fixed;
   top: 0;
   left: 0;
-  background-color: #fff;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-direction: column;
-      flex-direction: column; }
-  #mobile-menu-container .mobile-logo-container {
-    background-color: #f8f8f8; }
+  background-color: transparent; }
 
-#mobile-menu ul {
+#mobile-menu {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-direction: column;
       flex-direction: column; }
+  #mobile-menu li a {
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 4px 30px 4px 15px;
+    text-align: left;
+    margin: 0; }
 
 /* Small menu. */
 .menu-toggle,
@@ -639,6 +613,33 @@ a {
   float: right;
   text-align: right;
   width: 50%; }
+
+/* Current page rules */
+.home #primary-menu .current_page_item > a,
+.home #primary-menu .current-menu-item > a,
+.home #primary-menu .current_page_ancestor > a {
+  border-bottom: 3px solid #fff;
+  color: #fff; }
+  .home #primary-menu .current_page_item > a:hover,
+  .home #primary-menu .current-menu-item > a:hover,
+  .home #primary-menu .current_page_ancestor > a:hover {
+    color: #fff;
+    border-bottom: 3px solid #fff; }
+
+.post-type-archive-projects #primary-menu .current_page_item > a,
+.post-type-archive-projects #primary-menu .current-menu-item > a,
+.post-type-archive-projects #primary-menu .current_page_ancestor > a, .page-template-contact #primary-menu .current_page_item > a,
+.page-template-contact #primary-menu .current-menu-item > a,
+.page-template-contact #primary-menu .current_page_ancestor > a {
+  border-bottom: 3px solid #000;
+  color: #000; }
+  .post-type-archive-projects #primary-menu .current_page_item > a:hover,
+  .post-type-archive-projects #primary-menu .current-menu-item > a:hover,
+  .post-type-archive-projects #primary-menu .current_page_ancestor > a:hover, .page-template-contact #primary-menu .current_page_item > a:hover,
+  .page-template-contact #primary-menu .current-menu-item > a:hover,
+  .page-template-contact #primary-menu .current_page_ancestor > a:hover {
+    color: #fff;
+    border-bottom: 3px solid #000; }
 
 footer .site-info {
   display: -ms-flexbox;

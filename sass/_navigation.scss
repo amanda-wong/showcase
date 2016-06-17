@@ -120,44 +120,38 @@ a {
 	}
 
 	.menu-main-container {   //Main nav items
-		display: none;
-		@include tablet {
-			display: flex;
-			align-items: center;
-			margin: 0;
-		}
-		a {
-			padding-bottom: 5px;
-			margin: 0.3rem 0.8rem;
-			text-decoration: none;
-			font-family: $font__form_elements;
-			font-size: 1.3rem;
-			color: rgba(255,255,255,0.5);
+		#primary-menu {
+			display: none;
 			@include tablet {
-				font-size: 1.6rem;
+				display: flex;
+				align-items: center;
+				margin: 0;
 			}
-			@include desktop {
-				font-size: 1.8rem;
+			a {
+				padding-bottom: 5px;
+				margin: 0.3rem 0.8rem;
+				text-decoration: none;
+				font-family: $font__form_elements;
+				font-size: 1.3rem;
+				color: rgba(255,255,255,0.5);
+				@include tablet {
+					font-size: 1.6rem;
+				}
+				@include desktop {
+					font-size: 1.8rem;
+				}
+				&:hover {
+					color: #fff;
+					transition: all 1s;
+				}
 			}
-			&:hover {
-				color: #fff;
-				transition: all 1s;
-			}
-		}
-
-	}
-
-	.current_page_item > a,
-	.current-menu-item > a,
-	.current_page_ancestor > a {
-		border-bottom: 3px solid #fff;
-		color: #fff;
-		&:hover {
-			color: #fff;
-			border-bottom: 3px solid #fff;
 		}
 	}
 }
+
+
+
+
 
 // Light pages (Dark Nav)
 .post-type-archive-projects, .page-template-contact {
@@ -172,17 +166,6 @@ a {
 			}
 		}
 	}
-
-	.current_page_item > a,
-	.current-menu-item > a,
-	.current_page_ancestor > a {
-		border-bottom: 3px solid #000;
-		color: #000;
-		&:hover {
-			color: #fff;
-			border-bottom: 3px solid #000;
-		}
-	}
 }
 
 /* Mobile menu. */
@@ -191,18 +174,20 @@ a {
 	position: fixed;
 	top: 0;
 	left: 0;
-	background-color: #fff;
+	background-color: transparent;
+}
+
+#mobile-menu {
 	display: flex;
 	flex-direction: column;
-	.mobile-logo-container {
-		background-color: #f8f8f8;
+	li a {
+		background-color: rgba(0,0,0, 0.5);
+		padding: 4px 30px 4px 15px;
+		text-align: left;
+		margin: 0;
 	}
 }
 
-#mobile-menu ul {
-	display: flex;
-	flex-direction: column;
-}
 
 
 
@@ -240,5 +225,37 @@ a {
 		float: right;
 		text-align: right;
 		width: 50%;
+	}
+}
+
+/* Current page rules */
+.home {
+	#primary-menu {
+		.current_page_item > a,
+		.current-menu-item > a,
+		.current_page_ancestor > a {
+			border-bottom: 3px solid #fff;
+			color: #fff;
+			&:hover {
+				color: #fff;
+				border-bottom: 3px solid #fff;
+			}
+		}
+	}
+}
+
+// light pages (dark menu)
+.post-type-archive-projects, .page-template-contact {
+	#primary-menu {
+		.current_page_item > a,
+		.current-menu-item > a,
+		.current_page_ancestor > a {
+			border-bottom: 3px solid #000;
+			color: #000;
+			&:hover {
+				color: #fff;
+				border-bottom: 3px solid #000;
+			}
+		}
 	}
 }
