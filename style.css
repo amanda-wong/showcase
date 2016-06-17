@@ -473,7 +473,7 @@ a {
 .menu-main-container #primary-menu a, .menu-main-container #mobile-menu a {
   text-decoration: none;
   font-family: "bebas_neue", sans-serif;
-  font-size: 1.3rem; }
+  font-size: 1.5rem; }
   @media (min-width: 600px) {
     .menu-main-container #primary-menu a, .menu-main-container #mobile-menu a {
       font-size: 1.6rem; } }
