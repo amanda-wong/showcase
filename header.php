@@ -27,7 +27,7 @@
 					</a>
 					<div id="mobile-menu-container">
 						<div class="mobile-logo-container">
-							<a id="mobile-logo" href="/">Amanda Wong</a>
+							<a id="mobile-logo" href="/">AW</a>
 						</div>
 						<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'mobile-menu' ) ); ?>
 					</div>
