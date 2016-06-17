@@ -29,7 +29,7 @@
 						<div class="mobile-logo-container">
 							<a id="mobile-logo" href="/">Amanda Wong</a>
 						</div>
-						<?php wp_nav_menu( array( 'theme_location' => 'mobile', 'menu_id' => 'mobile-menu' ) ); ?>
+						<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'mobile-menu' ) ); ?>
 					</div>
 					<a id="logo" href="/">Amanda Wong</a>
 					<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu' ) ); ?>
