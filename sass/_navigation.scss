@@ -23,7 +23,31 @@ a {
 	}
 }
 
-/* Menus */
+/* -----------------------Tablet and Desktop Menus ----------------------------*/
+
+.main-navigation {
+	#logo, #mobile-logo {
+		font-family: $font__form_elements;
+		font-size: 2.5rem;
+		text-decoration: none;
+	}
+}
+
+.menu-main-container {
+	#primary-menu, #mobile-menu {
+		a {
+			text-decoration: none;
+			font-family: $font__form_elements;
+			font-size: 1.3rem;
+			@include tablet {
+				font-size: 1.6rem;
+			}
+			@include desktop {
+				font-size: 1.8rem;
+			}
+		}
+	}
+}
 
 //Dark pages (Light Nav)
 .main-navigation {
@@ -130,16 +154,7 @@ a {
 			a {
 				padding-bottom: 5px;
 				margin: 0.3rem 0.8rem;
-				text-decoration: none;
-				font-family: $font__form_elements;
-				font-size: 1.3rem;
 				color: rgba(255,255,255,0.5);
-				@include tablet {
-					font-size: 1.6rem;
-				}
-				@include desktop {
-					font-size: 1.8rem;
-				}
 				&:hover {
 					color: #fff;
 					transition: all 1s;
@@ -149,7 +164,8 @@ a {
 	}
 }
 
-/* Current page rules */
+/* ---------------------Current page rules --------------------------------- */
+//Dark Pages (Light Menu)
 .home {
 	#primary-menu {
 		.current_page_item > a,
@@ -165,7 +181,7 @@ a {
 	}
 }
 
-// light pages (dark menu)
+// Light Pages (Dark Menu)
 .post-type-archive-projects, .page-template-contact {
 	#logo {
 		color: #000;

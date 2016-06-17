@@ -464,7 +464,23 @@ a {
   a:hover, a:active {
     outline: 0; }
 
-/* Menus */
+/* -----------------------Tablet and Desktop Menus ----------------------------*/
+.main-navigation #logo, .main-navigation #mobile-logo {
+  font-family: "bebas_neue", sans-serif;
+  font-size: 2.5rem;
+  text-decoration: none; }
+
+.menu-main-container #primary-menu a, .menu-main-container #mobile-menu a {
+  text-decoration: none;
+  font-family: "bebas_neue", sans-serif;
+  font-size: 1.3rem; }
+  @media (min-width: 600px) {
+    .menu-main-container #primary-menu a, .menu-main-container #mobile-menu a {
+      font-size: 1.6rem; } }
+  @media (min-width: 1024px) {
+    .menu-main-container #primary-menu a, .menu-main-container #mobile-menu a {
+      font-size: 1.8rem; } }
+
 .main-navigation {
   display: -ms-flexbox;
   display: flex;
@@ -544,21 +560,12 @@ a {
     .main-navigation .menu-main-container #primary-menu a {
       padding-bottom: 5px;
       margin: 0.3rem 0.8rem;
-      text-decoration: none;
-      font-family: "bebas_neue", sans-serif;
-      font-size: 1.3rem;
       color: rgba(255, 255, 255, 0.5); }
-      @media (min-width: 600px) {
-        .main-navigation .menu-main-container #primary-menu a {
-          font-size: 1.6rem; } }
-      @media (min-width: 1024px) {
-        .main-navigation .menu-main-container #primary-menu a {
-          font-size: 1.8rem; } }
       .main-navigation .menu-main-container #primary-menu a:hover {
         color: #fff;
         transition: all 1s; }
 
-/* Current page rules */
+/* ---------------------Current page rules --------------------------------- */
 .home #primary-menu .current_page_item > a,
 .home #primary-menu .current-menu-item > a,
 .home #primary-menu .current_page_ancestor > a {
