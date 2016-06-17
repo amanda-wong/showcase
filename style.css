@@ -606,6 +606,19 @@ a {
     color: #fff;
     border-bottom: 3px solid #000; }
 
+.post-type-archive-projects #mobile-menu .current_page_item > a,
+.post-type-archive-projects #mobile-menu .current-menu-item > a,
+.post-type-archive-projects #mobile-menu .current_page_ancestor > a, .page-template-contact #mobile-menu .current_page_item > a,
+.page-template-contact #mobile-menu .current-menu-item > a,
+.page-template-contact #mobile-menu .current_page_ancestor > a {
+  color: red; }
+  .post-type-archive-projects #mobile-menu .current_page_item > a:hover,
+  .post-type-archive-projects #mobile-menu .current-menu-item > a:hover,
+  .post-type-archive-projects #mobile-menu .current_page_ancestor > a:hover, .page-template-contact #mobile-menu .current_page_item > a:hover,
+  .page-template-contact #mobile-menu .current-menu-item > a:hover,
+  .page-template-contact #mobile-menu .current_page_ancestor > a:hover {
+    color: red; }
+
 /* ------------------------------- Mobile menu ---------------------------------*/
 .mobile-logo-container {
   display: -ms-flexbox;
@@ -653,6 +666,13 @@ a {
   color: rgba(255, 255, 255, 0.5); }
   .home #mobile-menu li a:hover {
     color: #fff; }
+
+.post-type-archive-projects .mobile-logo-container, .page-template-contact .mobile-logo-container {
+  background-color: #fff; }
+  .post-type-archive-projects .mobile-logo-container #mobile-logo, .page-template-contact .mobile-logo-container #mobile-logo {
+    color: #000; }
+  .post-type-archive-projects .mobile-logo-container i, .page-template-contact .mobile-logo-container i {
+    color: red; }
 
 .post-type-archive-projects #mobile-menu li a, .page-template-contact #mobile-menu li a {
   background-color: #fff;

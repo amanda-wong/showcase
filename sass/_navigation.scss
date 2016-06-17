@@ -215,6 +215,16 @@ a {
 			}
 		}
 	}
+	#mobile-menu {
+		.current_page_item > a,
+		.current-menu-item > a,
+		.current_page_ancestor > a {
+			color: red;
+			&:hover {
+				color: red;
+			}
+		}
+	}
 }
 
 /* ------------------------------- Mobile menu ---------------------------------*/
@@ -277,6 +287,15 @@ a {
 }
 
 .post-type-archive-projects, .page-template-contact {
+	.mobile-logo-container {
+		background-color: #fff;
+		#mobile-logo {
+			color: #000;
+		}
+		i {
+			color: red;
+		}
+	}
 	#mobile-menu li a  {
 		background-color: #fff;
 		color: rgba(0,0,0, 0.3);
