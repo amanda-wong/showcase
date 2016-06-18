@@ -6,8 +6,6 @@ var elMobileMenu = document.getElementById('mobile-menu-container');
 function showMenu() {
     elMobileMenu.style.left = '0px';
     elMobileMenu.style.transition = 'ease 0.3s';
-    // document.getElementsByTagName('')[0] = 'linear 0.3s';
-
 }
 
 function hideMenu() {
