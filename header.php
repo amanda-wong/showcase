@@ -22,13 +22,13 @@
 
 			<header id="masthead" class="site-header" role="banner">
 				<nav id="site-navigation" class="main-navigation" role="navigation">
-					<a class="mobile-menu-button">
+					<a class="mobile-menu-button" onclick="showMenu()">
 						<i class="fa fa-bars" aria-hidden="true"></i>
 					</a>
 					<div id="mobile-menu-container">
 						<div class="mobile-logo-container">
 							<a id="mobile-logo" href="/">Amanda Wong</a>
-							<a>
+							<a onclick="hideMenu()">
 								<i class="fa fa-times" aria-hidden="true"></i>
 							</a>
 						</div>
