@@ -641,9 +641,6 @@ a {
   top: 21px;
   left: -250px;
   background-color: transparent; }
-  @media (min-width: 600px) {
-    #mobile-menu-container {
-      display: none; } }
 
 #mobile-menu {
   display: -ms-flexbox;
