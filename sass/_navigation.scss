@@ -248,6 +248,9 @@ a {
 	top: 21px;
 	left: -250px;
 	background-color: transparent;
+	@include tablet {
+		display: none;
+	}
 }
 
 #mobile-menu {
