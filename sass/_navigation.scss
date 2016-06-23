@@ -165,7 +165,7 @@ a {
 
 /* ---------------------Current page rules --------------------------------- */
 //Dark Pages (Light Menu)
-.home {
+.home, .page-template-contact  {
 	#primary-menu {
 		.current_page_item > a,
 		.current-menu-item > a,
@@ -191,7 +191,7 @@ a {
 }
 
 // Light Pages (Dark Menu)
-.post-type-archive-projects, .page-template-contact {
+.post-type-archive-projects{
 	#logo {
 		color: #000;
 	}
@@ -266,7 +266,7 @@ a {
 
 
 //Specific styles according to page
-.home  {
+.home, .page-template-contact  {
 	.mobile-menu-button{
 		color: #fff;
 	}
@@ -289,7 +289,7 @@ a {
 	}
 }
 
-.post-type-archive-projects, .page-template-contact {
+.post-type-archive-projects {
 	.mobile-menu-button{
 		color: #000;
 	}

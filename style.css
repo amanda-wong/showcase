@@ -565,58 +565,58 @@ a {
 /* ---------------------Current page rules --------------------------------- */
 .home #primary-menu .current_page_item > a,
 .home #primary-menu .current-menu-item > a,
-.home #primary-menu .current_page_ancestor > a {
+.home #primary-menu .current_page_ancestor > a, .page-template-contact #primary-menu .current_page_item > a,
+.page-template-contact #primary-menu .current-menu-item > a,
+.page-template-contact #primary-menu .current_page_ancestor > a {
   border-bottom: 3px solid #fff;
   color: #fff; }
   .home #primary-menu .current_page_item > a:hover,
   .home #primary-menu .current-menu-item > a:hover,
-  .home #primary-menu .current_page_ancestor > a:hover {
+  .home #primary-menu .current_page_ancestor > a:hover, .page-template-contact #primary-menu .current_page_item > a:hover,
+  .page-template-contact #primary-menu .current-menu-item > a:hover,
+  .page-template-contact #primary-menu .current_page_ancestor > a:hover {
     color: #fff;
     border-bottom: 3px solid #fff; }
 
 .home #mobile-menu .current_page_item > a,
 .home #mobile-menu .current-menu-item > a,
-.home #mobile-menu .current_page_ancestor > a {
+.home #mobile-menu .current_page_ancestor > a, .page-template-contact #mobile-menu .current_page_item > a,
+.page-template-contact #mobile-menu .current-menu-item > a,
+.page-template-contact #mobile-menu .current_page_ancestor > a {
   color: red; }
   .home #mobile-menu .current_page_item > a:hover,
   .home #mobile-menu .current-menu-item > a:hover,
-  .home #mobile-menu .current_page_ancestor > a:hover {
+  .home #mobile-menu .current_page_ancestor > a:hover, .page-template-contact #mobile-menu .current_page_item > a:hover,
+  .page-template-contact #mobile-menu .current-menu-item > a:hover,
+  .page-template-contact #mobile-menu .current_page_ancestor > a:hover {
     color: red; }
 
-.post-type-archive-projects #logo, .page-template-contact #logo {
+.post-type-archive-projects #logo {
   color: #000; }
 
-.post-type-archive-projects .menu-main-container #primary-menu a, .page-template-contact .menu-main-container #primary-menu a {
+.post-type-archive-projects .menu-main-container #primary-menu a {
   color: rgba(0, 0, 0, 0.3); }
-  .post-type-archive-projects .menu-main-container #primary-menu a:hover, .page-template-contact .menu-main-container #primary-menu a:hover {
+  .post-type-archive-projects .menu-main-container #primary-menu a:hover {
     color: #000; }
 
 .post-type-archive-projects .menu-main-container #primary-menu .current_page_item > a,
 .post-type-archive-projects .menu-main-container #primary-menu .current-menu-item > a,
-.post-type-archive-projects .menu-main-container #primary-menu .current_page_ancestor > a, .page-template-contact .menu-main-container #primary-menu .current_page_item > a,
-.page-template-contact .menu-main-container #primary-menu .current-menu-item > a,
-.page-template-contact .menu-main-container #primary-menu .current_page_ancestor > a {
+.post-type-archive-projects .menu-main-container #primary-menu .current_page_ancestor > a {
   border-bottom: 3px solid #000;
   color: #000; }
   .post-type-archive-projects .menu-main-container #primary-menu .current_page_item > a:hover,
   .post-type-archive-projects .menu-main-container #primary-menu .current-menu-item > a:hover,
-  .post-type-archive-projects .menu-main-container #primary-menu .current_page_ancestor > a:hover, .page-template-contact .menu-main-container #primary-menu .current_page_item > a:hover,
-  .page-template-contact .menu-main-container #primary-menu .current-menu-item > a:hover,
-  .page-template-contact .menu-main-container #primary-menu .current_page_ancestor > a:hover {
+  .post-type-archive-projects .menu-main-container #primary-menu .current_page_ancestor > a:hover {
     color: #fff;
     border-bottom: 3px solid #000; }
 
 .post-type-archive-projects #mobile-menu .current_page_item > a,
 .post-type-archive-projects #mobile-menu .current-menu-item > a,
-.post-type-archive-projects #mobile-menu .current_page_ancestor > a, .page-template-contact #mobile-menu .current_page_item > a,
-.page-template-contact #mobile-menu .current-menu-item > a,
-.page-template-contact #mobile-menu .current_page_ancestor > a {
+.post-type-archive-projects #mobile-menu .current_page_ancestor > a {
   color: red; }
   .post-type-archive-projects #mobile-menu .current_page_item > a:hover,
   .post-type-archive-projects #mobile-menu .current-menu-item > a:hover,
-  .post-type-archive-projects #mobile-menu .current_page_ancestor > a:hover, .page-template-contact #mobile-menu .current_page_item > a:hover,
-  .page-template-contact #mobile-menu .current-menu-item > a:hover,
-  .page-template-contact #mobile-menu .current_page_ancestor > a:hover {
+  .post-type-archive-projects #mobile-menu .current_page_ancestor > a:hover {
     color: red; }
 
 /* ------------------------------- Mobile menu ---------------------------------*/
@@ -655,36 +655,36 @@ a {
     #mobile-menu li a:hover {
       transition: all 1s; }
 
-.home .mobile-menu-button {
+.home .mobile-menu-button, .page-template-contact .mobile-menu-button {
   color: #fff; }
 
-.home .mobile-logo-container {
+.home .mobile-logo-container, .page-template-contact .mobile-logo-container {
   background-color: #000; }
-  .home .mobile-logo-container #mobile-logo {
+  .home .mobile-logo-container #mobile-logo, .page-template-contact .mobile-logo-container #mobile-logo {
     color: #fff; }
-  .home .mobile-logo-container i {
+  .home .mobile-logo-container i, .page-template-contact .mobile-logo-container i {
     color: red; }
 
-.home #mobile-menu li a {
+.home #mobile-menu li a, .page-template-contact #mobile-menu li a {
   background-color: #000;
   color: rgba(255, 255, 255, 0.5); }
-  .home #mobile-menu li a:hover {
+  .home #mobile-menu li a:hover, .page-template-contact #mobile-menu li a:hover {
     color: #fff; }
 
-.post-type-archive-projects .mobile-menu-button, .page-template-contact .mobile-menu-button {
+.post-type-archive-projects .mobile-menu-button {
   color: #000; }
 
-.post-type-archive-projects .mobile-logo-container, .page-template-contact .mobile-logo-container {
+.post-type-archive-projects .mobile-logo-container {
   background-color: #fff; }
-  .post-type-archive-projects .mobile-logo-container #mobile-logo, .page-template-contact .mobile-logo-container #mobile-logo {
+  .post-type-archive-projects .mobile-logo-container #mobile-logo {
     color: #000; }
-  .post-type-archive-projects .mobile-logo-container i, .page-template-contact .mobile-logo-container i {
+  .post-type-archive-projects .mobile-logo-container i {
     color: red; }
 
-.post-type-archive-projects #mobile-menu li a, .page-template-contact #mobile-menu li a {
+.post-type-archive-projects #mobile-menu li a {
   background-color: #fff;
   color: rgba(0, 0, 0, 0.3); }
-  .post-type-archive-projects #mobile-menu li a:hover, .page-template-contact #mobile-menu li a:hover {
+  .post-type-archive-projects #mobile-menu li a:hover {
     color: #000; }
 
 /* --------------------------------Small menu --------------------------------  */
