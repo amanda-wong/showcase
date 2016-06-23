@@ -9,7 +9,8 @@
 		<div class="page-hero">
 			<?php get_header(); ?>
             <div class="hero-content">
-				<h1>Start a conversation!</h1>
+				<h1>Connect with me</h1>
+                <hr/>
 			</div>
 		</div>
         <!-- <form name="contact_form" class="contact-form" action="/process_form.php" method="post">
