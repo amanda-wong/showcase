@@ -111,7 +111,7 @@
 /* (5) Contact Page */
 .page-template-contact {
     .page-hero {
-        background: linear-gradient(to right, rgba(0,0,0,0.4), rgba(0,0,0,0.4)),
+        background: linear-gradient(to right, rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
          url('../assets/images/path-hero.jpg');
         background-size: cover;
         background-position: center top;
@@ -120,6 +120,17 @@
     }
     .hero-content {
         padding: 30px 0;
+        h1 {
+            color: #fff;
+            text-align: center;
+            margin-bottom: 20px;
+            @include tablet {
+                font-size: 1.8rem;
+            }
+            @include desktop {
+                font-size: 2.5rem;
+            }
+        }
     }
 }
 
