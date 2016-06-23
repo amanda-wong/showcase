@@ -111,11 +111,12 @@
 /* (5) Contact Page */
 .page-template-contact {
     .page-hero {
-        background: linear-gradient( to right, rgba(255,255,255,0.6), rgba(255,255,255,0.6)),
-         url('../assets/images/notebook-pen-landing.jpg');
+        background: linear-gradient(to right, rgba(0,0,0,0.4), rgba(0,0,0,0.4)),
+         url('../assets/images/path-hero.jpg');
         background-size: cover;
-        background-position: center center;
+        background-position: center top;
         width: 100%;
+        height: 50vh;
     }
     .hero-content {
         padding: 30px 0;
