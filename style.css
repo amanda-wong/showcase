@@ -640,7 +640,8 @@ a {
   position: fixed;
   top: 21px;
   left: -250px;
-  background-color: transparent; }
+  background-color: transparent;
+  transition: all 0.3s ease; }
 
 #mobile-menu {
   display: -ms-flexbox;
