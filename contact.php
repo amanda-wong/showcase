@@ -13,8 +13,8 @@
                 <hr/>
 			</div>
             <section class="contact-container">
-                <div class="contact-details">
-
+                <div class="contact-content">
+            
                 </div>
                 <form name="contact_form" class="contact-form" action="/process_form.php" method="post">
                     <input type="text" name="name" id="name" placeholder="Name" value="">
