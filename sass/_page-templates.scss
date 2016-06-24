@@ -154,10 +154,17 @@
     display: flex;
     flex-direction: column;
     height: 600px;
+    @include tablet {
+        flex-direction: row;
+    }
 }
 
 .contact-content {
     margin: 10px 20px;
+    line-height: 1.6rem;
+    @include tablet {
+        width: 50vw;
+    }
 }
 
 .contact-form {

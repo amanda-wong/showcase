@@ -332,6 +332,12 @@ html {
 body {
   background: #fff;
   /* Fallback for when there is no custom background color defined. */ }
+  body p {
+    font-size: 14.5px;
+    line-height: 1.6rem; }
+    @media (min-width: 600px) {
+      body p {
+        line-height: 1.8rem; } }
 
 a {
   text-decoration: none; }
@@ -1060,9 +1066,17 @@ object {
   -ms-flex-direction: column;
       flex-direction: column;
   height: 600px; }
+  @media (min-width: 600px) {
+    .contact-container {
+      -ms-flex-direction: row;
+          flex-direction: row; } }
 
 .contact-content {
-  margin: 10px 20px; }
+  margin: 10px 20px;
+  line-height: 1.6rem; }
+  @media (min-width: 600px) {
+    .contact-content {
+      width: 50vw; } }
 
 .contact-form {
   display: -ms-flexbox;
