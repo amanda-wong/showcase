@@ -346,6 +346,16 @@ h1 {
     h1 {
       font-size: 1.8rem; } }
 
+h2 {
+  font-size: 1.1rem;
+  font-family: "open_sans", sans-serif; }
+  @media (min-width: 600px) {
+    h2 {
+      font-size: 1.5rem; } }
+  @media (min-width: 1024px) {
+    h2 {
+      font-size: 1.7rem; } }
+
 blockquote, q {
   quotes: "" ""; }
   blockquote:before, blockquote:after, q:before, q:after {
