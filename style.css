@@ -1051,6 +1051,9 @@ object {
       flex-direction: column;
   height: 600px; }
 
+.contact-content {
+  margin: 10px 20px; }
+
 .contact-form {
   display: -ms-flexbox;
   display: flex;
