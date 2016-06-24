@@ -15,9 +15,11 @@
         </div>
         <section class="contact-container">
             <div class="contact-content">
-                <h1>Helloooooooooooo there</h1>
+                <h2>Say hello</h2>
                 <p>
-                    Please feel free to reach out to me if you have any questions or comments about the services I offer. Also, you could always just send me a friendly hello.
+                    How I like to keep current with technology trends is working new projects,
+                    sharing cool ideas or just starting a conversation!
+                    Feel free to reach out, I'd love to hear from you!
                 </p>
             </div>
                 <form name="contact_form" class="contact-form" action="/process_form.php" method="post">
