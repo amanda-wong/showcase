@@ -1024,7 +1024,7 @@ object {
       height: 45vh; } }
 
 .page-template-contact .hero-content {
-  padding: 30px 0; }
+  padding-top: 30px; }
   .page-template-contact .hero-content h1 {
     color: #fff;
     text-align: center;
@@ -1043,6 +1043,13 @@ object {
   text-align: center;
   font-size: 1.3rem;
   font-weight: 700; }
+
+.contact-container {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  height: 600px; }
 
 .contact-form {
   display: -ms-flexbox;
