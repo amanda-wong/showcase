@@ -116,12 +116,12 @@
         background-size: cover;
         background-position: center top;
         width: 100%;
-        height: 30vh;
+        height: 161px;
         @include tablet {
-            height: 40vh;
+            height: 215px;
         }
         @include desktop {
-            height: 45vh;
+            height: 266px;
         }
     }
     .hero-content {
