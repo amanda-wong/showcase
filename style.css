@@ -1072,8 +1072,7 @@ object {
           flex-direction: row; } }
 
 .contact-content {
-  margin: 10px 20px;
-  line-height: 1.6rem; }
+  margin: 10px 20px; }
   @media (min-width: 600px) {
     .contact-content {
       width: 50vw; } }
@@ -1092,8 +1091,12 @@ object {
     width: 100%;
     margin-bottom: 10px;
     font-size: 16px;
-    padding: 5px 10px;
-    font-family: "open_sans", sans-serif; }
+    padding: 10px;
+    font-family: "open_sans", sans-serif;
+    border-radius: 0;
+    font-size: 14.5px;
+    border: 1px solid #ccc;
+    background-color: #fafafa; }
   .contact-form [type="button"] {
     width: 100px;
     height: 40px;
