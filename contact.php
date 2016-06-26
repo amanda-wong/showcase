@@ -24,8 +24,8 @@
             </div>
                 <form name="contact_form" class="contact-form" action="/process_form.php" method="post">
                     <div class="name-wrap">
-                        <label>Full Name *</label>
                         <div>
+                            <label>Full Name *</label>
                             <input type="text" name="firstName" id="first-name" value="">
                             <label for="firstName" required>First Name</label>
                         </div>
