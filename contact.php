@@ -25,12 +25,12 @@
                 <form name="contact_form" class="contact-form" action="/process_form.php" method="post">
                     <label>Full Name *</label>
                     <div class="name-wrap">
-                        <div>
-                            <input type="text" name="firstName" class="first-name" value="">
+                        <div class="fname-wrap"
+                            <input type="text" name="firstName" id="first-name" value="">
                             <label for="firstName" required>First Name</label>
                         </div>
-                        <div>
-                            <input type="text" name="lastName" class="last-name" value="">
+                        <div class="lname-wrap">
+                            <input type="text" name="lastName" id="last-name" value="">
                             <label for="lastName" required>Last Name</label>
                         </div>
                     </div>
