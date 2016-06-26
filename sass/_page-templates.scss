@@ -125,7 +125,11 @@
         }
     }
     .hero-content {
-        // padding-top: 30px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 65%;
         h1 {
             color: #fff;
             text-align: center;

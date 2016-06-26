@@ -1039,20 +1039,29 @@ object {
     .page-template-contact .page-hero {
       height: 45vh; } }
 
-.page-template-contact .hero-content h1 {
-  color: #fff;
-  text-align: center;
-  margin: 0 0 10px 0; }
-  @media (min-width: 600px) {
-    .page-template-contact .hero-content h1 {
-      font-size: 1.8rem; } }
-  @media (min-width: 1024px) {
-    .page-template-contact .hero-content h1 {
-      font-size: 2.5rem; } }
-
-.page-template-contact .hero-content hr {
-  height: 3px;
-  width: 80px; }
+.page-template-contact .hero-content {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  -ms-flex-pack: center;
+      justify-content: center;
+  -ms-flex-align: center;
+      align-items: center;
+  height: 65%; }
+  .page-template-contact .hero-content h1 {
+    color: #fff;
+    text-align: center;
+    margin: 0 0 10px 0; }
+    @media (min-width: 600px) {
+      .page-template-contact .hero-content h1 {
+        font-size: 1.8rem; } }
+    @media (min-width: 1024px) {
+      .page-template-contact .hero-content h1 {
+        font-size: 2.5rem; } }
+  .page-template-contact .hero-content hr {
+    height: 3px;
+    width: 80px; }
 
 .contact-greeting {
   text-align: center;
