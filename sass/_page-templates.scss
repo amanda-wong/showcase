@@ -153,7 +153,6 @@
 .contact-container {
     display: flex;
     flex-direction: column;
-    height: 600px;
     @include tablet {
         flex-direction: row;
     }
@@ -166,38 +165,59 @@
     }
 }
 
+
 .contact-form {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
     margin: 10px 20px;
     [type="text"], [type="email"], textarea {
         width: 100%;
-        margin-bottom: 10px;
-        font-size: 16px;
-        padding: 10px;
+        padding: 7px;
         font-family: $font__header_main;
         border-radius: 0;
-        font-size: 14.5px;
+        font-size: 12px;
         border: 1px solid #ccc;
         background-color: #fafafa;
+        &:hover {
+            background-color: #fff;
+        }
     }
     [type="button"] {
         width: 100px;
         height: 40px;
         text-transform: uppercase;
         box-shadow: none;
-        border: none;
-        background-color: #ffd700;
+        border: 2px solid #000;
+        background-color: #fff;
         text-shadow: none;
         font-family: $font__header_main;
         font-weight: 600;
         border-radius: 0;
-        &:hover, &:focus {
-            background-color: darken(#ffd700, 10%);
+        &:hover {
+            border: #000;
             box-shadow: none;
             outline: none;
+            background-color: #000;
+            color: #fff;
+            transition: 0.2s linear;
         }
     }
+}
+
+.name-wrap {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    .fname-wrap, .lname-wrap {
+        display: flex;
+        flex-direction: column;
+        flex-basis: 49%;
+        label {
+            font-size: 12px;
+        }
+    }
+}
+
+.email-wrap, .message-wrap, .name-wrap {
+    margin-bottom: 10px;
 }
