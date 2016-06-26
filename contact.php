@@ -23,10 +23,24 @@
                 </p>
             </div>
                 <form name="contact_form" class="contact-form" action="/process_form.php" method="post">
-                    <input type="text" name="name" id="name" placeholder="Name" value="">
-                    <input type="text" name="subject" id="subject" placeholder="Subject" value="">
-                    <input type="email" name="email" id="email" placeholder="Email" value="">
-                    <textarea name="message" rows="8" cols="40" placeholder="Leave a message" value=""></textarea>
+                    <div class="name-wrap">
+                        <label>Full Name *</label>
+                        <div>
+                            <input type="text" name="firstName" id="first-name" value="">
+                            <label for="firstName" required>First Name</label>
+                        </div>
+                        <div>
+                            <input type="text" name="lastName" id="last-name" value="">
+                            <label for="lastName" required>Last Name</label>
+                        </div>
+                    </div>
+                    <div class="email-wrap">
+                        <label for="email">Email Address *</label>
+                        <input type="email" name="email" id="email" placeholder="Email" value="">
+                    </div>
+                    <div class="message-wrap">
+                        <textarea name="message" rows="8" cols="40" placeholder="Leave a message" value=""></textarea>
+                    </div>
                     <input class="send-message" type="button" name="button" value="Send" action="submit">
                 </form>
         </section>
