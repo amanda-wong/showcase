@@ -36,10 +36,11 @@
                     </div>
                     <div class="email-wrap">
                         <label for="email">Email Address *</label>
-                        <input type="email" name="email" id="email" placeholder="Email" value="">
+                        <input type="email" name="email" id="email" value="">
                     </div>
                     <div class="message-wrap">
-                        <textarea name="message" rows="8" cols="40" placeholder="Leave a message" value=""></textarea>
+                        <label for="email">Your Message *</label>
+                        <textarea name="message" rows="8" cols="40" value=""></textarea>
                     </div>
                     <input class="send-message" type="button" name="button" value="Send" action="submit">
                 </form>
