@@ -13,7 +13,7 @@
                 <hr/>
 			</div>
         </div>
-        <section class="contact-container">
+        <!-- <section class="contact-container">
             <div class="contact-content">
                 <h2>Say hello</h2>
                 <p>
@@ -44,7 +44,7 @@
                     </div>
                     <input class="send-message" type="button" name="button" value="Send" action="submit">
                 </form>
-        </section>
+        </section> -->
         <?php get_footer(); ?>
 	</main><!-- #main -->
 </div><!-- #primary -->
