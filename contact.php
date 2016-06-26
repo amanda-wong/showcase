@@ -23,21 +23,21 @@
                 </p>
             </div>
                 <form name="contact_form" class="contact-form" action="/process_form.php" method="post">
+                    <label>Full Name *</label>
                     <div class="name-wrap">
                         <div>
-                            <label>Full Name *</label>
-                            <input type="text" name="firstName" id="first-name" value="">
+                            <input type="text" name="firstName" class="first-name" value="">
                             <label for="firstName" required>First Name</label>
                         </div>
                         <div>
-                            <input type="text" name="lastName" id="last-name" value="">
+                            <input type="text" name="lastName" class="last-name" value="">
                             <label for="lastName" required>Last Name</label>
                         </div>
                     </div>
-                    <div class="email-wrap">
+                    <!-- <div class="email-wrap">
                         <label for="email">Email Address *</label>
                         <input type="email" name="email" id="email" value="">
-                    </div>
+                    </div> -->
                     <div class="message-wrap">
                         <label for="email">Your Message *</label>
                         <textarea name="message" rows="8" cols="40" value=""></textarea>
