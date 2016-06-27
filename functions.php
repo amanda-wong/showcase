@@ -82,6 +82,7 @@ add_filter( 'stylesheet_uri', 'red_starter_minified_css', 10, 2 );
 /**
  * Enqueue scripts and styles.
  */
+
 function showcase_scripts() {
 	wp_enqueue_style( 'font-awesome-cdn' , 'https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css', array(), '4.4.0');
 	wp_enqueue_style( 'red-starter-style', get_stylesheet_uri() );
@@ -95,6 +96,14 @@ function showcase_scripts() {
 	}
 }
 add_action( 'wp_enqueue_scripts', 'showcase_scripts' );
+
+
+add_action( 'wp_default_scripts', function( $scripts ) {
+    if ( ! empty( $scripts->registered['jquery'] ) ) {
+        $jquery_dependencies = $scripts->registered['jquery']->deps;
+        $scripts->registered['jquery']->deps = array_diff( $jquery_dependencies, array( 'jquery-migrate' ) );
+    }
+} );
 
 /**
  * Custom template tags for this theme.
