@@ -334,7 +334,8 @@ body {
   /* Fallback for when there is no custom background color defined. */ }
   body p {
     font-size: 14.5px;
-    line-height: 1.6rem; }
+    line-height: 1.6rem;
+    font-family: 'helvetica', sans-serif; }
     @media (min-width: 600px) {
       body p {
         line-height: 1.8rem; } }
