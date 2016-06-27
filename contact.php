@@ -29,11 +29,11 @@
                 <div class="name-wrap">
                     <div class="fname-wrap">
                         <input type="text" name="firstName" id="first-name" value="">
-                        <label for="firstName" required>First Name</label>
+                        <label for="firstName">First Name</label>
                     </div>
                     <div class="lname-wrap">
                         <input type="text" name="lastName" id="last-name" value="">
-                        <label for="lastName" required>Last Name</label>
+                        <label for="lastName">Last Name</label>
                     </div>
                 </div>
                 <div class="email-wrap">
