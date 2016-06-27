@@ -22,7 +22,7 @@
                     Feel free to reach out, I'd love to hear from you!
                 </p>
             </div>
-            <form name="contact_form" class="contact-form" action="/process_form.php" method="post">
+            <form name="contact_form" class="contact-form" action="processform.php" method="post">
                 <label>
                     Full Name <span>*</span>
                 </label>
