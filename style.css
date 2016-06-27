@@ -1136,7 +1136,7 @@ object {
         margin-top: 5px; } }
     .contact-form [type="text"]:focus, .contact-form [type="email"]:focus, .contact-form textarea:focus {
       background-color: #fff; }
-  .contact-form [type="button"] {
+  .contact-form [type="submit"] {
     width: 100px;
     height: 40px;
     text-transform: uppercase;
@@ -1148,7 +1148,7 @@ object {
     font-weight: 600;
     border-radius: 0;
     margin-top: 10px; }
-    .contact-form [type="button"]:hover {
+    .contact-form [type="submit"]:hover {
       border: #000;
       box-shadow: none;
       outline: none;

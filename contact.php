@@ -28,11 +28,11 @@
                 </label>
                 <div class="name-wrap">
                     <div class="fname-wrap">
-                        <input type="text" name="firstName" id="first-name" value="">
+                        <input type="text" name="firstName" id="first-name" value="" />
                         <label for="firstName">First Name</label>
                     </div>
                     <div class="lname-wrap">
-                        <input type="text" name="lastName" id="last-name" value="">
+                        <input type="text" name="lastName" id="last-name" value="" />
                         <label for="lastName">Last Name</label>
                     </div>
                 </div>
@@ -40,13 +40,13 @@
                     <label for="email">
                         Email Address <span>*</span>
                     </label>
-                    <input type="email" name="email" id="email" value="">
+                    <input type="email" name="email" id="email" value="" />
                 </div>
                 <div class="message-wrap">
                     <label for="email">
                         Your Message <span>*</span>
                     </label>
-                    <textarea name="message" rows="8" cols="40" value=""></textarea>
+                    <textarea name="message" id="message" rows="8" cols="40"></textarea>
                 </div>
                 <input class="send-message" type="submit" name="submit" value="Send" action="submit">
             </form>
