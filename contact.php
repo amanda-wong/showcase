@@ -48,7 +48,7 @@
                     </label>
                     <textarea name="message" rows="8" cols="40" value=""></textarea>
                 </div>
-                <input class="send-message" type="button" name="button" value="Send" action="submit">
+                <input class="send-message" type="submit" name="submit" value="Send" action="submit">
             </form>
         </section>
         <?php get_footer(); ?>
