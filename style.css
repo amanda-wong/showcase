@@ -1073,24 +1073,55 @@ object {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-direction: column;
-      flex-direction: column; }
+      flex-direction: column;
+  padding: 30px 20px; }
+  .contact-container label {
+    color: rgba(26, 26, 26, 0.6); }
   @media (min-width: 600px) {
     .contact-container {
       -ms-flex-direction: row;
-          flex-direction: row; } }
+          flex-direction: row;
+      width: 90%;
+      -ms-flex-pack: distribute;
+          justify-content: space-around;
+      margin: 0 auto; } }
+  @media (min-width: 1024px) {
+    .contact-container {
+      width: 80%; } }
 
 .contact-content {
-  margin: 10px 20px; }
+  margin-bottom: 30px; }
+  .contact-content h2 {
+    margin-top: 0; }
+  .contact-content p {
+    margin-bottom: 0;
+    color: rgba(26, 26, 26, 0.6); }
   @media (min-width: 600px) {
     .contact-content {
-      width: 50vw; } }
+      width: 50vw;
+      -ms-flex-preferred-size: 40%;
+          flex-basis: 40%;
+      margin-bottom: 0; } }
 
 .contact-form {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-direction: column;
       flex-direction: column;
-  margin: 10px 20px; }
+  margin-bottom: 0; }
+  .contact-form label {
+    position: relative; }
+  .contact-form span {
+    font-size: 0.7rem;
+    position: absolute;
+    top: -2px; }
+  @media (min-width: 600px) {
+    .contact-form {
+      -ms-flex-preferred-size: 50%;
+          flex-basis: 50%; } }
+  @media (min-width: 1024px) {
+    .contact-form {
+      margin: 10px 0; } }
   .contact-form [type="text"], .contact-form [type="email"], .contact-form textarea {
     width: 100%;
     padding: 7px;
@@ -1099,6 +1130,10 @@ object {
     font-size: 12px;
     border: 1px solid #ccc;
     background-color: #fafafa; }
+    @media (min-width: 1024px) {
+      .contact-form [type="text"], .contact-form [type="email"], .contact-form textarea {
+        font-size: 16px;
+        margin-top: 5px; } }
     .contact-form [type="text"]:hover, .contact-form [type="email"]:hover, .contact-form textarea:hover {
       background-color: #fff; }
   .contact-form [type="button"] {
@@ -1111,7 +1146,8 @@ object {
     text-shadow: none;
     font-family: "open_sans", sans-serif;
     font-weight: 600;
-    border-radius: 0; }
+    border-radius: 0;
+    margin-top: 10px; }
     .contact-form [type="button"]:hover {
       border: #000;
       box-shadow: none;
@@ -1135,7 +1171,8 @@ object {
     -ms-flex-preferred-size: 49%;
         flex-basis: 49%; }
     .name-wrap .fname-wrap label, .name-wrap .lname-wrap label {
-      font-size: 12px; }
+      font-size: 11px;
+      margin-top: 5px; }
 
-.email-wrap, .message-wrap, .name-wrap {
-  margin-bottom: 10px; }
+.name-wrap, .email-wrap, .message-wrap {
+  margin-bottom: 20px; }
