@@ -214,8 +214,10 @@
         font-family: $font__header_main;
         border-radius: 0;
         font-size: 12px;
-        border: 1px solid #ccc;
-        background-color: #fafafa;
+        // border: 1px solid #ccc;
+        border: 0;
+        // background-color: #fafafa;
+        background-color: darken(#fafafa, 3%);
         @include desktop {
             font-size: 16px;
             margin-top: 5px;

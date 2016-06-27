@@ -1128,8 +1128,8 @@ object {
     font-family: "open_sans", sans-serif;
     border-radius: 0;
     font-size: 12px;
-    border: 1px solid #ccc;
-    background-color: #fafafa; }
+    border: 0;
+    background-color: #f2f2f2; }
     @media (min-width: 1024px) {
       .contact-form [type="text"], .contact-form [type="email"], .contact-form textarea {
         font-size: 16px;
