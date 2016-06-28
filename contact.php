@@ -22,17 +22,17 @@
                     Feel free to reach out, I'd love to hear from you!
                 </p>
             </div>
-            <form name="contact_form" class="contact-form" action="processform.php" method="post">
+            <form name="contact_form" class="contact-form" action="<?php echo get_template_directory_uri(); ?>/processform.php" method="post">
                 <label>
                     Full Name <span>*</span>
                 </label>
                 <div class="name-wrap">
                     <div class="fname-wrap">
-                        <input type="text" name="firstName" id="first-name" value="" />
+                        <input type="text" name="firstName" id="first-name" value="" required="true" />
                         <label for="firstName">First Name</label>
                     </div>
                     <div class="lname-wrap">
-                        <input type="text" name="lastName" id="last-name" value="" />
+                        <input type="text" name="lastName" id="last-name" value="" required="true" />
                         <label for="lastName">Last Name</label>
                     </div>
                 </div>
@@ -40,13 +40,13 @@
                     <label for="email">
                         Email Address <span>*</span>
                     </label>
-                    <input type="email" name="email" id="email" value="" />
+                    <input type="email" name="email" id="email" value="" required="true" />
                 </div>
                 <div class="message-wrap">
                     <label for="email">
                         Your Message <span>*</span>
                     </label>
-                    <textarea name="message" id="message" rows="8" cols="40"></textarea>
+                    <textarea name="message" id="message" rows="8" cols="40" required="true"></textarea>
                 </div>
                 <input class="send-message" type="submit" name="submit" value="Send" action="submit">
             </form>
