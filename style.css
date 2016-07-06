@@ -713,11 +713,12 @@ footer .site-info {
   -ms-flex-align: center;
       align-items: center;
   -ms-flex-direction: column;
-      flex-direction: column; }
+      flex-direction: column;
+  padding: 20px 0; }
   footer .site-info h2 {
     font-family: "bebas_neue", sans-serif;
     font-weight: bold;
-    margin-bottom: 10px; }
+    margin: 0 0 10px 0; }
   footer .site-info .social-icon-wrap {
     margin-bottom: 10px;
     width: 300px;
@@ -753,9 +754,6 @@ footer .site-info {
       footer .site-info .copyright {
         width: 300px;
         margin-bottom: 20px; } }
-    @media (min-width: 1024px) {
-      footer .site-info .copyright {
-        margin-bottom: 30px; } }
 
 /*--------------------------------------------------------------
 # Accessibility
