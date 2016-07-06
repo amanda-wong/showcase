@@ -954,7 +954,7 @@ object {
       justify-content: center;
   -ms-flex-align: center;
       align-items: center;
-  width: 90%; }
+  width: 80%; }
   @media (min-width: 600px) {
     .welcome-message {
       height: 75vh; } }
