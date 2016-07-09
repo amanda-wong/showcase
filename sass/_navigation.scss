@@ -46,6 +46,8 @@ a {
 	}
 }
 
+
+
 //Generic menu styles
 .menu-main-container {
 	#primary-menu, #mobile-menu {
@@ -191,7 +193,7 @@ a {
 }
 
 // Light Pages (Dark Menu)
-.post-type-archive-projects{
+.post-type-archive-projects, .blog{
 	#logo {
 		color: #000;
 	}
@@ -289,7 +291,7 @@ a {
 	}
 }
 
-.post-type-archive-projects {
+.post-type-archive-projects, .blog {
 	.mobile-menu-button{
 		color: #000;
 	}

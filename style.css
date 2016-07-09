@@ -608,32 +608,40 @@ a {
   .page-template-contact #mobile-menu .current_page_ancestor > a:hover {
     color: red; }
 
-.post-type-archive-projects #logo {
+.post-type-archive-projects #logo, .blog #logo {
   color: #000; }
 
-.post-type-archive-projects .menu-main-container #primary-menu a {
+.post-type-archive-projects .menu-main-container #primary-menu a, .blog .menu-main-container #primary-menu a {
   color: rgba(0, 0, 0, 0.3); }
-  .post-type-archive-projects .menu-main-container #primary-menu a:hover {
+  .post-type-archive-projects .menu-main-container #primary-menu a:hover, .blog .menu-main-container #primary-menu a:hover {
     color: #000; }
 
 .post-type-archive-projects .menu-main-container #primary-menu .current_page_item > a,
 .post-type-archive-projects .menu-main-container #primary-menu .current-menu-item > a,
-.post-type-archive-projects .menu-main-container #primary-menu .current_page_ancestor > a {
+.post-type-archive-projects .menu-main-container #primary-menu .current_page_ancestor > a, .blog .menu-main-container #primary-menu .current_page_item > a,
+.blog .menu-main-container #primary-menu .current-menu-item > a,
+.blog .menu-main-container #primary-menu .current_page_ancestor > a {
   border-bottom: 3px solid #000;
   color: #000; }
   .post-type-archive-projects .menu-main-container #primary-menu .current_page_item > a:hover,
   .post-type-archive-projects .menu-main-container #primary-menu .current-menu-item > a:hover,
-  .post-type-archive-projects .menu-main-container #primary-menu .current_page_ancestor > a:hover {
+  .post-type-archive-projects .menu-main-container #primary-menu .current_page_ancestor > a:hover, .blog .menu-main-container #primary-menu .current_page_item > a:hover,
+  .blog .menu-main-container #primary-menu .current-menu-item > a:hover,
+  .blog .menu-main-container #primary-menu .current_page_ancestor > a:hover {
     color: #fff;
     border-bottom: 3px solid #000; }
 
 .post-type-archive-projects #mobile-menu .current_page_item > a,
 .post-type-archive-projects #mobile-menu .current-menu-item > a,
-.post-type-archive-projects #mobile-menu .current_page_ancestor > a {
+.post-type-archive-projects #mobile-menu .current_page_ancestor > a, .blog #mobile-menu .current_page_item > a,
+.blog #mobile-menu .current-menu-item > a,
+.blog #mobile-menu .current_page_ancestor > a {
   color: red; }
   .post-type-archive-projects #mobile-menu .current_page_item > a:hover,
   .post-type-archive-projects #mobile-menu .current-menu-item > a:hover,
-  .post-type-archive-projects #mobile-menu .current_page_ancestor > a:hover {
+  .post-type-archive-projects #mobile-menu .current_page_ancestor > a:hover, .blog #mobile-menu .current_page_item > a:hover,
+  .blog #mobile-menu .current-menu-item > a:hover,
+  .blog #mobile-menu .current_page_ancestor > a:hover {
     color: red; }
 
 /* ------------------------------- Mobile menu ---------------------------------*/
@@ -688,20 +696,20 @@ a {
   .home #mobile-menu li a:hover, .page-template-contact #mobile-menu li a:hover {
     color: #fff; }
 
-.post-type-archive-projects .mobile-menu-button {
+.post-type-archive-projects .mobile-menu-button, .blog .mobile-menu-button {
   color: #000; }
 
-.post-type-archive-projects .mobile-logo-container {
+.post-type-archive-projects .mobile-logo-container, .blog .mobile-logo-container {
   background-color: #fff; }
-  .post-type-archive-projects .mobile-logo-container #mobile-logo {
+  .post-type-archive-projects .mobile-logo-container #mobile-logo, .blog .mobile-logo-container #mobile-logo {
     color: #000; }
-  .post-type-archive-projects .mobile-logo-container i {
+  .post-type-archive-projects .mobile-logo-container i, .blog .mobile-logo-container i {
     color: red; }
 
-.post-type-archive-projects #mobile-menu li a {
+.post-type-archive-projects #mobile-menu li a, .blog #mobile-menu li a {
   background-color: #fff;
   color: rgba(0, 0, 0, 0.3); }
-  .post-type-archive-projects #mobile-menu li a:hover {
+  .post-type-archive-projects #mobile-menu li a:hover, .blog #mobile-menu li a:hover {
     color: #000; }
 
 /* --------------------------------Small menu --------------------------------  */
