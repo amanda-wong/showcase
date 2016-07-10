@@ -999,11 +999,21 @@ object {
 .blog article:first-of-type .post-img-wrap {
   margin: 0 auto;
   width: 90%;
-  height: 85vh; }
+  height: 75vh; }
   .blog article:first-of-type .post-img-wrap img {
+    position: relative;
     width: 100%;
-    height: 90%;
+    height: 100%;
     object-fit: cover; }
+
+.blog article:first-of-type .entry-title {
+  position: absolute;
+  left: 45%;
+  top: 50%;
+  margin: 0; }
+  .blog article:first-of-type .entry-title a {
+    color: #fff;
+    font-size: 2rem; }
 
 /* (4) About Page */
 .page-template-about .page-hero {
