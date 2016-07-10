@@ -66,6 +66,23 @@
     }
 }
 
+/* (3) Blog Page */
+
+.blog {
+    article:first-of-type .post-img-wrap {
+        margin: 0 auto;
+        width: 90%;
+        height: 85vh;
+        img {
+            width: 100%;
+            height: 90%;
+            object-fit: cover;
+        }
+    }
+}
+
+
+
 /* (4) About Page */
 
 .page-template-about {
