@@ -996,24 +996,30 @@ object {
       font-size: 1.3rem; } }
 
 /* (3) Blog Page */
+.blog .site-main {
+  display: -ms-flexbox;
+  display: flex;
+  width: 90%;
+  margin: 0 auto; }
+
 .blog article:first-of-type .post-img-wrap {
   margin: 0 auto;
   width: 90%;
-  height: 75vh; }
+  height: 75vh;
+  position: relative; }
   .blog article:first-of-type .post-img-wrap img {
-    position: relative;
     width: 100%;
     height: 100%;
     object-fit: cover; }
-
-.blog article:first-of-type .entry-title {
-  position: absolute;
-  left: 45%;
-  top: 50%;
-  margin: 0; }
-  .blog article:first-of-type .entry-title a {
-    color: #fff;
-    font-size: 2rem; }
+  .blog article:first-of-type .post-img-wrap .entry-title {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    margin: 0; }
+    .blog article:first-of-type .post-img-wrap .entry-title a {
+      color: #fff;
+      font-size: 3rem;
+      text-transform: uppercase; }
 
 /* (4) About Page */
 .page-template-about .page-hero {
