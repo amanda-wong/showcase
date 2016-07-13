@@ -830,7 +830,8 @@ footer .site-info {
   display: none; }
   @media (min-width: 600px) {
     .widget-area {
-      display: inline; } }
+      display: inline;
+      padding-left: 20px; } }
 
 .widget {
   margin: 0 0 1.5em;
@@ -842,7 +843,38 @@ footer .site-info {
     max-width: 100%; }
 
 /* Search widget. */
-.widget_search .search-submit {
+@media (min-width: 600px) {
+  .search-form {
+    display: -ms-flexbox;
+    display: flex;
+    margin: 0;
+    padding: 0;
+    border: 1px solid #999;
+    width: 25vw; }
+    .search-form [type="search"] {
+      border-radius: 0;
+      border: none;
+      width: 100%;
+      outline: none;
+      padding: 5px;
+      font-size: 12px; }
+    .search-form .search-submit {
+      border-radius: 0;
+      border: none;
+      box-shadow: none;
+      text-shadow: none;
+      text-transform: uppercase;
+      background-color: #999;
+      color: #fff;
+      font-size: 11px;
+      padding: 5px 10px;
+      outline: none; } }
+
+@media (min-width: 1024px) {
+  .search-form {
+    width: 15vw; } }
+
+.screen-reader-text {
   display: none; }
 
 /*--------------------------------------------------------------

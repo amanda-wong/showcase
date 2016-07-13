@@ -6,6 +6,7 @@
 	display: none;
 	@include tablet {
 		display: inline;
+		padding-left: 20px;
 	}
 }
 
@@ -23,6 +24,40 @@
 }
 
 /* Search widget. */
-.widget_search .search-submit {
+
+.search-form {
+	@include tablet {
+		display: flex;
+		margin: 0;
+		padding: 0;
+		border: 1px solid #999;
+		width: 25vw;
+		[type="search"] {
+			border-radius: 0;
+			border: none;
+			width: 100%;
+			outline: none;
+			padding: 5px;
+			font-size: 12px;
+		}
+		.search-submit {
+			border-radius: 0;
+			border: none;
+			box-shadow: none;
+			text-shadow: none;
+			text-transform: uppercase;
+			background-color: #999;
+			color: #fff;
+			font-size: 11px;
+			padding: 5px 10px;
+			outline: none;
+		}
+	}
+	@include desktop {
+		width: 15vw;
+	}
+}
+
+.screen-reader-text {
 	display: none;
 }
