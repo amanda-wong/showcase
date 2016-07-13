@@ -46,8 +46,6 @@ a {
 	}
 }
 
-
-
 //Generic menu styles
 .menu-main-container {
 	#primary-menu, #mobile-menu {
@@ -61,6 +59,9 @@ a {
 			@include desktop {
 				font-size: 1.8rem;
 			}
+		}
+		li:last-of-type a {
+			margin-right: 0;
 		}
 	}
 }

@@ -509,6 +509,9 @@ a {
     .menu-main-container #primary-menu a, .menu-main-container #mobile-menu a {
       font-size: 1.8rem; } }
 
+.menu-main-container #primary-menu li:last-of-type a, .menu-main-container #mobile-menu li:last-of-type a {
+  margin-right: 0; }
+
 .main-navigation {
   display: -ms-flexbox;
   display: flex;
