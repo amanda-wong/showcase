@@ -522,7 +522,7 @@ a {
   -ms-flex-align: center;
       align-items: center;
   width: 90%;
-  padding-top: 0.8rem;
+  padding: 0.8rem 0;
   margin: 0 auto;
   position: relative; }
   @media (min-width: 600px) {
