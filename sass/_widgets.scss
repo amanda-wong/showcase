@@ -2,6 +2,14 @@
 # Widgets
 --------------------------------------------------------------*/
 
+.widget-area {
+	display: none;
+	@include tablet {
+		display: inline;
+	}
+}
+
+
 .widget {
 	margin: 0 0 $base__space-unit;
 

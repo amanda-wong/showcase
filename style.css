@@ -826,6 +826,12 @@ footer .site-info {
 /*--------------------------------------------------------------
 # Widgets
 --------------------------------------------------------------*/
+.widget-area {
+  display: none; }
+  @media (min-width: 600px) {
+    .widget-area {
+      display: inline; } }
+
 .widget {
   margin: 0 0 1.5em;
   /* Make sure select elements fit in widgets. */ }
@@ -1006,8 +1012,6 @@ object {
   margin: 0 auto; }
 
 .blog article:first-of-type .post-img-wrap {
-  margin: 0 auto;
-  width: 90%;
   height: 75vh;
   position: relative; }
   .blog article:first-of-type .post-img-wrap img {
