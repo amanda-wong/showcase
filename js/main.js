@@ -32,3 +32,12 @@ function hideMenu() {
 //     blogImgWrap.appendChild(headerImg);
 //     currentHeader.insertBefore(blogImgWrap, currentHeader.childNodes[2]);
 // }
+
+//Inject HTML content into Text Widget
+
+
+var footerSocial = document.getElementsByClassName('social-icon-wrap')[0].children;
+var socialIcons = footerSocial.cloneNode;
+// var copy = footerSocial.cloneNode;
+var textWidget = document.getElementsByClassName('widget')[0].childNodes[2].outerHTML;
+textWidget.appendChild(socialIcons);
