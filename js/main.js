@@ -34,10 +34,14 @@ function hideMenu() {
 // }
 
 //Inject HTML content into Text Widget
-
-
-var footerSocial = document.getElementsByClassName('social-icon-wrap')[0].children;
+var textwidget = document.getElementsByClassName('textwidget')[0];
+var footerSocial = document.querySelectorAll('.social-icon-wrap a');
 var socialIcons = footerSocial.cloneNode;
-// var copy = footerSocial.cloneNode;
-var textWidget = document.getElementsByClassName('widget')[0].childNodes[2].outerHTML;
-textWidget.appendChild(socialIcons);
+
+console.log(socialIcons);
+
+
+for (var i = 1; i < socialIcons.length; i++) {
+    var currentIcon = socialIcons[i];
+    textwidget.appendChild(currentIcon);
+}
