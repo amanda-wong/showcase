@@ -75,31 +75,48 @@
 }
 
 .blog {
-    article:first-of-type {
-        .post-img-wrap {
-            height: 75vh;
-            position: relative;
-            img {
-                width: 100%;
-                object-fit: cover;
-            }
-            .entry-title {
-                position: absolute;
-                top: 0;
-                left: 50%;
-                margin: 0;
-                a {
-                    color: #fff;
-                    font-size: 3rem;
-                    text-transform: uppercase;
-                }
-            }
-        }
+    .post-img-wrap {
+        position: relative;
+    }
+    .entry-meta {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        left: 25%;
+        top: 25%;
+    }
+    .entry-title a {
 
+        text-transform: uppercase;
+        margin: 0;
     }
 }
 
 
+
+// article:first-of-type {
+//     .post-img-wrap {
+//         height: 75vh;
+//         position: relative;
+//         img {
+//             width: 100%;
+//             object-fit: cover;
+//         }
+//         .entry-title {
+//             position: absolute;
+//             top: 0;
+//             left: 50%;
+//             margin: 0;
+//             a {
+//                 color: #fff;
+//                 font-size: 3rem;
+//                 text-transform: uppercase;
+//             }
+//         }
+//     }
+// }
 
 /* (4) About Page */
 

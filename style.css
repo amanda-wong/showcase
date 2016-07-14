@@ -838,7 +838,7 @@ footer .site-info {
   /* Make sure select elements fit in widgets. */ }
   .widget .widget-title {
     font-family: "bebas_neue", sans-serif;
-    margin-top: 0; }
+    margin: 0; }
   .widget ul {
     list-style: none;
     margin-left: 0;
@@ -1058,21 +1058,25 @@ object {
   width: 90%;
   margin: 0 auto; }
 
-.blog article:first-of-type .post-img-wrap {
-  height: 75vh;
+.blog .post-img-wrap {
   position: relative; }
-  .blog article:first-of-type .post-img-wrap img {
-    width: 100%;
-    object-fit: cover; }
-  .blog article:first-of-type .post-img-wrap .entry-title {
-    position: absolute;
-    top: 0;
-    left: 50%;
-    margin: 0; }
-    .blog article:first-of-type .post-img-wrap .entry-title a {
-      color: #fff;
-      font-size: 3rem;
-      text-transform: uppercase; }
+
+.blog .entry-meta {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  -ms-flex-pack: center;
+      justify-content: center;
+  -ms-flex-align: center;
+      align-items: center;
+  position: absolute;
+  left: 25%;
+  top: 25%; }
+
+.blog .entry-title a {
+  text-transform: uppercase;
+  margin: 0; }
 
 /* (4) About Page */
 .page-template-about .page-hero {
