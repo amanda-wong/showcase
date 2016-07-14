@@ -839,10 +839,16 @@ footer .site-info {
   .widget .widget-title {
     font-family: "bebas_neue", sans-serif;
     margin-top: 0; }
+  .widget ul {
+    list-style: none;
+    margin-left: 0;
+    padding-left: 0; }
+    .widget ul a {
+      color: #000; }
   .widget select {
     max-width: 100%; }
 
-/* Search widget. */
+/* Search Widget. */
 @media (min-width: 600px) {
   .search-form {
     display: -ms-flexbox;
@@ -874,8 +880,14 @@ footer .site-info {
   .search-form {
     width: 15vw; } }
 
-.screen-reader-text {
-  display: none; }
+/* Tag Cloud Widget. */
+.tagcloud a {
+  padding: 5px 10px;
+  background-color: #999;
+  color: #fff;
+  text-transform: uppercase;
+  font-style: bold;
+  margin: 1px; }
 
 /*--------------------------------------------------------------
 # Content

@@ -17,13 +17,21 @@
 		font-family: $font__form_elements;
 		margin-top: 0;
 	}
+	ul {
+		list-style: none;
+		margin-left: 0;
+		padding-left: 0;
+		a {
+			color: #000;
+		}
+	}
 	/* Make sure select elements fit in widgets. */
 	select {
 		max-width: 100%;
 	}
 }
 
-/* Search widget. */
+/* Search Widget. */
 
 .search-form {
 	@include tablet {
@@ -58,6 +66,15 @@
 	}
 }
 
-.screen-reader-text {
-	display: none;
+/* Tag Cloud Widget. */
+
+.tagcloud {
+	a {
+		padding: 5px 10px;
+		background-color: #999;
+		color: #fff;
+		text-transform: uppercase;
+		font-style: bold;
+		margin: 1px;
+	}
 }
