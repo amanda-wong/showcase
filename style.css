@@ -1072,11 +1072,18 @@ object {
       align-items: center;
   position: absolute;
   left: 25%;
-  top: 25%; }
+  top: 28%;
+  background-color: rgba(0, 0, 0, 0.3);
+  padding: 10px 20px; }
 
-.blog .entry-title a {
-  text-transform: uppercase;
+.blog .entry-title {
   margin: 0; }
+  .blog .entry-title a {
+    color: #fff;
+    text-transform: uppercase; }
+
+.blog .posted-on {
+  color: #fff; }
 
 /* (4) About Page */
 .page-template-about .page-hero {
