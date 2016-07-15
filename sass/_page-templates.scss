@@ -75,30 +75,35 @@
 }
 
 .blog {
-    .post-img-wrap {
+    .entry-header {
         position: relative;
     }
+
     .entry-meta {
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
         position: absolute;
-        left: 25%;
-        top: 28%;
-        background-color: rgba(0,0,0,0.3);
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%,-50%);
+        background-color: rgba(0,0,0,0.5);
         padding: 10px 20px;
     }
     .entry-title {
         margin: 0;
         a {
             color: #fff;
+            font-size: 20px;
             text-transform: uppercase;
         }
 
     }
     .posted-on {
         color: #fff;
+        font-style: italic;
+        font-size: 12px;
     }
 }
 

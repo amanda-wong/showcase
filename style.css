@@ -1058,7 +1058,7 @@ object {
   width: 90%;
   margin: 0 auto; }
 
-.blog .post-img-wrap {
+.blog .entry-header {
   position: relative; }
 
 .blog .entry-meta {
@@ -1071,19 +1071,23 @@ object {
   -ms-flex-align: center;
       align-items: center;
   position: absolute;
-  left: 25%;
-  top: 28%;
-  background-color: rgba(0, 0, 0, 0.3);
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(0, 0, 0, 0.5);
   padding: 10px 20px; }
 
 .blog .entry-title {
   margin: 0; }
   .blog .entry-title a {
     color: #fff;
+    font-size: 20px;
     text-transform: uppercase; }
 
 .blog .posted-on {
-  color: #fff; }
+  color: #fff;
+  font-style: italic;
+  font-size: 12px; }
 
 /* (4) About Page */
 .page-template-about .page-hero {
