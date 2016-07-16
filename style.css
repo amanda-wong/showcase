@@ -1051,43 +1051,68 @@ object {
     .fp-cta, .about-cta {
       font-size: 1.3rem; } }
 
-/* (3) Blog Page */
+/* (3) Blog Archive Page */
 .blog .site-main {
   display: -ms-flexbox;
   display: flex;
   width: 90%;
   margin: 0 auto; }
 
-.blog .entry-header {
-  position: relative; }
+/* Tablet and desktop blog content layout */
+@media (min-width: 600px) {
+  .blog-content {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: row;
+        flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -ms-flex-pack: justify;
+        justify-content: space-between; } }
 
-.blog .entry-meta {
+.post {
+  margin-bottom: 12px;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-direction: column;
-      flex-direction: column;
   -ms-flex-pack: center;
       justify-content: center;
   -ms-flex-align: center;
-      align-items: center;
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
-  background-color: rgba(0, 0, 0, 0.5);
-  padding: 10px 20px 15px; }
-
-.blog .entry-title {
-  margin: 0; }
-  .blog .entry-title a {
+      align-items: center; }
+  .post:first-of-type .img-link {
+    height: 20vh; }
+    .post:first-of-type .img-link img {
+      width: 100%;
+      object-fit: cover; }
+  .post:not(:first-child) {
+    -ms-flex-preferred-size: 49%;
+        flex-basis: 49%; }
+  .post .entry-header {
+    position: relative; }
+  .post .entry-meta {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+        flex-direction: column;
+    -ms-flex-pack: center;
+        justify-content: center;
+    -ms-flex-align: center;
+        align-items: center;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 10px 20px 15px; }
+  .post .entry-title {
+    margin: 0; }
+    .post .entry-title a {
+      color: #fff;
+      font-size: 16px;
+      text-transform: uppercase; }
+  .post .posted-on {
     color: #fff;
-    font-size: 16px;
-    text-transform: uppercase; }
-
-.blog .posted-on {
-  color: #fff;
-  font-style: italic;
-  font-size: 12px; }
+    font-style: italic;
+    font-size: 12px; }
 
 /* (4) About Page */
 .page-template-about .page-hero {

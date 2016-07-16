@@ -66,19 +66,49 @@
     }
 }
 
-/* (3) Blog Page */
+/* (3) Blog Archive Page */
 
+
+//Page set up
 .blog .site-main {
     display: flex;
     width: 90%;
     margin: 0 auto;
 }
 
-.blog {
+/* Tablet and desktop blog content layout */
+.blog-content {
+    @include tablet {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+
+}
+
+// Post
+.post {
+    margin-bottom: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    &:first-of-type {
+        .img-link {
+            height: 20vh;
+            img {
+                width: 100%;
+                object-fit: cover;
+            }
+        }
+    }
+    &:not(:first-child) {
+        flex-basis: 49%;
+    }
     .entry-header {
         position: relative;
     }
-
     .entry-meta {
         display: flex;
         flex-direction: column;
@@ -106,6 +136,7 @@
         font-size: 12px;
     }
 }
+
 
 
 
