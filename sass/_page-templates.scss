@@ -94,15 +94,10 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    &:first-of-type {
-        .img-link {
-            height: 20vh;
-            img {
-                width: 100%;
-                object-fit: cover;
-            }
-        }
+    img {
+        object-fit: cover;
     }
+
     &:not(:first-child) {
         flex-basis: 49%;
     }
@@ -137,16 +132,13 @@
     }
 }
 
-
-
-
-// article:first-of-type {
+// .post:first-of-type {
 //     .post-img-wrap {
-//         height: 75vh;
+//         height: 20vh;
 //         position: relative;
 //         img {
 //             width: 100%;
-//             object-fit: cover;
+//             object-fit: contain;
 //         }
 //         .entry-title {
 //             position: absolute;

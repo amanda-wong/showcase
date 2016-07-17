@@ -78,3 +78,26 @@
 		margin: 1px;
 	}
 }
+
+.textwidget a {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		padding: 18px;
+		width: 15px;
+		height: 15px;
+		margin: 8px;
+		border-radius: 50%;
+		border: 3px solid #000;
+		&:hover {
+			background-color: #000;
+			i {
+				color: #fff;
+			}
+		}
+		i {
+			color: #000;
+
+		}
+
+}

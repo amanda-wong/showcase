@@ -36,12 +36,11 @@ function hideMenu() {
 //Inject HTML content into Text Widget
 var textwidget = document.getElementsByClassName('textwidget')[0];
 var footerSocial = document.querySelectorAll('.social-icon-wrap a');
-var socialIcons = footerSocial.cloneNode;
-
-console.log(socialIcons);
 
 
-for (var i = 1; i < socialIcons.length; i++) {
-    var currentIcon = socialIcons[i];
-    textwidget.appendChild(currentIcon);
+
+for (var i = 1; i < footerSocial.length; i++) {
+    var currentIcon = footerSocial[i];
+    var iconCopy = currentIcon.cloneNode(true);
+    textwidget.appendChild(iconCopy);
 }

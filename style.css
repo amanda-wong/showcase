@@ -889,6 +889,26 @@ footer .site-info {
   font-style: bold;
   margin: 1px; }
 
+.textwidget a {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+      justify-content: center;
+  -ms-flex-align: center;
+      align-items: center;
+  padding: 18px;
+  width: 15px;
+  height: 15px;
+  margin: 8px;
+  border-radius: 50%;
+  border: 3px solid #000; }
+  .textwidget a:hover {
+    background-color: #000; }
+    .textwidget a:hover i {
+      color: #fff; }
+  .textwidget a i {
+    color: #000; }
+
 /*--------------------------------------------------------------
 # Content
 --------------------------------------------------------------*/
@@ -1078,11 +1098,8 @@ object {
       justify-content: center;
   -ms-flex-align: center;
       align-items: center; }
-  .post:first-of-type .img-link {
-    height: 20vh; }
-    .post:first-of-type .img-link img {
-      width: 100%;
-      object-fit: cover; }
+  .post img {
+    object-fit: cover; }
   .post:not(:first-child) {
     -ms-flex-preferred-size: 49%;
         flex-basis: 49%; }

@@ -14,7 +14,7 @@ footer .site-info {
         width: 300px;
         display: flex;
         justify-content: center;
-        a {
+        a {  // styles also exist in textWidget (Create mixin);
             display: flex;
             justify-content: center;
             align-items: center;
