@@ -37,8 +37,6 @@ function hideMenu() {
 var textwidget = document.getElementsByClassName('textwidget')[0];
 var footerSocial = document.querySelectorAll('.social-icon-wrap a');
 
-
-
 for (var i = 1; i < footerSocial.length; i++) {
     var currentIcon = footerSocial[i];
     var iconCopy = currentIcon.cloneNode(true);
