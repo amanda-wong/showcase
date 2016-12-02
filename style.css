@@ -224,22 +224,22 @@ th {
 --------------------------------------------------------------*/
 @font-face {
   font-family: 'roboto';
-  src: url("Roboto-Light-webfont.eot");
-  src: url("Roboto-Light-webfont.eot?#iefix") format("embedded-opentype"), url("Roboto-Light-webfont.woff") format("woff"), url("Roboto-Light-webfont.ttf") format("truetype"), url("Roboto-Light-webfont.svg#robotolight") format("svg");
-  font-weight: 300;
+  src: url("../assets/fonts/roboto/Roboto-Light-webfont.eot");
+  src: url("../assets/fonts/roboto/Roboto-Light-webfont.eot?#iefix") format("embedded-opentype"), url("../assets/fonts/roboto/Roboto-Light-webfont.woff") format("woff"), url("../assets/fonts/roboto/Roboto-Light-webfont.ttf") format("truetype"), url("../assets/fonts/roboto/Roboto-Light-webfont.svg#robotolight") format("svg");
+  font-weight: normal;
   font-style: normal; }
 
 @font-face {
   font-family: 'roboto';
-  src: url("Roboto-LightItalic-webfont.eot");
-  src: url("Roboto-LightItalic-webfont.eot?#iefix") format("embedded-opentype"), url("Roboto-LightItalic-webfont.woff") format("woff"), url("Roboto-LightItalic-webfont.ttf") format("truetype"), url("Roboto-LightItalic-webfont.svg#robotolight_italic") format("svg");
-  font-weight: 300;
+  src: url("../assets/fonts/roboto/Roboto-LightItalic-webfont.eot");
+  src: url("../assets/fonts/roboto/Roboto-LightItalic-webfont.eot?#iefix") format("embedded-opentype"), url("../assets/fonts/roboto/Roboto-LightItalic-webfont.woff") format("woff"), url("../assets/fonts/roboto/Roboto-LightItalic-webfont.ttf") format("truetype"), url("../assets/fonts/roboto/Roboto-LightItalic-webfont.svg#robotolight_italic") format("svg");
+  font-weight: normal;
   font-style: italic; }
 
 @font-face {
   font-family: 'roboto';
-  src: url("Roboto-Medium-webfont.eot");
-  src: url("Roboto-Medium-webfont.eot?#iefix") format("embedded-opentype"), url("Roboto-Medium-webfont.woff") format("woff"), url("Roboto-Medium-webfont.ttf") format("truetype"), url("Roboto-Medium-webfont.svg#robotomedium") format("svg");
+  src: url("../assets/fonts/roboto/Roboto-Medium-webfont.eot");
+  src: url("../assets/fonts/roboto/Roboto-Medium-webfont.eot?#iefix") format("embedded-opentype"), url("../assets/fonts/roboto/Roboto-Medium-webfont.woff") format("woff"), url("../assets/fonts/roboto/Roboto-Medium-webfont.ttf") format("truetype"), url("../assets/fonts/roboto/Roboto-Medium-webfont.svg#robotomedium") format("svg");
   font-weight: 500;
   font-style: normal; }
 
@@ -317,14 +317,12 @@ html {
 
 body {
   background: #fff;
-  /* Fallback for when there is no custom background color defined. */ }
-  body p {
-    font-family: "roboto", sans-serif;
-    font-size: 14.5px;
-    line-height: 1.6rem; }
-    @media (min-width: 600px) {
-      body p {
-        line-height: 1.8rem; } }
+  /* Fallback for when there is no custom background color defined. */
+  font-family: "roboto", sans-serif;
+  font-size: 15px; }
+  @media (min-width: 1024px) {
+    body .canvas {
+      max-width: 1200px; } }
 
 a {
   text-decoration: none; }
@@ -447,9 +445,12 @@ a {
   a:hover, a:active {
     outline: 0; }
 
-.main-navigation #logo, .main-navigation #mobile-logo {
-  font-size: 1.9rem;
-  text-decoration: none; }
+.main-navigation #logo {
+  font-size: 2rem;
+  text-decoration: none;
+  font-weight: 500;
+  text-transform: uppercase;
+  color: #a1a1a1; }
 
 .main-navigation .mobile-menu-button {
   position: absolute;
@@ -462,36 +463,24 @@ a {
     .main-navigation .mobile-menu-button {
       display: none; } }
 
-.menu-main-container #primary-menu a, .menu-main-container #mobile-menu a {
-  text-decoration: none;
-  font-size: 1.8rem; }
-  @media (min-width: 600px) {
-    .menu-main-container #primary-menu a, .menu-main-container #mobile-menu a {
-      font-size: 1.6rem; } }
-  @media (min-width: 1024px) {
-    .menu-main-container #primary-menu a, .menu-main-container #mobile-menu a {
-      font-size: 1.8rem; } }
-
-.menu-main-container #primary-menu li:last-of-type a, .menu-main-container #mobile-menu li:last-of-type a {
-  margin-right: 0; }
-
 .main-navigation {
-  display: -ms-flexbox;
-  display: flex;
+  display: none;
   -ms-flex-direction: row;
       flex-direction: row;
   -ms-flex-pack: start;
       justify-content: flex-start;
   -ms-flex-align: center;
       align-items: center;
-  width: 90%;
   padding: 0.8rem 0;
   margin: 0 auto;
   position: relative; }
   @media (min-width: 600px) {
     .main-navigation {
+      display: -ms-flexbox;
+      display: flex;
       -ms-flex-pack: justify;
-          justify-content: space-between; } }
+          justify-content: space-between;
+      padding: 0 15px; } }
   .main-navigation ul {
     list-style: none;
     margin: 0;
@@ -526,77 +515,42 @@ a {
         -ms-flex-align: center;
             align-items: center;
         margin: 0; } }
+    @media (min-width: 1024px) {
+      .main-navigation .menu-main-container #primary-menu {
+        max-width: 1200px; } }
     .main-navigation .menu-main-container #primary-menu a {
       padding-bottom: 5px;
       margin: 0.3rem 0.8rem;
-      color: rgba(255, 255, 255, 0.5); }
+      color: #a1a1a1; }
       .main-navigation .menu-main-container #primary-menu a:hover {
-        color: #fff;
+        color: #000;
         transition: all 1s; }
 
 /* ---------------------Current page rules --------------------------------- */
-.home #primary-menu .current_page_item > a,
-.home #primary-menu .current-menu-item > a,
-.home #primary-menu .current_page_ancestor > a, .page-template-contact #primary-menu .current_page_item > a,
-.page-template-contact #primary-menu .current-menu-item > a,
-.page-template-contact #primary-menu .current_page_ancestor > a {
-  border-bottom: 3px solid #fff;
-  color: #fff; }
-  .home #primary-menu .current_page_item > a:hover,
-  .home #primary-menu .current-menu-item > a:hover,
-  .home #primary-menu .current_page_ancestor > a:hover, .page-template-contact #primary-menu .current_page_item > a:hover,
-  .page-template-contact #primary-menu .current-menu-item > a:hover,
-  .page-template-contact #primary-menu .current_page_ancestor > a:hover {
-    color: #fff;
-    border-bottom: 3px solid #fff; }
-
-.home #mobile-menu .current_page_item > a,
-.home #mobile-menu .current-menu-item > a,
-.home #mobile-menu .current_page_ancestor > a, .page-template-contact #mobile-menu .current_page_item > a,
-.page-template-contact #mobile-menu .current-menu-item > a,
-.page-template-contact #mobile-menu .current_page_ancestor > a {
-  color: red; }
-  .home #mobile-menu .current_page_item > a:hover,
-  .home #mobile-menu .current-menu-item > a:hover,
-  .home #mobile-menu .current_page_ancestor > a:hover, .page-template-contact #mobile-menu .current_page_item > a:hover,
-  .page-template-contact #mobile-menu .current-menu-item > a:hover,
-  .page-template-contact #mobile-menu .current_page_ancestor > a:hover {
-    color: red; }
-
-.post-type-archive-projects #logo, .blog #logo {
-  color: #000; }
-
-.post-type-archive-projects .menu-main-container #primary-menu a, .blog .menu-main-container #primary-menu a {
+.menu-main-container #primary-menu a {
   color: rgba(0, 0, 0, 0.3); }
-  .post-type-archive-projects .menu-main-container #primary-menu a:hover, .blog .menu-main-container #primary-menu a:hover {
+  .menu-main-container #primary-menu a:hover {
     color: #000; }
 
-.post-type-archive-projects .menu-main-container #primary-menu .current_page_item > a,
-.post-type-archive-projects .menu-main-container #primary-menu .current-menu-item > a,
-.post-type-archive-projects .menu-main-container #primary-menu .current_page_ancestor > a, .blog .menu-main-container #primary-menu .current_page_item > a,
-.blog .menu-main-container #primary-menu .current-menu-item > a,
-.blog .menu-main-container #primary-menu .current_page_ancestor > a {
-  border-bottom: 3px solid #000;
+.menu-main-container #primary-menu .current_page_item > a,
+.menu-main-container #primary-menu .current-menu-item > a,
+.menu-main-container #primary-menu .current_page_ancestor > a {
+  border-bottom: 1px solid #000;
   color: #000; }
-  .post-type-archive-projects .menu-main-container #primary-menu .current_page_item > a:hover,
-  .post-type-archive-projects .menu-main-container #primary-menu .current-menu-item > a:hover,
-  .post-type-archive-projects .menu-main-container #primary-menu .current_page_ancestor > a:hover, .blog .menu-main-container #primary-menu .current_page_item > a:hover,
-  .blog .menu-main-container #primary-menu .current-menu-item > a:hover,
-  .blog .menu-main-container #primary-menu .current_page_ancestor > a:hover {
+  .menu-main-container #primary-menu .current_page_item > a:hover,
+  .menu-main-container #primary-menu .current-menu-item > a:hover,
+  .menu-main-container #primary-menu .current_page_ancestor > a:hover {
     color: #fff;
+    text-transform: uppercase;
     border-bottom: 3px solid #000; }
 
-.post-type-archive-projects #mobile-menu .current_page_item > a,
-.post-type-archive-projects #mobile-menu .current-menu-item > a,
-.post-type-archive-projects #mobile-menu .current_page_ancestor > a, .blog #mobile-menu .current_page_item > a,
-.blog #mobile-menu .current-menu-item > a,
-.blog #mobile-menu .current_page_ancestor > a {
+#mobile-menu .current_page_item > a,
+#mobile-menu .current-menu-item > a,
+#mobile-menu .current_page_ancestor > a {
   color: red; }
-  .post-type-archive-projects #mobile-menu .current_page_item > a:hover,
-  .post-type-archive-projects #mobile-menu .current-menu-item > a:hover,
-  .post-type-archive-projects #mobile-menu .current_page_ancestor > a:hover, .blog #mobile-menu .current_page_item > a:hover,
-  .blog #mobile-menu .current-menu-item > a:hover,
-  .blog #mobile-menu .current_page_ancestor > a:hover {
+  #mobile-menu .current_page_item > a:hover,
+  #mobile-menu .current-menu-item > a:hover,
+  #mobile-menu .current_page_ancestor > a:hover {
     color: red; }
 
 /* ------------------------------- Mobile menu ---------------------------------*/
@@ -960,46 +914,18 @@ object {
 /*--------------------------------------------------------------
 # Page Templates
 --------------------------------------------------------------*/
+.content-area {
+  padding: 100px; }
+
 /* (1) Home Page */
-.home .site-content {
+.home .canvas {
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: center;
-      justify-content: center; }
-
-.home .page-hero {
-  background: linear-gradient(to right, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("../assets/images/desktop-a-landing.jpg");
-  background-size: cover;
-  background-position: center center;
-  height: 70vh; }
-  @media (min-width: 600px) {
-    .home .page-hero {
-      height: 100vh; } }
-
-.welcome-message {
-  height: 45vh;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-direction: column;
-      flex-direction: column;
   -ms-flex-pack: center;
       justify-content: center;
   -ms-flex-align: center;
       align-items: center;
-  width: 80%; }
-  @media (min-width: 600px) {
-    .welcome-message {
-      height: 75vh; } }
-  .welcome-message h1 {
-    color: #fff;
-    text-align: center;
-    margin-bottom: 20px; }
-    @media (min-width: 600px) {
-      .welcome-message h1 {
-        font-size: 1.8rem; } }
-    @media (min-width: 1024px) {
-      .welcome-message h1 {
-        font-size: 2.2rem; } }
+  height: 100vh; }
 
 .fp-cta, .about-cta {
   border: 3px solid #fff;

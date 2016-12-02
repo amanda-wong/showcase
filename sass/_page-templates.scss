@@ -2,46 +2,22 @@
 # Page Templates
 --------------------------------------------------------------*/
 
+.content-area {
+    padding: 100px;
+}
+
+
 /* (1) Home Page */
 .home {
-    .site-content {
+    .canvas {
         display: flex;
         justify-content: center;
-    }
-    .page-hero {
-        background: linear-gradient( to right, rgba(0,0,0,0.7), rgba(0,0,0,0.7)),
-         url('../assets/images/desktop-a-landing.jpg');
-        background-size: cover;
-        background-position: center center;
-        height: 70vh;
-        @include  tablet {
-            height: 100vh;
-        }
+        align-items: center;
+        height: 100vh;
     }
 }
 
-.welcome-message {
-    height: 45vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 80%;
-    @include tablet {
-        height: 75vh;
-    }
-    h1 {
-        color: #fff;
-        text-align: center;
-        margin-bottom: 20px;
-        @include tablet {
-            font-size: 1.8rem;
-        }
-        @include desktop {
-            font-size: 2.2rem;
-        }
-    }
-}
+
 
 .fp-cta, .about-cta {
     border: 3px solid #fff;

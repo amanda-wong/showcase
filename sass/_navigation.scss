@@ -23,13 +23,13 @@ a {
 	}
 }
 
-// /* -----------------------Tablet and Desktop Menus ----------------------------*/
-
-//Generic Logo styles
 .main-navigation {
-	#logo, #mobile-logo {
-		font-size: 1.9rem;
+	#logo {
+		font-size: 2rem;
 		text-decoration: none;
+		font-weight: 500;
+		text-transform: uppercase;
+		color: #a1a1a1;
 	}
 	.mobile-menu-button {
 		position: absolute;
@@ -45,37 +45,19 @@ a {
 	}
 }
 
-//Generic menu styles
-.menu-main-container {
-	#primary-menu, #mobile-menu {
-		a {
-			text-decoration: none;
-			font-size: 1.8rem;
-			@include tablet {
-				font-size: 1.6rem;
-			}
-			@include desktop {
-				font-size: 1.8rem;
-			}
-		}
-		li:last-of-type a {
-			margin-right: 0;
-		}
-	}
-}
-
 //Tablet/Desktop dark pages (Light Nav)
 .main-navigation {
-	display: flex;
+	display: none;
 	flex-direction: row;
 	justify-content: flex-start;
 	align-items: center;
-	width: 90%;
 	padding: 0.8rem 0;
 	margin: 0 auto;
 	position: relative;
 	@include tablet {
+		display: flex;
 		justify-content: space-between;
+		padding: 0 15px;
 	}
 
 
@@ -139,12 +121,15 @@ a {
 				align-items: center;
 				margin: 0;
 			}
+			@include desktop {
+				max-width: 1200px;
+			}
 			a {
 				padding-bottom: 5px;
 				margin: 0.3rem 0.8rem;
-				color: rgba(255,255,255,0.5);
+				color: #a1a1a1;
 				&:hover {
-					color: #fff;
+					color: #000;
 					transition: all 1s;
 				}
 			}
@@ -153,37 +138,10 @@ a {
 }
 
 /* ---------------------Current page rules --------------------------------- */
-//Dark Pages (Light Menu)
-.home, .page-template-contact  {
-	#primary-menu {
-		.current_page_item > a,
-		.current-menu-item > a,
-		.current_page_ancestor > a {
-			border-bottom: 3px solid #fff;
-			color: #fff;
-			&:hover {
-				color: #fff;
-				border-bottom: 3px solid #fff;
-			}
-		}
-	}
-	#mobile-menu {
-		.current_page_item > a,
-		.current-menu-item > a,
-		.current_page_ancestor > a {
-			color: red;
-			&:hover {
-				color: red;
-			}
-		}
-	}
-}
 
 // Light Pages (Dark Menu)
-.post-type-archive-projects, .blog{
-	#logo {
-		color: #000;
-	}
+
+
 	.menu-main-container #primary-menu {
 		a {
 			color: rgba(0,0,0, 0.3);
@@ -194,10 +152,12 @@ a {
 		.current_page_item > a,
 		.current-menu-item > a,
 		.current_page_ancestor > a {
-			border-bottom: 3px solid #000;
+			border-bottom: 1px solid #000;
 			color: #000;
+
 			&:hover {
 				color: #fff;
+				text-transform: uppercase;
 				border-bottom: 3px solid #000;
 			}
 		}
@@ -212,7 +172,7 @@ a {
 			}
 		}
 	}
-}
+
 
 /* ------------------------------- Mobile menu ---------------------------------*/
 //Generic mobile styles across pages
