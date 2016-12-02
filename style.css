@@ -252,7 +252,7 @@ input,
 select,
 textarea {
   color: #404040;
-  font-family: "open_sans", sans-serif;
+  font-family: "roboto", sans-serif;
   font-size: 16px;
   font-size: 1rem;
   line-height: 1.5; }
@@ -319,35 +319,15 @@ body {
   background: #fff;
   /* Fallback for when there is no custom background color defined. */ }
   body p {
+    font-family: "roboto", sans-serif;
     font-size: 14.5px;
-    line-height: 1.6rem;
-    font-family: 'helvetica', sans-serif; }
+    line-height: 1.6rem; }
     @media (min-width: 600px) {
       body p {
         line-height: 1.8rem; } }
 
 a {
   text-decoration: none; }
-
-h1 {
-  font-size: 1.3rem;
-  font-family: "open_sans", sans-serif; }
-  @media (min-width: 600px) {
-    h1 {
-      font-size: 1.6rem; } }
-  @media (min-width: 1024px) {
-    h1 {
-      font-size: 1.8rem; } }
-
-h2 {
-  font-size: 1.1rem;
-  font-family: "open_sans", sans-serif; }
-  @media (min-width: 600px) {
-    h2 {
-      font-size: 1.5rem; } }
-  @media (min-width: 1024px) {
-    h2 {
-      font-size: 1.7rem; } }
 
 blockquote, q {
   quotes: "" ""; }
@@ -467,9 +447,7 @@ a {
   a:hover, a:active {
     outline: 0; }
 
-/* -----------------------Tablet and Desktop Menus ----------------------------*/
 .main-navigation #logo, .main-navigation #mobile-logo {
-  font-family: "bebas_neue", sans-serif;
   font-size: 1.9rem;
   text-decoration: none; }
 
@@ -486,7 +464,6 @@ a {
 
 .menu-main-container #primary-menu a, .menu-main-container #mobile-menu a {
   text-decoration: none;
-  font-family: "bebas_neue", sans-serif;
   font-size: 1.8rem; }
   @media (min-width: 600px) {
     .menu-main-container #primary-menu a, .menu-main-container #mobile-menu a {
@@ -515,17 +492,6 @@ a {
     .main-navigation {
       -ms-flex-pack: justify;
           justify-content: space-between; } }
-  .main-navigation #logo {
-    text-align: center;
-    color: #fff;
-    margin-left: 50px; }
-    @media (min-width: 600px) {
-      .main-navigation #logo {
-        font-size: 3rem;
-        margin: 0; } }
-    @media (min-width: 1024px) {
-      .main-navigation #logo {
-        font-size: 3.5rem; } }
   .main-navigation ul {
     list-style: none;
     margin: 0;
@@ -713,7 +679,6 @@ footer .site-info {
       flex-direction: column;
   padding: 20px 0; }
   footer .site-info h2 {
-    font-family: "bebas_neue", sans-serif;
     font-weight: bold;
     margin: 0 0 10px 0; }
   footer .site-info .social-icon-wrap {
@@ -823,7 +788,6 @@ footer .site-info {
   margin: 0 0 1.5em;
   /* Make sure select elements fit in widgets. */ }
   .widget .widget-title {
-    font-family: "bebas_neue", sans-serif;
     margin: 0; }
   .widget ul {
     list-style: none;
@@ -1038,7 +1002,6 @@ object {
         font-size: 2.2rem; } }
 
 .fp-cta, .about-cta {
-  font-family: "open_sans", sans-serif;
   border: 3px solid #fff;
   padding: 0.7rem 1.1rem;
   text-transform: uppercase;
@@ -1134,7 +1097,6 @@ object {
       flex-direction: column;
   -ms-flex-pack: center;
       justify-content: center;
-  font-family: "open_sans", sans-serif;
   font-style: italic;
   color: #fff;
   text-align: center;

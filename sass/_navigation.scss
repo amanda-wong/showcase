@@ -28,7 +28,6 @@ a {
 //Generic Logo styles
 .main-navigation {
 	#logo, #mobile-logo {
-		font-family: $font__form_elements;
 		font-size: 1.9rem;
 		text-decoration: none;
 	}
@@ -51,7 +50,6 @@ a {
 	#primary-menu, #mobile-menu {
 		a {
 			text-decoration: none;
-			font-family: $font__form_elements;
 			font-size: 1.8rem;
 			@include tablet {
 				font-size: 1.6rem;

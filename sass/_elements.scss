@@ -16,8 +16,11 @@ html {
 body {
 	background: $color__background-body; /* Fallback for when there is no custom background color defined. */
 	p {
+		font-family: $font__roboto;
+
 		font-size: 14.5px;
 		line-height: 1.6rem;
+
 		@include tablet {
 			line-height: 1.8rem;
 		}
