@@ -23,7 +23,7 @@ a {
 	}
 }
 
-/* -----------------------Tablet and Desktop Menus ----------------------------*/
+// /* -----------------------Tablet and Desktop Menus ----------------------------*/
 
 //Generic Logo styles
 .main-navigation {
@@ -80,18 +80,6 @@ a {
 		justify-content: space-between;
 	}
 
-	#logo {
-		text-align: center;
-		color: #fff;
-		margin-left: 50px;
-		@include tablet {
-			font-size: 3rem;
-			margin: 0;
-		}
-		@include desktop {
-			font-size: 3.5rem;
-		}
-	}
 
 	ul {
 		list-style: none;
