@@ -50,7 +50,19 @@
 #primary-menu {
 	display: none;
 	&:last-child {
-		
+		a {
+			margin-right: 0;
+		}
+	}
+	.current_page_item > a,
+	.current-menu-item > a,
+	.current_page_ancestor > a {
+		border-bottom: 1px solid #000;
+		color: #000;
+
+		&:hover {
+			color: #000;
+		}
 	}
 	@include tablet {
 		display: flex;
@@ -69,7 +81,6 @@
 		}
 	}
 }
-
 
 .main-navigation {
 	ul {
@@ -126,29 +137,7 @@
 
 /* ---------------------Current page rules --------------------------------- */
 
-// Light Pages (Dark Menu)
-
-
-	.menu-main-container #primary-menu {
-		a {
-			color: rgba(0,0,0, 0.3);
-			&:hover {
-				color: #000;
-			}
-		}
-		.current_page_item > a,
-		.current-menu-item > a,
-		.current_page_ancestor > a {
-			border-bottom: 1px solid #000;
-			color: #000;
-
-			&:hover {
-				color: #000;
-			}
-		}
-	}
-
-	#mobile-menu {          		// TODO
+	#mobile-menu {          		// TODO: Mobile
 		.current_page_item > a,
 		.current-menu-item > a,
 		.current_page_ancestor > a {
@@ -159,9 +148,8 @@
 		}
 	}
 
-
 /* ------------------------------- Mobile menu ---------------------------------*/
-//Generic mobile styles across pages
+//Generic mobile styles across pages  // TODO: Mobile
 .mobile-logo-container {
 	display: flex;
 	justify-content: space-between;

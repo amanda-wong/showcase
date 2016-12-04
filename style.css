@@ -473,8 +473,20 @@ textarea {
       .main-navigation .mobile-menu-button {
         display: none; } }
 
+/* ------------- Top Navigation ---------*/
 #primary-menu {
   display: none; }
+  #primary-menu:last-child a {
+    margin-right: 0; }
+  #primary-menu .current_page_item > a,
+  #primary-menu .current-menu-item > a,
+  #primary-menu .current_page_ancestor > a {
+    border-bottom: 1px solid #000;
+    color: #000; }
+    #primary-menu .current_page_item > a:hover,
+    #primary-menu .current-menu-item > a:hover,
+    #primary-menu .current_page_ancestor > a:hover {
+      color: #000; }
   @media (min-width: 600px) {
     #primary-menu {
       display: -ms-flexbox;
@@ -519,21 +531,6 @@ textarea {
   position: relative; }
 
 /* ---------------------Current page rules --------------------------------- */
-.menu-main-container #primary-menu a {
-  color: rgba(0, 0, 0, 0.3); }
-  .menu-main-container #primary-menu a:hover {
-    color: #000; }
-
-.menu-main-container #primary-menu .current_page_item > a,
-.menu-main-container #primary-menu .current-menu-item > a,
-.menu-main-container #primary-menu .current_page_ancestor > a {
-  border-bottom: 1px solid #000;
-  color: #000; }
-  .menu-main-container #primary-menu .current_page_item > a:hover,
-  .menu-main-container #primary-menu .current-menu-item > a:hover,
-  .menu-main-container #primary-menu .current_page_ancestor > a:hover {
-    color: #000; }
-
 #mobile-menu .current_page_item > a,
 #mobile-menu .current-menu-item > a,
 #mobile-menu .current_page_ancestor > a {
@@ -594,22 +591,6 @@ textarea {
   color: rgba(255, 255, 255, 0.5); }
   .home #mobile-menu li a:hover, .page-template-contact #mobile-menu li a:hover {
     color: #fff; }
-
-.post-type-archive-projects .mobile-menu-button, .blog .mobile-menu-button {
-  color: #000; }
-
-.post-type-archive-projects .mobile-logo-container, .blog .mobile-logo-container {
-  background-color: #fff; }
-  .post-type-archive-projects .mobile-logo-container #mobile-logo, .blog .mobile-logo-container #mobile-logo {
-    color: #000; }
-  .post-type-archive-projects .mobile-logo-container i, .blog .mobile-logo-container i {
-    color: red; }
-
-.post-type-archive-projects #mobile-menu li a, .blog #mobile-menu li a {
-  background-color: #fff;
-  color: rgba(0, 0, 0, 0.3); }
-  .post-type-archive-projects #mobile-menu li a:hover, .blog #mobile-menu li a:hover {
-    color: #000; }
 
 /* Links */
 a {
