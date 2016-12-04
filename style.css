@@ -615,7 +615,8 @@ footer .site-info {
   padding: 20px 0; }
   footer .site-info h2 {
     font-weight: bold;
-    margin: 0 0 10px 0; }
+    margin-bottom: 5px;
+    font-size: 0.8rem; }
   footer .site-info .social-icon-wrap {
     margin-bottom: 10px;
     width: 300px;

@@ -11,7 +11,7 @@
 
 			<footer id="colophon" class="site-footer" role="contentinfo">
 				<div class="site-info">
-		            <h2>- Let's get social -</h2>
+		            <h2>- Follow me -</h2>
 		            <div class="social-icon-wrap">
 						<a href="https://www.github.com/amanda-wong/" target="_blank">
 		                    <i class="fa fa-github" aria-hidden="true"></i>
