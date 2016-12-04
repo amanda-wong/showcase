@@ -6,16 +6,10 @@
 
 <div id="primary" class="content-area">
 	<main id="main" class="site-main" role="main">
-		<div class="page-hero">
 			<?php get_header(); ?>
-            <div class="hero-content">
-				<h1>Connect with me</h1>
-                <hr/>
-			</div>
-        </div>
         <section class="contact-container">
             <div class="contact-content">
-                <h2>Say hello</h2>
+                <h1>Connect with me</h1>
                 <p>
                     How I like to keep current with technology trends is working new projects,
                     sharing cool ideas or just starting a conversation!

@@ -178,159 +178,27 @@
 
 
 /* (5) Contact Page */
-.page-template-contact {
-    .page-hero {
-        background: linear-gradient(to right, rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
-         url('../assets/images/path-hero.jpg');
-        background-size: cover;
-        background-position: center top;
-        width: 100%;
-        height: 30vh;
-        @include tablet {
-            height: 40vh;
-        }
-        @include desktop {
-            height: 45vh;
-        }
-    }
-    .hero-content {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        height: 65%;
-        h1 {
-            color: #fff;
-            text-align: center;
-            margin: 0 0 10px 0;
-            @include tablet {
-                font-size: 1.8rem;
-            }
-            @include desktop {
-                font-size: 2.5rem;
-            }
-        }
-        hr {
-            height: 3px;
-            width: 80px;
-            margin-top: 0;
-        }
-    }
-}
-
-.contact-greeting {
-    text-align: center;
-    font-size: 1.3rem;
-    font-weight: 700;
-}
 
 .contact-container {
     display: flex;
     flex-direction: column;
-    padding: 30px 20px;
-    label {
-        color: rgba(26,26,26, 0.6);
-    }
+
     @include tablet {
-        flex-direction: row;
-        width: 90%;
-        justify-content: space-around;
-        margin: 0 auto;
+        padding: 50px 0;
     }
+
     @include desktop {
-        width: 80%;
+        // padding: 100px 0;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .contact-content {
+
+        @include tablet {
+            width: 50vw;
+            flex-basis: 45%;
+            margin-bottom: 0;
+        }
     }
 }
-
-.contact-content {
-    margin-bottom: 30px;
-    h2 {
-        margin-top: 0;
-    }
-    p {
-        margin-bottom: 0;
-        color: rgba(26,26,26, 0.6);
-    }
-    @include tablet {
-        width: 50vw;
-        flex-basis: 40%;
-        margin-bottom: 0;
-    }
-}
-
-
-// .contact-form {
-//     display: flex;
-//     flex-direction: column;
-//     margin-bottom: 0;
-//     label {
-//         position: relative;
-//     }
-//     span {
-//         font-size: 0.7rem;
-//         position: absolute;
-//         top: -2px;
-//     }
-//     @include tablet {
-//         flex-basis: 50%;
-//     }
-//     @include desktop {
-//         margin: 10px 0;
-//     }
-//     [type="text"], [type="email"], textarea {
-//         width: 100%;
-//         padding: 7px;
-//         border-radius: 0;
-//         font-size: 12px;
-//         // border: 1px solid #ccc;
-//         border: 0;
-//         // background-color: #fafafa;
-//         background-color: darken(#fafafa, 3%);
-//         @include desktop {
-//             font-size: 16px;
-//             margin-top: 5px;
-//         }
-//         &:focus {
-//             background-color: #fff;
-//         }
-//     }
-//     [type="submit"] {
-//         width: 100px;
-//         height: 40px;
-//         text-transform: uppercase;
-//         box-shadow: none;
-//         border: 2px solid #000;
-//         background-color: #fff;
-//         text-shadow: none;
-//         font-weight: 600;
-//         border-radius: 0;
-//         margin-top: 10px;
-//         &:hover {
-//             border: #000;
-//             box-shadow: none;
-//             outline: none;
-//             background-color: #000;
-//             color: #fff;
-//             transition: 0.2s linear;
-//         }
-//     }
-// }
-//
-// .name-wrap {
-//     display: flex;
-//     flex-direction: row;
-//     justify-content: space-between;
-//     .fname-wrap, .lname-wrap {
-//         display: flex;
-//         flex-direction: column;
-//         flex-basis: 49%;
-//         label {
-//             font-size: 11px;
-//             margin-top: 5px;
-//         }
-//     }
-// }
-//
-// .name-wrap, .email-wrap, .message-wrap {
-//     margin-bottom: 20px;
-// }

@@ -325,7 +325,19 @@ body {
       max-width: 1200px; } }
 
 a {
-  text-decoration: none; }
+  text-decoration: none;
+  cursor: pointer; }
+
+h1, h2, h3, h4, h5 {
+  font-family: "roboto", sans-serif;
+  font-weight: 500;
+  text-transform: uppercase; }
+
+h1 {
+  font-size: 1.4rem; }
+
+h2 {
+  font-size: 1rem; }
 
 blockquote, q {
   quotes: "" ""; }
@@ -1032,79 +1044,23 @@ object {
         margin-top: 20px; } }
 
 /* (5) Contact Page */
-.page-template-contact .page-hero {
-  background: linear-gradient(to right, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("../assets/images/path-hero.jpg");
-  background-size: cover;
-  background-position: center top;
-  width: 100%;
-  height: 30vh; }
-  @media (min-width: 600px) {
-    .page-template-contact .page-hero {
-      height: 40vh; } }
-  @media (min-width: 1024px) {
-    .page-template-contact .page-hero {
-      height: 45vh; } }
-
-.page-template-contact .hero-content {
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-direction: column;
-      flex-direction: column;
-  -ms-flex-pack: center;
-      justify-content: center;
-  -ms-flex-align: center;
-      align-items: center;
-  height: 65%; }
-  .page-template-contact .hero-content h1 {
-    color: #fff;
-    text-align: center;
-    margin: 0 0 10px 0; }
-    @media (min-width: 600px) {
-      .page-template-contact .hero-content h1 {
-        font-size: 1.8rem; } }
-    @media (min-width: 1024px) {
-      .page-template-contact .hero-content h1 {
-        font-size: 2.5rem; } }
-  .page-template-contact .hero-content hr {
-    height: 3px;
-    width: 80px;
-    margin-top: 0; }
-
-.contact-greeting {
-  text-align: center;
-  font-size: 1.3rem;
-  font-weight: 700; }
-
 .contact-container {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-direction: column;
-      flex-direction: column;
-  padding: 30px 20px; }
-  .contact-container label {
-    color: rgba(26, 26, 26, 0.6); }
+      flex-direction: column; }
   @media (min-width: 600px) {
+    .contact-container {
+      padding: 50px 0; } }
+  @media (min-width: 1024px) {
     .contact-container {
       -ms-flex-direction: row;
           flex-direction: row;
-      width: 90%;
-      -ms-flex-pack: distribute;
-          justify-content: space-around;
-      margin: 0 auto; } }
-  @media (min-width: 1024px) {
-    .contact-container {
-      width: 80%; } }
-
-.contact-content {
-  margin-bottom: 30px; }
-  .contact-content h2 {
-    margin-top: 0; }
-  .contact-content p {
-    margin-bottom: 0;
-    color: rgba(26, 26, 26, 0.6); }
+      -ms-flex-pack: justify;
+          justify-content: space-between; } }
   @media (min-width: 600px) {
-    .contact-content {
+    .contact-container .contact-content {
       width: 50vw;
-      -ms-flex-preferred-size: 40%;
-          flex-basis: 40%;
+      -ms-flex-preferred-size: 45%;
+          flex-basis: 45%;
       margin-bottom: 0; } }
