@@ -3,7 +3,15 @@
 --------------------------------------------------------------*/
 
 .content-area {
-    padding: 100px;
+    max-width: 1200px;
+    padding: 50px 20px;
+    margin: 0 auto;
+    @include tablet {
+        padding: 50px 30px;
+    }
+    @include desktop {
+        padding: 100px;
+    }
 }
 
 
