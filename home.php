@@ -1,4 +1,9 @@
+<?php
+/**
+ * Template Name: Blog Page
+ */
 
+ ?>
 
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main">
@@ -10,6 +15,7 @@
 
 				<?php endwhile; // End of the loop. ?>
 			</section>
+
 		</main><!-- #main -->
 	</div><!-- #primary -->
 

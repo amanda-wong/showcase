@@ -10,7 +10,7 @@
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">
 			<?php get_header(); ?>
-			<section>
+			<section class="canvas">
 				<?php if ( have_posts() ) : ?>
 
 					<div class="block-container">
