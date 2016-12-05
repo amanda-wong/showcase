@@ -29,8 +29,12 @@ if ( post_password_required() ) {
 			<h2 class="screen-reader-text"><?php esc_html( 'Comment navigation' ); ?></h2>
 			<div class="nav-links">
 
-				<div class="nav-previous"><?php previous_comments_link( esc_html( 'Older Comments' ) ); ?></div>
-				<div class="nav-next"><?php next_comments_link( esc_html( 'Newer Comments' ) ); ?></div>
+				<div class="nav-previous">
+					<?php previous_comments_link( esc_html( 'Older Comments' ) ); ?>
+				</div>
+				<div class="nav-next">
+					<?php next_comments_link( esc_html( 'Newer Comments' ) ); ?>
+				</div>
 
 			</div><!-- .nav-links -->
 		</nav><!-- #comment-nav-above -->
@@ -67,7 +71,7 @@ if ( post_password_required() ) {
 
 	<?php comment_form( array(
 		'title_reply'          => esc_html( 'Post a Comment' ),
-		'comment_notes_before' => wp_kses( '<p class="comment-notes">Want to join the discussion? Feel free to contribute!</p>', array( 'p' => array( 'class' => '' ) ) ),
+		'comment_notes_before' => wp_kses( '<p class="comment-notes">Tell me what you think of this post!</p>', array( 'p' => array( 'class' => '' ) ) ),
 		'label_submit'         => esc_html( 'Submit' ),
 		'cancel_reply_link'    => esc_html( '[Cancel reply]' )
 	) ); ?>
