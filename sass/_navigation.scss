@@ -15,7 +15,7 @@
 	}
 
 	#logo {
-		color: #a1a1a1;
+		color: $color__dark-grey;
 		font-size: 1.5rem;
 		font-weight: 500;
 		line-height: 1.5rem;
@@ -57,9 +57,9 @@
 	.current_page_item > a,
 	.current-menu-item > a,
 	.current_page_ancestor > a {
-		border-bottom: 1px solid #000;
-		color: #000;
-
+		text-transform: uppercase;
+		border-bottom: 1px solid $color__dark-grey;
+		color: #696969;
 		&:hover {
 			color: #000;
 		}
@@ -73,8 +73,9 @@
 		max-width: 1200px;
 	}
 	a {
-		margin: 0.3rem 0.8rem;
+		margin: 0.3rem 1rem;
 		color: #a1a1a1;
+		text-transform: uppercase;
 		&:hover {
 			color: #000;
 			transition: all 1s;
