@@ -1079,9 +1079,7 @@ object {
           justify-content: space-between; } }
   .contact-container .contact-content h1 {
     margin-top: 0; }
-  @media (min-width: 600px) {
+  @media (min-width: 1024px) {
     .contact-container .contact-content {
-      width: 50vw;
       -ms-flex-preferred-size: 45%;
-          flex-basis: 45%;
-      margin-bottom: 0; } }
+          flex-basis: 45%; } }

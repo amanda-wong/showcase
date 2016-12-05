@@ -202,10 +202,8 @@
         h1 {
             margin-top: 0;
         }
-        @include tablet {
-            width: 50vw;
+        @include desktop {
             flex-basis: 45%;
-            margin-bottom: 0;
         }
     }
 }
