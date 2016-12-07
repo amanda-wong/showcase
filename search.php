@@ -5,11 +5,11 @@
  * @package RED_Starter_Theme
  */
 
-get_header(); ?>
+ ?>
 
 	<section id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">
-
+			<?php get_header(); ?>
 		<?php if ( have_posts() ) : ?>
 
 			<header class="page-header">

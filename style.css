@@ -725,7 +725,7 @@ footer .site-info {
       padding-left: 20px; } }
 
 .widget {
-  margin: 0 0 1.5em;
+  margin: 0 0 3.5em;
   /* Make sure select elements fit in widgets. */ }
   .widget .widget-title {
     margin: 0; }
@@ -807,7 +807,7 @@ footer .site-info {
   display: block; }
 
 .hentry {
-  margin: 0 0 1.5em; }
+  margin: 0 0 2.5em; }
 
 .updated:not(.published) {
   display: none; }
@@ -824,6 +824,14 @@ footer .site-info {
 .page-links {
   clear: both;
   margin: 0 0 1.5em; }
+
+.entry-header .entry-title {
+  margin-bottom: 5px; }
+  .entry-header .entry-title a {
+    color: #696969; }
+
+.entry-header .posted-on {
+  font-size: 13px; }
 
 /* Asides */
 .blog .format-aside .entry-title,
@@ -900,6 +908,7 @@ object {
 /*--------------------------------------------------------------
 # Page Templates
 --------------------------------------------------------------*/
+/*(0)Page set up */
 .content-area {
   max-width: 1200px;
   padding: 50px 20px;
@@ -918,6 +927,18 @@ object {
     @media (min-width: 1024px) {
       .content-area .canvas {
         padding: 45px 0; } }
+
+/*(0.1) 404 Page */
+@media (min-width: 1024px) {
+  .error-404 {
+    margin-top: 30px; } }
+
+/* (0.2) Search Results Page */
+.search .page-header {
+  margin-bottom: 30px; }
+  @media (min-width: 1024px) {
+    .search .page-header {
+      margin-top: 30px; } }
 
 /* (1) Home Page */
 .home .canvas {

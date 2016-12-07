@@ -9,7 +9,7 @@
 }
 
 .hentry {
-	margin: 0 0 $base__space-unit;
+	margin: 0 0 2.5em;
 }
 
 .updated:not(.published){
@@ -31,6 +31,19 @@
 	clear: both;
 	margin: 0 0 $base__space-unit;
 }
+
+.entry-header {
+	.entry-title {
+		margin-bottom: 5px;
+		a {
+			color: $color__dark-grey;
+		}
+	}
+	.posted-on {
+		font-size: 13px;
+	}
+}
+
 
 /* Asides */
 
