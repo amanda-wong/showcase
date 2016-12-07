@@ -3,9 +3,6 @@
   "version": "1.0.0",
   "description": "Amanda Wong's portfolio theme",
   "main": "gulpfile.js",
-  "dependencies": {
-    "jquery": "^3.1.1"
-  },
   "devDependencies": {
     "browser-sync": "^2.18.2",
     "es6-promise": "^3.2.1",
