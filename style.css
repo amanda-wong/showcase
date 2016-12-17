@@ -969,6 +969,45 @@ object {
       justify-content: space-between; }
 
 /* (4) About Page */
+.skills-container .skill:nth-child(odd) .skill-level {
+  background: repeating-linear-gradient(45deg, #606dbc, #606dbc 10px, #465298 10px, #465298 20px); }
+
+.skills-container .skill:nth-child(even) .skill-level {
+  background: repeating-linear-gradient(45deg, #FFA500, #FFA500 10px, #ffc966 10px, #ffc966 20px); }
+
+.skill {
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 10px; }
+
+.skill-label {
+  background-color: #fff;
+  padding: 5px 10px 5px 0;
+  text-align: right;
+  min-width: 110px; }
+  @media (min-width: 1024px) {
+    .skill-label {
+      width: 115px; } }
+
+.skill-bar {
+  background-color: #e6e6e6;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%; }
+  .skill-bar .skill-level {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+        align-items: center;
+    width: 5%;
+    position: relative;
+    transition: width 2s linear; }
+    .skill-bar .skill-level:after {
+      position: absolute;
+      right: 15px;
+      color: white;
+      content: attr(data-percent); }
+
 /* (5) Contact Page */
 .page-template-contact .canvas {
   display: -ms-flexbox;

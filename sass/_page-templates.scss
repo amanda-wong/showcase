@@ -87,6 +87,64 @@
 
 /* (4) About Page */
 
+.skills-container {
+    .skill:nth-child(odd) {
+        .skill-level {
+            background: repeating-linear-gradient(
+              45deg,
+              #606dbc,
+              #606dbc 10px,
+              #465298 10px,
+              #465298 20px
+            );
+        }
+    }
+    .skill:nth-child(even) {
+        .skill-level {
+            background: repeating-linear-gradient(
+              45deg,
+              #FFA500,
+              #FFA500 10px,
+              #ffc966 10px,
+              #ffc966 20px
+            );
+        }
+    }
+}
+.skill {
+    display: flex;
+    margin-bottom: 10px;
+}
+
+.skill-label {
+    background-color: #fff;
+    padding: 5px 10px 5px 0;
+    text-align: right;
+    min-width: 110px;
+    @include desktop {
+        width: 115px;
+    }
+}
+.skill-bar {
+    background-color: #e6e6e6;
+    display: flex;
+    width: 100%;
+
+    .skill-level {
+        display: flex;
+        align-items: center;
+        width: 5%;
+        position: relative;
+        transition: width 2s linear;
+        &:after {
+            position: absolute;
+            right: 15px;
+            color: white;
+            content: attr(data-percent);
+        }
+    }
+}
+
 
 /* (5) Contact Page */
 .page-template-contact {
