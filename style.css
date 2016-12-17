@@ -985,9 +985,6 @@ object {
   padding: 5px 10px 5px 0;
   text-align: right;
   min-width: 110px; }
-  @media (min-width: 1024px) {
-    .skill-label {
-      width: 115px; } }
 
 .skill-bar {
   background-color: #e6e6e6;
