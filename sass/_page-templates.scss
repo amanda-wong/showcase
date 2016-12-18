@@ -92,10 +92,10 @@
         .skill-level {
             background: repeating-linear-gradient(
               45deg,
-              #606dbc,
-              #606dbc 10px,
-              #465298 10px,
-              #465298 20px
+              rgba(96, 109, 188, 0.5),
+              rgba(96, 109, 188, 0.5) 10px,
+              rgba(70, 82, 152, 0.3) 10px,
+              rgba(70, 82, 152, 0.3) 20px
             );
         }
     }
@@ -120,7 +120,8 @@
     background-color: #fff;
     padding: 5px 10px 5px 0;
     text-align: right;
-    min-width: 110px;
+    min-width: 115px;
+    z-index: 1;
 }
 .skill-bar {
     background-color: #e6e6e6;
@@ -130,18 +131,30 @@
     .skill-level {
         display: flex;
         align-items: center;
-        width: 5%;
+        width: 0%;
         position: relative;
-        transition: width 2s linear;
+        transition: width 2s ease-in-out;
         &:after {
             position: absolute;
-            right: 15px;
-            color: white;
+            right: 10px;
+            color: #000; 
             content: attr(data-percent);
+            text-shadow: 1px 1px rgba(255,255,255,255.5);
         }
     }
 }
 
+.download-resume {     //TODO: Add resume
+    margin-top: 40px;
+    text-align: center;
+    font-weight: 700;
+    a {
+        color: $color__dark-grey;
+        &:hover {
+            font-weight: 500;
+        }
+    }
+}
 
 /* (5) Contact Page */
 .page-template-contact {
