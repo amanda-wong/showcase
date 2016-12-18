@@ -89,7 +89,7 @@
                         PHP
                     </div>
                     <div class="skill-bar">
-                        <div class="skill-level" data-percent="10%"></div>
+                        <div class="skill-level" data-percent="15%"></div>
                     </div>
                 </div>
                 <div class="skill">
@@ -97,7 +97,7 @@
                         Angular/React
                     </div>
                     <div class="skill-bar">
-                        <div class="skill-level" data-percent="10%"></div>
+                        <div class="skill-level" data-percent="15%"></div>
                     </div>
                 </div>
                 <div class="skill">
