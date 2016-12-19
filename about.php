@@ -11,7 +11,7 @@
             <div class="about-copy">
             </div>
             <div class="instagram">
-				<h2>#amandaoutandabout</h2>
+				<h2>Amanda being a human</h2>
                 <ul id="instagram-grid">
 
                 </ul>
