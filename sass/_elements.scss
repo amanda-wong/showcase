@@ -44,11 +44,13 @@ h1 {
 }
 
 h2 {
-	font-size: 0.8rem;
+	font-size: 0.9rem;
 	font-weight: 500;
-	color: #000;
+	color: $color__dark-grey;
+	@include desktop {
+		font-size: 1rem;
+	}
 }
-
 
 blockquote, q {
 	quotes: "" "";
