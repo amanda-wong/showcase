@@ -87,6 +87,31 @@
 
 /* (4) About Page */
 
+//Instagram Grid
+.instagram {
+	h2 {
+		text-align: center;
+	}
+}
+#instagram-grid {
+	margin-left: 0;
+	padding-left: 0;
+	display: flex;
+	flex-wrap: wrap;
+
+	.insta-block {
+		list-style-type: none;
+		flex-basis: 50%;
+		@include tablet {
+			flex-basis: 33%;
+		}
+		@include desktop {
+			flex-basis: 25%;
+		}
+	}
+}
+
+//skill-bar-graph
 .skills-container {
     .skill:nth-child(odd) {
         .skill-level {
@@ -137,13 +162,15 @@
         &:after {
             position: absolute;
             right: 10px;
-            color: #000; 
+            color: #000;
             content: attr(data-percent);
             text-shadow: 1px 1px rgba(255,255,255,255.5);
         }
     }
 }
 
+
+//Download Resume
 .download-resume {     //TODO: Add resume
     margin-top: 40px;
     text-align: center;

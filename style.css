@@ -341,9 +341,12 @@ h1 {
   font-size: 1.1rem; }
 
 h2 {
-  font-size: 0.8rem;
+  font-size: 0.9rem;
   font-weight: 500;
-  color: #000; }
+  color: #696969; }
+  @media (min-width: 1024px) {
+    h2 {
+      font-size: 1rem; } }
 
 blockquote, q {
   quotes: "" ""; }
@@ -969,6 +972,29 @@ object {
       justify-content: space-between; }
 
 /* (4) About Page */
+.instagram h2 {
+  text-align: center; }
+
+#instagram-grid {
+  margin-left: 0;
+  padding-left: 0;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap; }
+  #instagram-grid .insta-block {
+    list-style-type: none;
+    -ms-flex-preferred-size: 50%;
+        flex-basis: 50%; }
+    @media (min-width: 600px) {
+      #instagram-grid .insta-block {
+        -ms-flex-preferred-size: 33%;
+            flex-basis: 33%; } }
+    @media (min-width: 1024px) {
+      #instagram-grid .insta-block {
+        -ms-flex-preferred-size: 25%;
+            flex-basis: 25%; } }
+
 .skills-container .skill:nth-child(odd) .skill-level {
   background: repeating-linear-gradient(45deg, rgba(96, 109, 188, 0.5), rgba(96, 109, 188, 0.5) 10px, rgba(70, 82, 152, 0.3) 10px, rgba(70, 82, 152, 0.3) 20px); }
 
