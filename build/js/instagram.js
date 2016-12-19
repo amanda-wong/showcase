@@ -17,7 +17,7 @@ jQuery(document).ready(function($){
 					tags.forEach(function(i){
 						if(i == 'amandaoutandabout') {
 							var imgURL = el.images.standard_resolution.url;
-							var img = '<li><a href="' + imgURL +'"><img src="' + imgURL + '"/></a></li>';
+							var img = '<li class="insta-block"><a href="' + imgURL + '" class="insta-url"><img src="' + imgURL + '" class="insta-img"/></a></li>';
 							instagrid.append(img);
 						}
 					});
