@@ -9,7 +9,11 @@
 		<?php get_header(); ?>
         <section class="canvas">
             <div class="about-copy">
+            </div>
+            <div class="instagram">
+                <ul id="instagram-grid">
 
+                </ul>
             </div>
             <div class="skills-container">
                 <div class="skill">
