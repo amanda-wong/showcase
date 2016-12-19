@@ -38,10 +38,10 @@ gulp.task('styles', function() {
 
 gulp.task('scripts', function(){
     gulp.src('./js/*.js')
-      .pipe(uglify())
-      .pipe(rename({
-        extname: '.min.js'
-      }))
+    //   .pipe(uglify())
+    //   .pipe(rename({
+    //     extname: '.min.js'
+    //   }))
       .pipe(gulp.dest('./build/js'));
 });
 
