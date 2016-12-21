@@ -983,6 +983,8 @@ object {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap; }
   #instagram-grid .insta-block {
+    display: -ms-flexbox;
+    display: flex;
     list-style-type: none;
     -ms-flex-preferred-size: 50%;
         flex-basis: 50%; }
@@ -994,6 +996,25 @@ object {
       #instagram-grid .insta-block {
         -ms-flex-preferred-size: 25%;
             flex-basis: 25%; } }
+
+.modalBackground {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.4);
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+      justify-content: center;
+  -ms-flex-align: center;
+      align-items: center; }
+
+.detailsOpen {
+  width: 500px;
+  height: 450px;
+  background-color: #fff; }
 
 .skills-container .skill:nth-child(odd) .skill-level {
   background: repeating-linear-gradient(45deg, rgba(96, 109, 188, 0.5), rgba(96, 109, 188, 0.5) 10px, rgba(70, 82, 152, 0.3) 10px, rgba(70, 82, 152, 0.3) 20px); }
