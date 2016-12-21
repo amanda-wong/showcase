@@ -32,12 +32,12 @@ jQuery(document).ready(function($){
 					instaDetails.className = 'modalBackground';
 					var detailsWrap = document.createElement('ul');
 					detailsWrap.className = 'detailsOpen';
-
-
-					// detailsWrap.append($(this).href);
+					var imageEl = this.innerHTML;
+					console.log($(this)[0].caption);
+					detailsWrap.innerHTML = '<li>' + imageEl + '</li>';
 					instaDetails.appendChild(detailsWrap);
-
 					document.body.appendChild(instaDetails);
+
 
 				});
 			});
