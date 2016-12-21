@@ -1003,7 +1003,7 @@ object {
   bottom: 0;
   left: 0;
   right: 0;
-  background-color: rgba(0, 0, 0, 0.4);
+  background-color: rgba(0, 0, 0, 0.8);
   display: -ms-flexbox;
   display: flex;
   -ms-flex-pack: center;
@@ -1014,7 +1014,9 @@ object {
 .detailsOpen {
   width: 500px;
   height: 450px;
-  background-color: #fff; }
+  background-color: #fff;
+  padding-left: 0;
+  margin-left: 0; }
 
 .skills-container .skill:nth-child(odd) .skill-level {
   background: repeating-linear-gradient(45deg, rgba(96, 109, 188, 0.5), rgba(96, 109, 188, 0.5) 10px, rgba(70, 82, 152, 0.3) 10px, rgba(70, 82, 152, 0.3) 20px); }
