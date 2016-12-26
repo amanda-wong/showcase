@@ -998,7 +998,7 @@ object {
             flex-basis: 25%; } }
 
 .modalBackground {
-  position: absolute;
+  position: fixed;
   top: 0;
   bottom: 0;
   left: 0;
@@ -1009,14 +1009,26 @@ object {
   -ms-flex-pack: center;
       justify-content: center;
   -ms-flex-align: center;
-      align-items: center; }
+      align-items: center;
+  z-index: 9; }
 
-.detailsOpen {
+.closeModal {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  color: #fff;
+  font-size: 40px;
+  cursor: pointer; }
+
+.showImage {
   width: 500px;
-  height: 450px;
+  height: 500px; }
+
+.showCaption {
+  width: 350px;
+  height: 500px;
   background-color: #fff;
-  padding-left: 0;
-  margin-left: 0; }
+  padding: 10px 25px; }
 
 .skills-container .skill:nth-child(odd) .skill-level {
   background: repeating-linear-gradient(45deg, rgba(96, 109, 188, 0.5), rgba(96, 109, 188, 0.5) 10px, rgba(70, 82, 152, 0.3) 10px, rgba(70, 82, 152, 0.3) 20px); }
