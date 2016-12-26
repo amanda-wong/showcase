@@ -9,6 +9,7 @@ jQuery(document).ready(function($){
 		data: {access_token: token},
 		success: function(data){
 			var instaPosts = data.data;
+			console.log(instaPosts);
 			var instagrid = $(document.getElementById('instagram-grid'));
 			instaPosts.forEach(function(el){
 				var tags = el.tags;
@@ -16,9 +17,14 @@ jQuery(document).ready(function($){
 					tags.forEach(function(i){
 						if(i == 'amandaoutandabout') {
 							var imgURL = el.images.standard_resolution.url;
-							var img = '<li class="insta-block"><a href="' + imgURL + '" class="insta-link"><img src="' + imgURL + '" class="insta-img"/></a></li>';
+							var caption = el.caption.text;
+							var img = '\
+								<li class="insta-block">\
+									<a href="' + imgURL + '" class="insta-link" data-caption="' + caption + '">\
+										<img src="' + imgURL + '" class="insta-img"/>\
+									</a>\
+								</li>';
 							instagrid.append(img);
-
 						}
 					});
 				}
@@ -28,31 +34,40 @@ jQuery(document).ready(function($){
 			imageLink.forEach(function(igLink){
 				igLink.addEventListener('click', function(e){
 					e.preventDefault();
-					var instaDetails = document.createElement('div');
-					instaDetails.className = 'modalBackground';
-					var detailsWrap = document.createElement('ul');
-					detailsWrap.className = 'detailsOpen';
+					var modalBackground = document.createElement('div');
+					modalBackground.className = 'modalBackground';
+					var clearIcon = '<i class="material-icons closeModal" id="closeModal">clear</i>';
+					modalBackground.innerHTML = clearIcon;
+
+					var imageWrap = document.createElement('div');
+					imageWrap.className = 'showImage';
+					var captionWrap = document.createElement('div');
+
+
+					var captionEl = document.createElement('p');
+					var captionText = this.getAttribute('data-caption');
+					captionEl.innerHTML = captionText;
+					captionWrap.appendChild(captionEl);
+					captionWrap.className = 'showCaption';
+
+
 					var imageEl = this.innerHTML;
-					console.log($(this)[0].caption);
-					detailsWrap.innerHTML = '<li>' + imageEl + '</li>';
-					instaDetails.appendChild(detailsWrap);
-					document.body.appendChild(instaDetails);
+					imageWrap.innerHTML = '<div>' + imageEl + '</div>';
 
+					modalBackground.appendChild(imageWrap);
+					modalBackground.appendChild(captionWrap);
+					document.body.appendChild(modalBackground);
+					document.body.style.overflowY = 'hidden';
 
+					var closeModal = document.getElementById('closeModal');
+
+					closeModal.addEventListener('click', function(e){
+						e.preventDefault();
+						document.body.removeChild(modalBackground);
+						document.body.style.overflowY = 'auto';
+					});
 				});
 			});
 		}
 	});
 });
-
-// imgURL = $(this).href;
-// console.log(imgURL);
-// instaPosts.forEach(function(el){
-// 	var imgURL = el.images.standard_resolution.url;
-// 	var fullImage = '<li><img src="' + imgURL + '"></></li>';
-// 	var fullDetails = document.createElement('li');
-// 	var caption = el.caption.text;
-// 	fullDetails.innerHTML = caption;
-// 	detailsWrap.innerHTML = fullImage + fullDetails;
-// 	instaDetails.innerHTML = detailsWrap;
-// });
