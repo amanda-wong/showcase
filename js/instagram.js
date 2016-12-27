@@ -67,10 +67,14 @@ jQuery(document).ready(function($){
 						}
 					});
 					window.addEventListener('click', function(e){
-						var closeIconEl = document.getElementById('closeIcon');
-						if(e.target.contains(detailsWrap) || e.target.contains(closeIconEl)){
+						if(e.target.contains(detailsWrap)){
 							closeModal();
 						}
+					});
+
+					var closeIconEl = document.getElementById('closeIcon');
+					closeIconEl.addEventListener('click', function(){
+						closeModal();
 					});
 
 					function closeModal() {
