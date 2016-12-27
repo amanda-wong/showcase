@@ -41,10 +41,15 @@ function handleApiResponse(data) {
 			tags.forEach(function(tag){
 				if(tag == 'amandaoutandabout') {
 					var imgURL = el.images.standard_resolution.url;
+					var profilePic = el.user.profile_picture;
+					var username = el.user.username;
 					var caption = el.caption.text;
+					var location = el.location.name;
 					var img = '\
 						<li class="insta-block">\
-							<a href="' + imgURL + '" class="insta-link" data-caption="' + caption + '">\
+							<a href="' + imgURL + '" class="insta-link" \
+								data-caption="' + caption + '" data-profilePic="' + profilePic + '"\
+								data-username="' + username +'" data-location="' + location + '">\
 								<img src="' + imgURL + '" class="insta-img"/>\
 							</a>\
 						</li>';
@@ -75,6 +80,7 @@ function registerClickHandlers() {
 			var captionWrap = document.createElement('div');
 			var captionEl = document.createElement('p');
 			var captionText = this.getAttribute('data-caption');
+
 			if(!captionText == '') {
 				captionEl.innerHTML = captionText;
 				captionWrap.appendChild(captionEl);
