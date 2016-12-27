@@ -75,10 +75,11 @@ function registerClickHandlers() {
 			var captionWrap = document.createElement('div');
 			var captionEl = document.createElement('p');
 			var captionText = this.getAttribute('data-caption');
-			captionEl.innerHTML = captionText;
-			captionWrap.appendChild(captionEl);
-			captionWrap.className = 'showCaption';
-
+			if(!captionText == '') {
+				captionEl.innerHTML = captionText;
+				captionWrap.appendChild(captionEl);
+				captionWrap.className = 'showCaption';
+			}
 
 			var imageEl = this.innerHTML;
 			imageWrap.innerHTML = '<div>' + imageEl + '</div>';
