@@ -36,14 +36,15 @@ jQuery(document).ready(function($){
 					e.preventDefault();
 					var modalBackground = document.createElement('div');
 					modalBackground.className = 'modalBackground';
-					var clearIcon = '<i class="material-icons closeModal" id="closeModal">clear</i>';
-					modalBackground.innerHTML = clearIcon;
+					var closeIcon = '<i class="material-icons closeIcon" id="closeIcon">clear</i>';
+					modalBackground.innerHTML = closeIcon;
 
+					var detailsWrap = document.createElement('div');
+					detailsWrap.className = 'detailsWrap';
 					var imageWrap = document.createElement('div');
 					imageWrap.className = 'showImage';
+
 					var captionWrap = document.createElement('div');
-
-
 					var captionEl = document.createElement('p');
 					var captionText = this.getAttribute('data-caption');
 					captionEl.innerHTML = captionText;
@@ -54,18 +55,28 @@ jQuery(document).ready(function($){
 					var imageEl = this.innerHTML;
 					imageWrap.innerHTML = '<div>' + imageEl + '</div>';
 
-					modalBackground.appendChild(imageWrap);
-					modalBackground.appendChild(captionWrap);
+					detailsWrap.appendChild(imageWrap);
+					detailsWrap.appendChild(captionWrap);
+					modalBackground.appendChild(detailsWrap);
 					document.body.appendChild(modalBackground);
 					document.body.style.overflowY = 'hidden';
 
-					var closeModal = document.getElementById('closeModal');
+					window.addEventListener('keydown', function(e){
+						if(e.keyCode == '27') {
+							closeModal();
+						}
+					});
+					window.addEventListener('click', function(e){
+						var closeIconEl = document.getElementById('closeIcon');
+						if(e.target.contains(detailsWrap) || e.target.contains(closeIconEl)){
+							closeModal();
+						}
+					});
 
-					closeModal.addEventListener('click', function(e){
-						e.preventDefault();
+					function closeModal() {
 						document.body.removeChild(modalBackground);
 						document.body.style.overflowY = 'auto';
-					});
+					}
 				});
 			});
 		}
