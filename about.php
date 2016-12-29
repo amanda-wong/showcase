@@ -13,12 +13,21 @@
             <div class="instagram">
 				<h2>Amanda being a human</h2>
                 <ul id="instagram-grid"></ul>
-				<div class="modalBackground">
-					<i id="closeIcon" class="material-icons closeIcon">clear</i>
-					<div class="modalInner">
-						<div id="imageWrap" class="showImage"></div>
-						<div class="showCaption">
+				<div class="modal-background">
+					<i id="close-icon" class="material-icons close-icon">clear</i>
+					<div class="modal-inner">
+						<div id="image-wrap" class="image-wrap"></div>
+						<div class="pic-details">
+							<div class="user-info">
+								<div class="profile-pic">
+								</div>
+								<div class="user-location">
+									<p class="username">missamandawong</p>
+									<p class="location"></p>
+								</div>
+							</div>
 							<p id="caption"></p>
+							<p class="likes"></i></p>
 						</div>
 					</div>
 				</div>
