@@ -1,7 +1,6 @@
-// Instagram AJAX call
-var modalInner;
-var modalBackground;
-
+// Instagram Ajax call and modal script
+var modalBackground = document.querySelector('.modalBackground');
+var modalInner = document.querySelector('.modalInner');
 
 jQuery(document).ready(function($){
 	var token = '36678597.c769071.94c9b79038254991a8af374f77cd33f1';
@@ -27,7 +26,7 @@ window.addEventListener('click', function(e){
 });
 
 function closeModal() {
-	document.body.removeChild(modalBackground);
+	modalBackground.style.display = 'none';
 	document.body.style.overflowY = 'auto';
 }
 
@@ -61,39 +60,27 @@ function handleApiResponse(data) {
 	registerClickHandlers();
 }
 
-
 function registerClickHandlers() {
 	var imageLinks = document.querySelectorAll('.insta-link');
 	imageLinks.forEach(function(link){
 		link.addEventListener('click', function(e){
 			e.preventDefault();
-			modalBackground = document.createElement('div');
-			modalBackground.className = 'modalBackground';
-			var closeIcon = '<i class="material-icons closeIcon" id="closeIcon">clear</i>';
-			modalBackground.innerHTML = closeIcon;
 
-			modalInner = document.createElement('div');
-			modalInner.className = 'detailsWrap';
-			var imageWrap = document.createElement('div');
-			imageWrap.className = 'showImage';
+			var imageEl = this.innerHTML;
+			var imageWrap = document.getElementById('imageWrap');
+			imageWrap.innerHTML = imageEl;
 
-			var captionWrap = document.createElement('div');
-			var captionEl = document.createElement('p');
+			var captionEl = document.getElementById('caption');
 			var captionText = this.getAttribute('data-caption');
 
 			if(!captionText == '') {
 				captionEl.innerHTML = captionText;
-				captionWrap.appendChild(captionEl);
-				captionWrap.className = 'showCaption';
+			} else {
+				var captionWrapEl = document.querySelector('.showCaption');
+				imageWrap.nextElementSibling.remove(captionWrapEl);
 			}
 
-			var imageEl = this.innerHTML;
-			imageWrap.innerHTML = '<div>' + imageEl + '</div>';
-
-			modalInner.appendChild(imageWrap);
-			modalInner.appendChild(captionWrap);
-			modalBackground.appendChild(modalInner);
-			document.body.appendChild(modalBackground);
+			modalBackground.style.display = 'flex';
 			document.body.style.overflowY = 'hidden';
 
 			var closeIconEl = document.getElementById('closeIcon');
