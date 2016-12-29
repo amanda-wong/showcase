@@ -12,9 +12,16 @@
             </div>
             <div class="instagram">
 				<h2>Amanda being a human</h2>
-                <ul id="instagram-grid">
-
-                </ul>
+                <ul id="instagram-grid"></ul>
+				<div class="modalBackground">
+					<i id="closeIcon" class="material-icons closeIcon">clear</i>
+					<div class="modalInner">
+						<div id="imageWrap" class="showImage"></div>
+						<div class="showCaption">
+							<p id="caption"></p>
+						</div>
+					</div>
+				</div>
             </div>
             <div class="skills-container">
                 <div class="skill">
