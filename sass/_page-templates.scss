@@ -123,13 +123,18 @@
 	right: 0;
 	background-color: rgba(0,0,0,0.8);
 	z-index: 9;
-	display: flex;
+	display: none;
 	justify-content: center;
 	align-items: center;
+
 }
 
-.detailsWrap {
+.modalInner { 
 	display: flex;
+	flex-direction: column;
+	@include desktop {
+		flex-direction: row;
+	}
 }
 
 .closeIcon {
@@ -141,15 +146,35 @@
 	cursor: pointer;
 }
 
-.showImage{
-	width: 500px;
-	height: 500px;
+.showImage {
+	width: 385px;
+
+	@include tablet {
+		width: 420px;
+	}
+
+	@include desktop {
+		width: 500px;
+	}
+
 }
-.showCaption {
-	width: 350px;
-	height: 500px;
+
+.showCaption { 			//:TODO change name
+
+	width: 385px;
+	height: auto;
 	background-color: #fff;
 	padding: 10px 25px;
+
+	@include tablet {
+		width: 420px;
+	}
+
+	@include desktop {
+		width: 350px;
+		height: 500px;
+	}
+
 }
 
 //skill-bar-graph
