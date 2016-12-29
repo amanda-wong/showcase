@@ -997,7 +997,7 @@ object {
         -ms-flex-preferred-size: 25%;
             flex-basis: 25%; } }
 
-.modalBackground {
+.modal-background {
   position: fixed;
   top: 0;
   bottom: 0;
@@ -1011,17 +1011,17 @@ object {
   -ms-flex-align: center;
       align-items: center; }
 
-.modalInner {
+.modal-inner {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-direction: column;
       flex-direction: column; }
   @media (min-width: 1024px) {
-    .modalInner {
+    .modal-inner {
       -ms-flex-direction: row;
           flex-direction: row; } }
 
-.closeIcon {
+.close-icon {
   position: absolute;
   top: 20px;
   right: 20px;
@@ -1029,27 +1029,65 @@ object {
   font-size: 40px;
   cursor: pointer; }
 
-.showImage {
+.image-wrap {
   width: 385px; }
   @media (min-width: 600px) {
-    .showImage {
+    .image-wrap {
       width: 420px; } }
   @media (min-width: 1024px) {
-    .showImage {
+    .image-wrap {
       width: 500px; } }
 
-.showCaption {
+.pic-details {
   width: 385px;
   height: auto;
   background-color: #fff;
-  padding: 10px 25px; }
+  padding: 20px 25px;
+  position: relative; }
   @media (min-width: 600px) {
-    .showCaption {
+    .pic-details {
       width: 420px; } }
   @media (min-width: 1024px) {
-    .showCaption {
+    .pic-details {
       width: 350px;
       height: 500px; } }
+
+.profile-pic {
+  width: 55px;
+  margin-right: 15px; }
+  .profile-pic img {
+    width: 60px;
+    border-radius: 50%; }
+
+.user-info {
+  display: -ms-flexbox;
+  display: flex; }
+  .user-info p {
+    margin: 0;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap; }
+  .user-info .username {
+    font-weight: 500; }
+  .user-info .user-location {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+        flex-direction: column;
+    -ms-flex-pack: center;
+        justify-content: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap; }
+
+.likes {
+  display: none;
+  position: absolute;
+  bottom: 0;
+  right: 25px;
+  font-weight: 500; }
+  @media (min-width: 600px) {
+    .likes {
+      display: -ms-flexbox;
+      display: flex; } }
 
 .skills-container .skill:nth-child(odd) .skill-level {
   background: repeating-linear-gradient(45deg, rgba(96, 109, 188, 0.5), rgba(96, 109, 188, 0.5) 10px, rgba(70, 82, 152, 0.3) 10px, rgba(70, 82, 152, 0.3) 20px); }
