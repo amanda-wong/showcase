@@ -27,7 +27,11 @@
 								</div>
 							</div>
 							<p id="caption"></p>
-							<p class="likes"></i></p>
+							<div class="likes-date">
+								<p class="likes"></p>
+								<p class="date-created"></p>
+							</div>
+
 						</div>
 					</div>
 				</div>
