@@ -1,6 +1,6 @@
 // Instagram Ajax call and modal script
-var modalBackground = document.querySelector('.modalBackground');
-var modalInner = document.querySelector('.modalInner');
+var modalBackground = document.querySelector('.modal-background');
+var modalInner = document.querySelector('.modal-inner');
 
 jQuery(document).ready(function($){
 	var token = '36678597.c769071.94c9b79038254991a8af374f77cd33f1';
@@ -41,14 +41,15 @@ function handleApiResponse(data) {
 				if(tag == 'amandaoutandabout') {
 					var imgURL = el.images.standard_resolution.url;
 					var profilePic = el.user.profile_picture;
-					var username = el.user.username;
 					var caption = el.caption.text;
 					var location = el.location.name;
+					var likesCount = el.likes.count;
+					var dateCreated = el.created_time;
 					var img = '\
 						<li class="insta-block">\
 							<a href="' + imgURL + '" class="insta-link" \
 								data-caption="' + caption + '" data-profilePic="' + profilePic + '"\
-								data-username="' + username +'" data-location="' + location + '">\
+								" data-likes="' + likesCount + '" data-location="' + location + '">\
 								<img src="' + imgURL + '" class="insta-img"/>\
 							</a>\
 						</li>';
@@ -65,9 +66,8 @@ function registerClickHandlers() {
 	imageLinks.forEach(function(link){
 		link.addEventListener('click', function(e){
 			e.preventDefault();
-
 			var imageEl = this.innerHTML;
-			var imageWrap = document.getElementById('imageWrap');
+			var imageWrap = document.getElementById('image-wrap');
 			imageWrap.innerHTML = imageEl;
 
 			var captionEl = document.getElementById('caption');
@@ -76,14 +76,26 @@ function registerClickHandlers() {
 			if(!captionText == '') {
 				captionEl.innerHTML = captionText;
 			} else {
-				var captionWrapEl = document.querySelector('.showCaption');
+				var captionWrapEl = document.querySelector('.pic-details');
 				imageWrap.nextElementSibling.remove(captionWrapEl);
 			}
+
+			var profilePicEl = document.querySelector('.profile-pic');
+			var profilePic = this.getAttribute('data-profilePic');
+			profilePicEl.innerHTML = '<img src="' + profilePic + '">';
+
+			var locationEl = document.querySelector('.location');
+			var locationText = this.getAttribute('data-location');
+			locationEl.innerHTML = locationText;
+
+			var likesEl = document.querySelector('.likes');
+			var likesNum = this.getAttribute('data-likes');
+			likesEl.innerHTML = likesNum + ' likes';
 
 			modalBackground.style.display = 'flex';
 			document.body.style.overflowY = 'hidden';
 
-			var closeIconEl = document.getElementById('closeIcon');
+			var closeIconEl = document.getElementById('close-icon');
 			closeIconEl.addEventListener('click', function(){
 				closeModal();
 			});
