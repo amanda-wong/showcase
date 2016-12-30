@@ -150,7 +150,7 @@
 }
 
 .image-wrap {
-	width: 385px;
+	width: 350px;
 
 	@include tablet {
 		width: 420px;
@@ -163,12 +163,16 @@
 }
 
 .pic-details {
-	width: 385px;
+	width: 350px;
 	height: auto;
 	background-color: #fff;
 	padding: 20px 25px;
-	position: relative;
-
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	p {
+		margin: 0;
+	}
 	@include tablet {
 		width: 420px;
 	}
@@ -190,13 +194,12 @@
 
 .user-info {
 	display: flex;
-	p {
-		margin: 0;
-		flex-wrap: wrap;
-	}
+	margin-bottom: 20px;
+
 	.username {
 		font-weight: 500;
 	}
+
 	.user-location {
 		display: flex;
 		flex-direction: column;
@@ -205,15 +208,26 @@
 	}
 }
 
-.likes {
+.likes-date {
 	display: none;
-	position: absolute;
-	bottom: 0;
-	right: 25px;
+	justify-content: space-between;
+	@include tablet {
+		margin-top: 20px;
+		display: flex;
+	}
+}
+
+.likes {
 	font-weight: 500;
 	@include tablet {
 		display: flex;
 	}
+}
+
+.dateCreated {
+	display: flex;
+	font-style: italic;
+	align-self: flex-end;
 }
 
 //skill-bar-graph

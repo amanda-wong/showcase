@@ -1030,7 +1030,7 @@ object {
   cursor: pointer; }
 
 .image-wrap {
-  width: 385px; }
+  width: 350px; }
   @media (min-width: 600px) {
     .image-wrap {
       width: 420px; } }
@@ -1039,11 +1039,18 @@ object {
       width: 500px; } }
 
 .pic-details {
-  width: 385px;
+  width: 350px;
   height: auto;
   background-color: #fff;
   padding: 20px 25px;
-  position: relative; }
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  -ms-flex-pack: justify;
+      justify-content: space-between; }
+  .pic-details p {
+    margin: 0; }
   @media (min-width: 600px) {
     .pic-details {
       width: 420px; } }
@@ -1061,11 +1068,8 @@ object {
 
 .user-info {
   display: -ms-flexbox;
-  display: flex; }
-  .user-info p {
-    margin: 0;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap; }
+  display: flex;
+  margin-bottom: 20px; }
   .user-info .username {
     font-weight: 500; }
   .user-info .user-location {
@@ -1078,16 +1082,29 @@ object {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap; }
 
-.likes {
+.likes-date {
   display: none;
-  position: absolute;
-  bottom: 0;
-  right: 25px;
+  -ms-flex-pack: justify;
+      justify-content: space-between; }
+  @media (min-width: 600px) {
+    .likes-date {
+      margin-top: 20px;
+      display: -ms-flexbox;
+      display: flex; } }
+
+.likes {
   font-weight: 500; }
   @media (min-width: 600px) {
     .likes {
       display: -ms-flexbox;
       display: flex; } }
+
+.dateCreated {
+  display: -ms-flexbox;
+  display: flex;
+  font-style: italic;
+  -ms-flex-item-align: end;
+      align-self: flex-end; }
 
 .skills-container .skill:nth-child(odd) .skill-level {
   background: repeating-linear-gradient(45deg, rgba(96, 109, 188, 0.5), rgba(96, 109, 188, 0.5) 10px, rgba(70, 82, 152, 0.3) 10px, rgba(70, 82, 152, 0.3) 20px); }
