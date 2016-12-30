@@ -103,8 +103,6 @@ function registerClickHandlers() {
 			var fullDateCreated = monthCreated + ' ' + dayCreated + ', ' + yearCreated;
 			dateEl.innerText = fullDateCreated;
 
-			console.log(monthCreated);
-
 			modalBackground.style.display = 'flex';
 			document.body.style.overflowY = 'hidden';
 
