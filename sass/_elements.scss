@@ -16,7 +16,7 @@ html {
 body {
 	background: $color__background-body; /* Fallback for when there is no custom background color defined. */
 	font-family: $font__roboto;
-	font-size: 15px;
+	font-size: 16px;
 	color: $color__dark-grey;
 	.canvas {
 		@include desktop {
