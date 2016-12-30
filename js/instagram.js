@@ -49,7 +49,8 @@ function handleApiResponse(data) {
 						<li class="insta-block">\
 							<a href="' + imgURL + '" class="insta-link" \
 								data-caption="' + caption + '" data-profilePic="' + profilePic + '"\
-								" data-likes="' + likesCount + '" data-location="' + location + '">\
+								data-dateCreated="' + dateCreated + '" data-likes="' + likesCount + '"\
+								data-location="' + location + '">\
 								<img src="' + imgURL + '" class="insta-img"/>\
 							</a>\
 						</li>';
@@ -70,7 +71,7 @@ function registerClickHandlers() {
 			var imageWrap = document.getElementById('image-wrap');
 			imageWrap.innerHTML = imageEl;
 
-			var captionEl = document.getElementById('caption');
+			var captionEl = document.querySelector('.caption');
 			var captionText = this.getAttribute('data-caption');
 
 			if(!captionText == '') {
@@ -91,6 +92,18 @@ function registerClickHandlers() {
 			var likesEl = document.querySelector('.likes');
 			var likesNum = this.getAttribute('data-likes');
 			likesEl.innerHTML = likesNum + ' likes';
+
+			var dateEl = document.querySelector('.date-created');
+			var dateString = this.getAttribute('data-dateCreated');
+			var dateCreated = new Date(parseInt(dateString) * 1000);
+			var months = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
+			var monthCreated = months[dateCreated.getMonth()];
+			var dayCreated = dateCreated.getDate();
+			var yearCreated = dateCreated.getFullYear();
+			var fullDateCreated = monthCreated + ' ' + dayCreated + ', ' + yearCreated;
+			dateEl.innerText = fullDateCreated;
+
+			console.log(monthCreated);
 
 			modalBackground.style.display = 'flex';
 			document.body.style.overflowY = 'hidden';
