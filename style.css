@@ -319,7 +319,7 @@ body {
   background: #fff;
   /* Fallback for when there is no custom background color defined. */
   font-family: "roboto", sans-serif;
-  font-size: 15px;
+  font-size: 16px;
   color: #696969; }
   @media (min-width: 1024px) {
     body .canvas {
