@@ -9,32 +9,33 @@
 		<?php get_header(); ?>
         <section class="canvas">
             <div class="about-copy">
+				<p><?php echo CFS()->get( 'about_me' ); ?></p>
             </div>
             <div class="instagram">
 				<h2>Amanda being a human</h2>
                 <ul id="instagram-grid"></ul>
-				<div class="modal-background">
+				<div class="modal-background"> <!-- modal start -->
 					<i id="close-icon" class="material-icons close-icon">clear</i>
 					<div class="modal-inner">
 						<div id="image-wrap" class="image-wrap"></div>
 						<div class="pic-details">
-							<div class="user-info">
-								<div class="profile-pic">
+							<div class="user-caption-wrap">
+								<div class="user-info">
+									<div class="profile-pic"></div>
+									<div class="user-location">
+										<p class="username">missamandawong</p>
+										<p class="location"></p>
+									</div>
 								</div>
-								<div class="user-location">
-									<p class="username">missamandawong</p>
-									<p class="location"></p>
-								</div>
+								<p class="caption"></p>
 							</div>
-							<p id="caption"></p>
 							<div class="likes-date">
 								<p class="likes"></p>
 								<p class="date-created"></p>
 							</div>
-
 						</div>
 					</div>
-				</div>
+				</div><!-- modal end -->
             </div>
             <div class="skills-container">
                 <div class="skill">
