@@ -40,17 +40,18 @@ function handleApiResponse(data) {
 			tags.forEach(function(tag){
 				if(tag == 'amandaoutandabout') {
 					var imgURL = el.images.standard_resolution.url;
+					var imgWidth = el.images.standard_resolution.width;
 					var profilePic = el.user.profile_picture;
 					var caption = el.caption.text;
-					var location = el.location.name;
+					var location = el.location ? el.location.name : '';
 					var likesCount = el.likes.count;
 					var dateCreated = el.created_time;
 					var img = '\
 						<li class="insta-block">\
 							<a href="' + imgURL + '" class="insta-link" \
-								data-caption="' + caption + '" data-profilePic="' + profilePic + '"\
-								data-dateCreated="' + dateCreated + '" data-likes="' + likesCount + '"\
-								data-location="' + location + '">\
+								data-imageWidth="' + imgWidth + '"data-caption="' + caption + '" \
+								data-profilePic="' + profilePic + '" data-dateCreated="' + dateCreated + '" \
+								data-likes="' + likesCount + '" data-location="' + location + '">\
 								<img src="' + imgURL + '" class="insta-img"/>\
 							</a>\
 						</li>';
@@ -91,7 +92,10 @@ function registerClickHandlers() {
 
 			var likesEl = document.querySelector('.likes');
 			var likesNum = this.getAttribute('data-likes');
-			likesEl.innerHTML = likesNum + ' likes';
+
+			if(!likesNum == 0) {
+				likesEl.innerHTML = likesNum + ' likes';
+			}
 
 			var dateEl = document.querySelector('.date-created');
 			var dateString = this.getAttribute('data-dateCreated');
