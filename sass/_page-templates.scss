@@ -82,7 +82,36 @@
 
 .nav-links {
     display: flex;
-    justify-content: space-between;
+	flex-direction: column;
+	@include tablet {
+		flex-direction: row;
+		justify-content: space-between;
+	}
+}
+
+.nav-previous {
+	margin: 0 auto 35px;
+	@include tablet {
+		margin: 0;
+	}
+}
+
+.nav-next {
+	margin: 0 auto;
+	@include tablet {
+		margin: 0;
+	}
+}
+
+
+.nav-previous a,
+.nav-next a  {
+
+	color: $color__dark-grey;
+	border: 1px solid $color__dark-grey;
+	padding: 10px 15px;
+	text-transform: uppercase;
+	font-size: 14px;
 }
 
 /* (4) About Page */
