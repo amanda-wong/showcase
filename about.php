@@ -130,7 +130,11 @@
 					<div class="user-info">
 						<div class="profile-pic"></div>
 						<div class="user-location">
-							<p class="username">missamandawong</p>
+							<a class="username"
+								href="https://www.instagram.com/missamandawong/"
+								target="_blank">
+									missamandawong
+							</a>
 							<p class="location"></p>
 						</div>
 					</div>

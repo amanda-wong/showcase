@@ -1059,8 +1059,6 @@ object {
       flex-wrap: wrap; }
   #instagram-grid .insta-block {
     display: block;
-    -ms-flex-pack: start;
-        justify-content: flex-start;
     list-style-type: none;
     -ms-flex-preferred-size: 33%;
         flex-basis: 33%; }
@@ -1148,7 +1146,8 @@ object {
   display: flex;
   margin-bottom: 20px; }
   .user-info .username {
-    font-weight: 500; }
+    font-weight: 500;
+    color: #696969; }
   .user-info .user-location {
     display: -ms-flexbox;
     display: flex;

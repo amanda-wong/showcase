@@ -202,7 +202,6 @@
 
 	.insta-block {
 		display: block;
-		justify-content: flex-start;
 		list-style-type: none;
 		flex-basis: 33%;
 
@@ -304,6 +303,7 @@
 
 	.username {
 		font-weight: 500;
+		color: $color__dark-grey;
 	}
 
 	.user-location {
