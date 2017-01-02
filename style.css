@@ -996,6 +996,10 @@ object {
       #instagram-grid .insta-block {
         -ms-flex-preferred-size: 25%;
             flex-basis: 25%; } }
+  #instagram-grid .insta-img {
+    opacity: 0.6; }
+    #instagram-grid .insta-img:hover, #instagram-grid .insta-img:active {
+      opacity: 1; }
 
 .modal-background {
   position: fixed;
@@ -1036,7 +1040,9 @@ object {
       width: 420px; } }
   @media (min-width: 1024px) {
     .image-wrap {
-      width: 500px; } }
+      width: 500px; }
+      .image-wrap img {
+        width: 100%; } }
 
 .pic-details {
   width: 350px;

@@ -111,12 +111,16 @@
 			flex-basis: 25%;
 		}
 	}
+
+	.insta-img {
+		opacity: 0.6;
+		&:hover, &:active {
+			opacity: 1;
+		}
+	}
 }
 
-
-
-
-// InstaDetails
+// Modal styles
 
 .modal-background {
 	position: fixed;
@@ -129,7 +133,6 @@
 	display: none;
 	justify-content: center;
 	align-items: center;
-
 }
 
 .modal-inner {
@@ -158,9 +161,14 @@
 
 	@include desktop {
 		width: 500px;
-	}
+		img {
+			width: 100%;
+		}
 
+	}
 }
+
+
 
 .pic-details {
 	width: 350px;
