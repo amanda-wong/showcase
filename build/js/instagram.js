@@ -30,51 +30,59 @@ function closeModal() {
 	document.body.style.overflowY = 'auto';
 }
 
-function handleApiResponse(data) {
-	var instaPosts = data.data;
-	console.log(instaPosts);
+function handleApiResponse(response) {
+	var instaPosts = response.data;
 	var instagrid = jQuery(document.getElementById('instagram-grid'));
-	instaPosts.forEach(function(el){
-		var tags = el.tags;
-		if(tags) {
-			tags.forEach(function(tag){
-				if(tag == 'amandaoutandabout') {
-					var imgURL = el.images.standard_resolution.url;
-					var imgWidth = el.images.standard_resolution.width;
-					var profilePic = el.user.profile_picture;
-					var caption = el.caption.text;
-					var location = el.location ? el.location.name : '';
-					var likesCount = el.likes.count;
-					var dateCreated = el.created_time;
-					var img = '\
-						<li class="insta-block">\
-							<a href="' + imgURL + '" class="insta-link" \
-								data-imageWidth="' + imgWidth + '"data-caption="' + caption + '" \
-								data-profilePic="' + profilePic + '" data-dateCreated="' + dateCreated + '" \
-								data-likes="' + likesCount + '" data-location="' + location + '">\
-								<img src="' + imgURL + '" class="insta-img"/>\
-							</a>\
-						</li>';
-					instagrid.append(img);
-				}
-			});
+
+	//Filter posts with tags amandaoutandabout
+	instaPosts = instaPosts.filter(function(el){
+		if(el.tags && el.tags.indexOf('amandaoutandabout') >= 0) {
+			return true;
 		}
 	});
-	registerClickHandlers();
+
+	console.log(instaPosts);
+
+	//Limit post count to 12
+	instaPosts = instaPosts.slice(0,12);
+	instaPosts.forEach(function(el){
+		var imgURL = el.images.standard_resolution.url;
+		var imgWidth = el.images.standard_resolution.width;
+		var profilePic = el.user.profile_picture;
+		var caption = el.caption.text;
+		var location = el.location ? el.location.name : '';
+		var likesCount = el.likes.count;
+		var dateCreated = el.created_time;
+		var img = '\
+			<li class="insta-block">\
+				<a href="' + imgURL + '" class="insta-link" \
+					data-imageWidth="' + imgWidth + '"data-caption="' + caption + '" \
+					data-profilePic="' + profilePic + '" data-dateCreated="' + dateCreated + '" \
+					data-likes="' + likesCount + '" data-location="' + location + '">\
+					<img src="' + imgURL + '" class="insta-img"/>\
+				</a>\
+			</li>';
+
+		instagrid.append(img);
+	});
+	registerModalImageViewer();
 }
 
-function registerClickHandlers() {
+function registerModalImageViewer() {
 	var imageLinks = document.querySelectorAll('.insta-link');
+
 	imageLinks.forEach(function(link){
 		link.addEventListener('click', function(e){
 			e.preventDefault();
+
+			//Create wrapper around image
 			var imageEl = this.innerHTML;
 			var imageWrap = document.getElementById('image-wrap');
 			imageWrap.innerHTML = imageEl;
 
+			//Set image description
 			var captionEl = document.querySelector('.caption');
 			var captionText = this.getAttribute('data-caption');
-
 			if(!captionText == '') {
 				captionEl.innerHTML = captionText;
 			} else {
@@ -82,24 +90,27 @@ function registerClickHandlers() {
 				imageWrap.nextElementSibling.remove(captionWrapEl);
 			}
 
+			//Add profile image
 			var profilePicEl = document.querySelector('.profile-pic');
 			var profilePic = this.getAttribute('data-profilePic');
 			profilePicEl.innerHTML = '<img src="' + profilePic + '">';
 
+			//Set location
 			var locationEl = document.querySelector('.location');
 			var locationText = this.getAttribute('data-location');
 			locationEl.innerHTML = locationText;
 
+			//Set likes
 			var likesEl = document.querySelector('.likes');
 			var likesNum = this.getAttribute('data-likes');
-
 			if(!likesNum == 0) {
 				likesEl.innerHTML = likesNum + ' likes';
 			}
 
+			//Build image date
 			var dateEl = document.querySelector('.date-created');
 			var dateString = this.getAttribute('data-dateCreated');
-			var dateCreated = new Date(parseInt(dateString) * 1000);
+			var dateCreated = new Date(parseInt(dateString) * 1000); // Instagram api stores in sec not ms
 			var months = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
 			var monthCreated = months[dateCreated.getMonth()];
 			var dayCreated = dateCreated.getDate();
@@ -107,8 +118,9 @@ function registerClickHandlers() {
 			var fullDateCreated = monthCreated + ' ' + dayCreated + ', ' + yearCreated;
 			dateEl.innerText = fullDateCreated;
 
+			//Open and close modal
 			modalBackground.style.display = 'flex';
-			document.body.style.overflowY = 'hidden';
+			document.body.style.overflowY = 'hidden';  //Prevent scroll
 
 			var closeIconEl = document.getElementById('close-icon');
 			closeIconEl.addEventListener('click', function(){
