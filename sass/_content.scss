@@ -22,9 +22,12 @@
 }
 
 .page-content,
-.entry-content,
 .entry-summary {
 	margin: $base__space-unit 0 0;
+}
+
+.entry-content {
+	margin: 50px 0 70px;
 }
 
 .page-links {
