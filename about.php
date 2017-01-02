@@ -8,12 +8,12 @@
 	<main id="main" class="site-main" role="main">
 		<?php get_header(); ?>
         <section class="canvas">
-			<h1>Meet Amanda</h1>
+			<h1>Hello I'm amanda</h1>
             <div class="about-copy">
 				<p><?php echo CFS()->get( 'about_me' ); ?></p>
             </div>
             <div class="instagram">
-				<h2>Amanda being a human</h2>
+				<h2> Being a human</h2>
                 <ul id="instagram-grid"></ul>
 				<div class="modal-background"> <!-- modal start (position:fixed)-->
 					<i id="close-icon" class="material-icons close-icon">clear</i>
