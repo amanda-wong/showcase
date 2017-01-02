@@ -925,13 +925,13 @@ object {
     .content-area {
       padding: 100px; } }
   .content-area .canvas {
-    padding: 30px 0; }
+    padding: 30px 0 0; }
     @media (min-width: 600px) {
       .content-area .canvas {
-        padding: 50px 0; } }
+        padding: 50px 0 0; } }
     @media (min-width: 1024px) {
       .content-area .canvas {
-        padding: 45px 0; } }
+        padding: 45px 0 0; } }
 
 /*(0.1) 404 Page */
 @media (min-width: 1024px) {
@@ -1000,6 +1000,53 @@ object {
   font-size: 14px; }
 
 /* (4) About Page */
+.skills-container .skill:nth-child(odd) .skill-level {
+  background: repeating-linear-gradient(45deg, rgba(96, 109, 188, 0.5), rgba(96, 109, 188, 0.5) 10px, rgba(70, 82, 152, 0.3) 10px, rgba(70, 82, 152, 0.3) 20px); }
+
+.skills-container .skill:nth-child(even) .skill-level {
+  background: repeating-linear-gradient(45deg, #FFA500, #FFA500 10px, #ffc966 10px, #ffc966 20px); }
+
+.skill {
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 10px; }
+
+.skill-label {
+  background-color: #fff;
+  padding: 5px 10px 5px 0;
+  text-align: right;
+  min-width: 115px;
+  z-index: 1; }
+
+.skill-bar {
+  background-color: #e6e6e6;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%; }
+  .skill-bar .skill-level {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+        align-items: center;
+    width: 0%;
+    position: relative;
+    transition: width 2s ease-in-out; }
+    .skill-bar .skill-level:after {
+      position: absolute;
+      right: 10px;
+      color: #000;
+      content: attr(data-percent);
+      text-shadow: 1px 1px white; }
+
+.download-resume {
+  margin-top: 40px;
+  text-align: center;
+  font-weight: 700; }
+  .download-resume a {
+    color: #696969; }
+    .download-resume a:hover {
+      font-weight: 500; }
+
 .instagram h2 {
   text-align: center; }
 
@@ -1011,22 +1058,19 @@ object {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap; }
   #instagram-grid .insta-block {
-    display: -ms-flexbox;
-    display: flex;
+    display: block;
+    -ms-flex-pack: start;
+        justify-content: flex-start;
     list-style-type: none;
-    -ms-flex-preferred-size: 50%;
-        flex-basis: 50%; }
+    -ms-flex-preferred-size: 33%;
+        flex-basis: 33%; }
     @media (min-width: 600px) {
       #instagram-grid .insta-block {
-        -ms-flex-preferred-size: 33%;
-            flex-basis: 33%; } }
-    @media (min-width: 1024px) {
-      #instagram-grid .insta-block {
-        -ms-flex-preferred-size: 25%;
-            flex-basis: 25%; } }
+        -ms-flex-preferred-size: 16.66666667%;
+            flex-basis: 16.66666667%; } }
   #instagram-grid .insta-img {
     opacity: 0.6; }
-    #instagram-grid .insta-img:hover, #instagram-grid .insta-img:active {
+    #instagram-grid .insta-img:hover {
       opacity: 1; }
 
 .modal-background {
@@ -1074,7 +1118,6 @@ object {
 
 .pic-details {
   width: 350px;
-  height: auto;
   background-color: #fff;
   padding: 20px 25px;
   display: -ms-flexbox;
@@ -1139,53 +1182,6 @@ object {
   font-style: italic;
   -ms-flex-item-align: end;
       align-self: flex-end; }
-
-.skills-container .skill:nth-child(odd) .skill-level {
-  background: repeating-linear-gradient(45deg, rgba(96, 109, 188, 0.5), rgba(96, 109, 188, 0.5) 10px, rgba(70, 82, 152, 0.3) 10px, rgba(70, 82, 152, 0.3) 20px); }
-
-.skills-container .skill:nth-child(even) .skill-level {
-  background: repeating-linear-gradient(45deg, #FFA500, #FFA500 10px, #ffc966 10px, #ffc966 20px); }
-
-.skill {
-  display: -ms-flexbox;
-  display: flex;
-  margin-bottom: 10px; }
-
-.skill-label {
-  background-color: #fff;
-  padding: 5px 10px 5px 0;
-  text-align: right;
-  min-width: 115px;
-  z-index: 1; }
-
-.skill-bar {
-  background-color: #e6e6e6;
-  display: -ms-flexbox;
-  display: flex;
-  width: 100%; }
-  .skill-bar .skill-level {
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-align: center;
-        align-items: center;
-    width: 0%;
-    position: relative;
-    transition: width 2s ease-in-out; }
-    .skill-bar .skill-level:after {
-      position: absolute;
-      right: 10px;
-      color: #000;
-      content: attr(data-percent);
-      text-shadow: 1px 1px white; }
-
-.download-resume {
-  margin-top: 40px;
-  text-align: center;
-  font-weight: 700; }
-  .download-resume a {
-    color: #696969; }
-    .download-resume a:hover {
-      font-weight: 500; }
 
 /* (5) Contact Page */
 .page-template-contact .canvas {
