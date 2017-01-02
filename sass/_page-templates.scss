@@ -204,6 +204,12 @@
 		display: block;
 		list-style-type: none;
 		flex-basis: 33%;
+		opacity: 0.6;
+		transition: opacity 0.5s ease-in-out;
+		&:hover {
+			opacity: 1;
+
+		}
 
 		@include tablet {
 			flex-basis: 25%;
@@ -215,12 +221,7 @@
 	}
 
 	.insta-img {
-		opacity: 0.6;
-		transition: opacity 0.8s;
-		&:hover {
-			opacity: 1;
 
-		}
 	}
 }
 

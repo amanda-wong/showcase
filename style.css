@@ -1061,7 +1061,11 @@ object {
     display: block;
     list-style-type: none;
     -ms-flex-preferred-size: 33%;
-        flex-basis: 33%; }
+        flex-basis: 33%;
+    opacity: 0.6;
+    transition: opacity 0.5s ease-in-out; }
+    #instagram-grid .insta-block:hover {
+      opacity: 1; }
     @media (min-width: 600px) {
       #instagram-grid .insta-block {
         -ms-flex-preferred-size: 25%;
@@ -1070,11 +1074,6 @@ object {
       #instagram-grid .insta-block {
         -ms-flex-preferred-size: 16.6666666667%;
             flex-basis: 16.6666666667%; } }
-  #instagram-grid .insta-img {
-    opacity: 0.6;
-    transition: opacity 0.8s; }
-    #instagram-grid .insta-img:hover {
-      opacity: 1; }
 
 .modal-background {
   position: fixed;
