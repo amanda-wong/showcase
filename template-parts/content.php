@@ -17,7 +17,7 @@
 			esc_url( get_permalink() ) ), '</a></h2>' ); ?>
 	  		<?php red_starter_posted_on(); ?>
   		</div>
-
+		<?php the_excerpt(); ?>
 		<?php endif; ?>
 	</header><!-- .entry-header -->
 </article><!-- #post-## -->
