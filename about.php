@@ -114,34 +114,35 @@
             <div class="download-resume">
                 <a>Download Resume</a>
             </div>
-			<div class="instagram">
-				<h2> Being a human</h2>
-                <ul id="instagram-grid"></ul>
-				<div class="modal-background"> <!-- modal start (position:fixed)-->
-					<i id="close-icon" class="material-icons close-icon">clear</i>
-					<div class="modal-inner">
-						<div id="image-wrap" class="image-wrap"></div>
-						<div class="pic-details">
-							<div class="user-caption-wrap">
-								<div class="user-info">
-									<div class="profile-pic"></div>
-									<div class="user-location">
-										<p class="username">missamandawong</p>
-										<p class="location"></p>
-									</div>
-								</div>
-								<p class="caption"></p>
-							</div>
-							<div class="likes-date">
-								<p class="likes"></p>
-								<p class="date-created"></p>
-							</div>
-						</div>
-					</div>
-				</div><!-- modal end -->
-            </div>
+
         </section>
 	</main><!-- #main -->
 </div><!-- #primary -->
+<div class="instagram">
+	<h2> Being a human</h2>
+	<ul id="instagram-grid"></ul>
+	<div class="modal-background"> <!-- modal start (position:fixed)-->
+		<i id="close-icon" class="material-icons close-icon">clear</i>
+		<div class="modal-inner">
+			<div id="image-wrap" class="image-wrap"></div>
+			<div class="pic-details">
+				<div class="user-caption-wrap">
+					<div class="user-info">
+						<div class="profile-pic"></div>
+						<div class="user-location">
+							<p class="username">missamandawong</p>
+							<p class="location"></p>
+						</div>
+					</div>
+					<p class="caption"></p>
+				</div>
+				<div class="likes-date">
+					<p class="likes"></p>
+					<p class="date-created"></p>
+				</div>
+			</div>
+		</div>
+	</div><!-- modal end -->
+</div>
 
 <?php get_footer(); ?>
