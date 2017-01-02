@@ -54,13 +54,10 @@ function handleApiResponse(response) {
 		var likesCount = el.likes.count;
 		var dateCreated = el.created_time;
 		var img = '\
-			<li class="insta-block">\
-				<a href="' + imgURL + '" class="insta-link" \
-					data-imageWidth="' + imgWidth + '"data-caption="' + caption + '" \
-					data-profilePic="' + profilePic + '" data-dateCreated="' + dateCreated + '" \
-					data-likes="' + likesCount + '" data-location="' + location + '">\
+			<li class="insta-block" data-imageWidth="' + imgWidth + '"data-caption="' + caption + '" \
+				data-profilePic="' + profilePic + '" data-dateCreated="' + dateCreated + '" \
+				data-likes="' + likesCount + '" data-location="' + location + '">\
 					<img src="' + imgURL + '" class="insta-img"/>\
-				</a>\
 			</li>';
 
 		instagrid.append(img);
@@ -69,9 +66,9 @@ function handleApiResponse(response) {
 }
 
 function registerModalImageViewer() {
-	var imageLinks = document.querySelectorAll('.insta-link');
+	var imageBlock = document.querySelectorAll('.insta-block');
 
-	imageLinks.forEach(function(link){
+	imageBlock.forEach(function(link){
 		link.addEventListener('click', function(e){
 			e.preventDefault();
 
