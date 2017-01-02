@@ -1064,10 +1064,15 @@ object {
         flex-basis: 33%; }
     @media (min-width: 600px) {
       #instagram-grid .insta-block {
-        -ms-flex-preferred-size: 16.66666667%;
-            flex-basis: 16.66666667%; } }
+        -ms-flex-preferred-size: 25%;
+            flex-basis: 25%; } }
+    @media (min-width: 1024px) {
+      #instagram-grid .insta-block {
+        -ms-flex-preferred-size: 16.6666666667%;
+            flex-basis: 16.6666666667%; } }
   #instagram-grid .insta-img {
-    opacity: 0.6; }
+    opacity: 0.6;
+    transition: opacity 0.8s; }
     #instagram-grid .insta-img:hover {
       opacity: 1; }
 

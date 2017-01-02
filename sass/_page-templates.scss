@@ -206,13 +206,17 @@
 		flex-basis: 33%;
 
 		@include tablet {
-			flex-basis: 16.66666667%;
+			flex-basis: 25%;
+		}
+
+		@include desktop {
+			flex-basis: 16.6666666667%;
 		}
 	}
 
 	.insta-img {
 		opacity: 0.6;
-
+		transition: opacity 0.8s;
 		&:hover {
 			opacity: 1;
 
