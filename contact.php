@@ -18,6 +18,7 @@
             </div>
             <?php echo do_shortcode( '[contact-form-7 id="64" title="Contact Form"]' ); ?>
         </section>
-        <?php get_footer(); ?>
+
 	</main><!-- #main -->
 </div><!-- #primary -->
+<?php get_footer(); ?>
