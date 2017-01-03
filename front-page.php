@@ -2,8 +2,8 @@
 	<main id="main" class="site-main" role="main">
 			<?php get_header(); ?>
 			<section class="canvas">
-				Greetings human, you've come to the right place.
-				Come stay a while and enjoy this open space.
+				<p>Hello</p>
+				<p>I'm Amanda and I'm a front-end developer</p>
 			</section>
 	</main><!-- #main -->
 </div><!-- #primary -->

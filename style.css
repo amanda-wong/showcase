@@ -947,13 +947,38 @@ object {
 
 /* (1) Home Page */
 .home .canvas {
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-pack: center;
-      justify-content: center;
-  -ms-flex-align: center;
-      align-items: center;
-  height: 100vh; }
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: 700; }
+  .home .canvas p:first-child {
+    font-size: 110px;
+    margin: 0 auto;
+    line-height: 120px; }
+  .home .canvas p:last-child {
+    font-size: 15px;
+    letter-spacing: 11px;
+    line-height: 20px;
+    margin: 0 auto; }
+  @media (min-width: 600px) {
+    .home .canvas p:first-child {
+      font-size: 200px;
+      margin: 0;
+      line-height: 220px; }
+    .home .canvas p:last-child {
+      font-size: 16px;
+      letter-spacing: 11px;
+      line-height: 20px;
+      margin: 0; } }
+  @media (min-width: 1024px) {
+    .home .canvas p:first-child {
+      font-size: 270px;
+      margin: 0;
+      line-height: 270px; }
+    .home .canvas p:last-child {
+      font-size: 16px;
+      letter-spacing: 11px;
+      line-height: 20px;
+      margin: 0; } }
 
 /* (3) Blog Archive Page */
 /* (3.1) Single Blog Post Page */
@@ -1051,7 +1076,7 @@ object {
   text-align: center; }
 
 #instagram-grid {
-  margin-left: 0;
+  margin: 0 0 0;
   padding-left: 0;
   display: -ms-flexbox;
   display: flex;
