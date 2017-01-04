@@ -946,19 +946,57 @@ object {
       margin-top: 30px; } }
 
 /* (1) Home Page */
+.home .main-navigation {
+  margin: 50px 30px 30px; }
+  @media (min-width: 1024px) {
+    .home .main-navigation {
+      margin: 100px auto 20px;
+      max-width: 1000px; } }
+
+.home .content-area {
+  padding: 0;
+  max-width: none; }
+
+.home .site-main {
+  position: relative; }
+  .home .site-main .hp-hero-wrap {
+    opacity: 0.6;
+    height: 63vh;
+    background-image: url("../assets/images/homepage_hero.jpg");
+    background-size: cover;
+    background-position: center; }
+
 .home .canvas {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+      justify-content: center;
+  -ms-flex-align: center;
+      align-items: center;
+  padding: 0;
+  margin: 0 auto;
   text-transform: uppercase;
   text-align: center;
-  font-weight: 700; }
+  font-weight: 700;
+  height: 60vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  color: #fff; }
   .home .canvas p:first-child {
     font-size: 110px;
     margin: 0 auto;
-    line-height: 120px; }
+    line-height: 120px;
+    opacity: 0.9; }
   .home .canvas p:last-child {
     font-size: 15px;
     letter-spacing: 11px;
     line-height: 20px;
-    margin: 0 auto; }
+    margin: 0 auto;
+    padding: 10px 15px;
+    background-color: rgba(255, 255, 255, 0.3); }
   @media (min-width: 600px) {
     .home .canvas p:first-child {
       font-size: 200px;
