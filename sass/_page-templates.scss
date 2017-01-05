@@ -102,7 +102,7 @@
 		   line-height: 20px;
 		   margin: 0 auto;
 		   padding: 10px 15px;
-		   background-color: rgba(255,255,255,0.3)
+		   background-color: rgba(0,0,0, 0.3);
 	   }
 
 		@include tablet {
@@ -139,7 +139,18 @@
 
 /* (3) Blog Archive Page */
 
+.blog {
 
+	.blog-content {
+		article:last-child{
+			margin-bottom: 0;
+		}
+	}
+
+	article img {
+		display: none;
+	}
+}
 
 /* (3.1) Single Blog Post Page */
 

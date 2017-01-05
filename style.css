@@ -996,7 +996,7 @@ object {
     line-height: 20px;
     margin: 0 auto;
     padding: 10px 15px;
-    background-color: rgba(255, 255, 255, 0.3); }
+    background-color: rgba(0, 0, 0, 0.3); }
   @media (min-width: 600px) {
     .home .canvas p:first-child {
       font-size: 200px;
@@ -1019,6 +1019,12 @@ object {
       margin: 0; } }
 
 /* (3) Blog Archive Page */
+.blog .blog-content article:last-child {
+  margin-bottom: 0; }
+
+.blog article img {
+  display: none; }
+
 /* (3.1) Single Blog Post Page */
 .entry-footer a {
   padding: 5px 10px;
