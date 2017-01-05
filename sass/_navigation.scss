@@ -58,10 +58,10 @@
 	.current-menu-item > a,
 	.current_page_ancestor > a {
 		text-transform: uppercase;
-		border-bottom: 1px solid $color__dark-grey;
-		color: #696969;
+		border-bottom: 1px solid $color__dark-red;
+		color: $color__dark-red;
 		&:hover {
-			color: #000;
+			color: $color__dark-red;
 		}
 	}
 	@include tablet {
@@ -77,7 +77,7 @@
 		color: #a1a1a1;
 		text-transform: uppercase;
 		&:hover {
-			color: #000;
+			color: $color__dark-red;
 			transition: all 1s;
 		}
 	}

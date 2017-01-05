@@ -335,7 +335,7 @@ h1, h2, h3, h4, h5 {
 
 h1 {
   font-weight: normal;
-  border-left: 5px solid #696969;
+  border-left: 5px solid #a30000;
   padding-left: 20px;
   color: #a1a1a1;
   font-size: 1.1rem; }
@@ -503,12 +503,12 @@ textarea {
   #primary-menu .current-menu-item > a,
   #primary-menu .current_page_ancestor > a {
     text-transform: uppercase;
-    border-bottom: 1px solid #696969;
-    color: #696969; }
+    border-bottom: 1px solid #a30000;
+    color: #a30000; }
     #primary-menu .current_page_item > a:hover,
     #primary-menu .current-menu-item > a:hover,
     #primary-menu .current_page_ancestor > a:hover {
-      color: #000; }
+      color: #a30000; }
   @media (min-width: 600px) {
     #primary-menu {
       display: -ms-flexbox;
@@ -524,7 +524,7 @@ textarea {
     color: #a1a1a1;
     text-transform: uppercase; }
     #primary-menu a:hover {
-      color: #000;
+      color: #a30000;
       transition: all 1s; }
 
 .main-navigation ul {
@@ -601,11 +601,11 @@ textarea {
 
 /* Links */
 a {
-  color: royalblue; }
+  color: #a30000; }
   a:visited {
-    color: purple; }
+    color: #510000; }
   a:hover, a:focus, a:active {
-    color: midnightblue; }
+    color: #510000; }
   a:hover, a:active {
     outline: 0; }
 
