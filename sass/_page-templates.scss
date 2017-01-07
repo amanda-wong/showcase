@@ -214,10 +214,10 @@
         .skill-level {
             background: repeating-linear-gradient(
               45deg,
-              rgba(96, 109, 188, 0.5),
-              rgba(96, 109, 188, 0.5) 10px,
-              rgba(70, 82, 152, 0.3) 10px,
-              rgba(70, 82, 152, 0.3) 20px
+              rgba(197, 156, 108, 0.2),
+              rgba(197, 156, 108, 0.2) 10px,
+              rgba(197, 156, 108, 0.4) 10px,
+              rgba(197, 156, 108, 0.4) 20px
             );
         }
     }
@@ -225,10 +225,10 @@
         .skill-level {
             background: repeating-linear-gradient(
               45deg,
-              #FFA500,
-              #FFA500 10px,
-              #ffc966 10px,
-              #ffc966 20px
+			  rgba(61,61,61, 0.2),
+              rgba(61,61,61,0.2) 10px,
+              rgba(61,61,61, 0.1) 10px,
+              rgba(61,61,61, 0.1) 20px
             );
         }
     }
@@ -246,7 +246,7 @@
     z-index: 1;
 }
 .skill-bar {
-    background-color: #e6e6e6;
+    background-color: lighten(#e6e6e6, 6%);
     display: flex;
     width: 100%;
 
