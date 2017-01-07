@@ -335,7 +335,7 @@ h1, h2, h3, h4, h5 {
 
 h1 {
   font-weight: normal;
-  border-left: 5px solid #a30000;
+  border-left: 5px solid #c59c6c;
   padding-left: 20px;
   color: #a1a1a1;
   font-size: 1.1rem; }
@@ -504,19 +504,21 @@ textarea {
     text-transform: uppercase;
     transition: all 0.5s; }
     #primary-menu a:hover {
-      background-color: rgba(225, 225, 225, 0.5); }
+      background-color: rgba(197, 156, 108, 0.1); }
   #primary-menu:last-child a {
     margin-right: 0; }
   #primary-menu .current_page_item > a,
   #primary-menu .current-menu-item > a,
   #primary-menu .current_page_ancestor > a {
-    background-color: rgba(225, 225, 225, 0.5);
+    background-color: rgba(197, 156, 108, 0.6);
+    border-radius: 5%;
     padding: 5px 10px;
-    font-weight: 500; }
+    font-weight: 500;
+    color: #fff; }
     #primary-menu .current_page_item > a:hover,
     #primary-menu .current-menu-item > a:hover,
     #primary-menu .current_page_ancestor > a:hover {
-      background-color: #a1a1a1;
+      background-color: #c59c6c;
       color: #fff; }
   @media (min-width: 600px) {
     #primary-menu {
@@ -603,7 +605,7 @@ textarea {
 
 /* Links */
 a {
-  color: #a30000; }
+  color: #c59c6c; }
   a:visited {
     color: #510000; }
   a:hover, a:focus, a:active {
@@ -998,7 +1000,7 @@ object {
     line-height: 20px;
     margin: 0 auto;
     padding: 10px 15px;
-    background-color: rgba(0, 0, 0, 0.3); }
+    background-color: rgba(197, 156, 108, 0.6); }
   @media (min-width: 600px) {
     .home .canvas p:first-child {
       font-size: 200px;
