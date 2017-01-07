@@ -513,7 +513,6 @@ textarea {
   #primary-menu .current-menu-item > a,
   #primary-menu .current_page_ancestor > a {
     background-color: rgba(197, 156, 108, 0.6);
-    border-radius: 5%;
     padding: 5px 10px;
     font-weight: 500;
     color: #fff; }
