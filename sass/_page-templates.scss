@@ -438,10 +438,15 @@
     .canvas {
         display: flex;
         flex-direction: column;
-        input[type="text"],
-        input[type="email"] {
-            width: 100%;
-        }
+
+
+		.wpcf7 {
+			flex-basis: 45%;
+			input[type="text"],
+	        input[type="email"] {
+	            width: 100%;
+	        }
+		}
 
         @include desktop {
             flex-direction: row;

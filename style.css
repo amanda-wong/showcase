@@ -432,16 +432,17 @@ input[type="password"],
 input[type="search"],
 textarea {
   margin: 5px 0 15px;
-  background-color: rgba(197, 156, 108, 0.2);
+  background-color: #efefef;
   border: 0;
-  outline: #c59c6c; }
+  outline: #c59c6c;
+  font-size: 14px; }
   input[type="text"]:focus,
   input[type="email"]:focus,
   input[type="url"]:focus,
   input[type="password"]:focus,
   input[type="search"]:focus,
   textarea:focus {
-    background-color: rgba(197, 156, 108, 0.4); }
+    background-color: #d1d1d1; }
 
 input[type="text"],
 input[type="email"],
@@ -1266,9 +1267,12 @@ object {
   display: flex;
   -ms-flex-direction: column;
       flex-direction: column; }
-  .page-template-contact .canvas input[type="text"],
-  .page-template-contact .canvas input[type="email"] {
-    width: 100%; }
+  .page-template-contact .canvas .wpcf7 {
+    -ms-flex-preferred-size: 45%;
+        flex-basis: 45%; }
+    .page-template-contact .canvas .wpcf7 input[type="text"],
+    .page-template-contact .canvas .wpcf7 input[type="email"] {
+      width: 100%; }
   @media (min-width: 1024px) {
     .page-template-contact .canvas {
       -ms-flex-direction: row;
