@@ -8,7 +8,7 @@
 	<main id="main" class="site-main" role="main">
 		<?php get_header(); ?>
         <section class="canvas">
-			<h1>Hello I'm amanda</h1>
+			<h1>Hi Nice to meet you!</h1>
             <div class="about-copy">
 				<p><?php echo CFS()->get( 'about_me' ); ?></p>
             </div>
