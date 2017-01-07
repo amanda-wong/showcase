@@ -117,20 +117,25 @@ require get_template_directory() . '/inc/template-tags.php';
  */
 require get_template_directory() . '/inc/extras.php';
 
-// Replaces the excerpt "Read More" text by a link
+/** Replace excerpt read more link **/
 function new_excerpt_more($more) {
        global $post;
 	return '<a class="moretag" href="'. get_permalink($post->ID) . '"> ...read more.</a>';
 }
 add_filter('excerpt_more', 'new_excerpt_more');
 
-/**
- * Filter the except length to 20 words.
- *
- * @param int $length Excerpt length.
- * @return int (Maybe) modified excerpt length.
- */
+/** Increase size of excerpt to 30 characters **/
 function wpdocs_custom_excerpt_length( $length ) {
-    return 20;
+    return 30;
 }
 add_filter( 'excerpt_length', 'wpdocs_custom_excerpt_length', 999 );
+
+/** Add current page rule on single blog post **/
+function add_custom_class($classes=array(), $menu_item=false) {
+    if ( !is_page() && 'Blog' == $menu_item->title &&
+            !in_array( 'current-menu-item', $classes ) ) {
+        $classes[] = 'current-menu-item';
+    }
+    return $classes;
+}
+add_filter('nav_menu_css_class', 'add_custom_class', 100, 2);

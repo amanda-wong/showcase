@@ -1032,6 +1032,11 @@ object {
   display: none; }
 
 /* (3.1) Single Blog Post Page */
+.entry-title a {
+  transition: all 0.3s; }
+  .entry-title a:hover {
+    color: #c59c6c; }
+
 .entry-footer a {
   padding: 5px 10px;
   background-color: rgba(161, 161, 161, 0.4);
@@ -1140,7 +1145,8 @@ object {
     opacity: 0.6;
     transition: opacity 0.5s ease-in-out; }
     #instagram-grid .insta-block:hover {
-      opacity: 1; }
+      opacity: 1;
+      cursor: pointer; }
     @media (min-width: 600px) {
       #instagram-grid .insta-block {
         -ms-flex-preferred-size: 25%;
