@@ -39,12 +39,12 @@ input[type="url"],
 input[type="password"],
 input[type="search"],
 textarea {
-	color: #666;
-	border: 1px solid #ccc;
-	border-radius: 3px;
-
-	&:focus {
-		color: #111;
+	margin: 5px 0 15px;
+	background-color: rgba(197, 156, 108, 0.2);
+	border: 0;
+	outline: $color__gold;
+	&:focus{
+		background-color: rgba(197, 156, 108, 0.4);
 	}
 }
 
@@ -53,10 +53,10 @@ input[type="email"],
 input[type="url"],
 input[type="password"],
 input[type="search"] {
-	padding: 3px;
+	padding: 10px;
 }
 
 textarea {
-	padding-left: 3px;
+	padding: 10px;
 	width: 100%;
 }

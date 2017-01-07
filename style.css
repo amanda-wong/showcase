@@ -431,26 +431,27 @@ input[type="url"],
 input[type="password"],
 input[type="search"],
 textarea {
-  color: #666;
-  border: 1px solid #ccc;
-  border-radius: 3px; }
+  margin: 5px 0 15px;
+  background-color: rgba(197, 156, 108, 0.2);
+  border: 0;
+  outline: #c59c6c; }
   input[type="text"]:focus,
   input[type="email"]:focus,
   input[type="url"]:focus,
   input[type="password"]:focus,
   input[type="search"]:focus,
   textarea:focus {
-    color: #111; }
+    background-color: rgba(197, 156, 108, 0.4); }
 
 input[type="text"],
 input[type="email"],
 input[type="url"],
 input[type="password"],
 input[type="search"] {
-  padding: 3px; }
+  padding: 10px; }
 
 textarea {
-  padding-left: 3px;
+  padding: 10px;
   width: 100%; }
 
 /*--------------------------------------------------------------
@@ -605,11 +606,11 @@ textarea {
 
 /* Links */
 a {
-  color: #c59c6c; }
+  color: #926939; }
   a:visited {
-    color: #510000; }
+    color: #926939; }
   a:hover, a:focus, a:active {
-    color: #510000; }
+    color: #c59c6c; }
   a:hover, a:active {
     outline: 0; }
 
