@@ -1079,6 +1079,22 @@ object {
     background-color: #c59c6c;
     color: #fff; }
 
+.comment-form-comment,
+.comment-form-author,
+.comment-form-email,
+.comment-form-url {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  margin: 0 0 5px; }
+  @media (min-width: 600px) {
+    .comment-form-comment,
+    .comment-form-author,
+    .comment-form-email,
+    .comment-form-url {
+      width: 70%; } }
+
 /* (4) About Page */
 .skills-container .skill:nth-child(odd) .skill-level {
   background: repeating-linear-gradient(45deg, rgba(197, 156, 108, 0.2), rgba(197, 156, 108, 0.2) 10px, rgba(197, 156, 108, 0.4) 10px, rgba(197, 156, 108, 0.4) 20px); }
