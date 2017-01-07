@@ -812,7 +812,7 @@ footer .site-info {
   display: block; }
 
 .hentry {
-  margin: 0 0 2.5em; }
+  margin: 0 0 3.3em; }
 
 .updated:not(.published) {
   display: none; }
@@ -838,7 +838,7 @@ footer .site-info {
     color: #696969; }
 
 .entry-header .posted-on {
-  font-size: 13px; }
+  font-size: 14px; }
 
 /* Asides */
 .blog .format-aside .entry-title,
