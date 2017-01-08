@@ -87,7 +87,6 @@ ol {
 li > ul,
 li > ol {
 	margin-bottom: 0;
-	margin-left: $base__space-unit;
 }
 
 dt {
@@ -106,4 +105,8 @@ img {
 table {
 	margin: 0 0 $base__space-unit;
 	width: 100%;
+}
+
+time {
+	font-size: 14px;
 }

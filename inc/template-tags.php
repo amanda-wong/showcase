@@ -127,28 +127,27 @@
 
  	<li id="comment-<?php comment_ID(); ?>" <?php comment_class( empty( $args['has_children'] ) ? '' : 'parent' ); ?>>
  		<article id="div-comment-<?php comment_ID(); ?>" class="comment-body">
+			<div class="comment-user-info">
+				<div class="comment-author-avatar">
+	 				<?php echo get_avatar( $comment, 64 ); ?>
+	 			</div>
+				<div class="comment-meta">
+					<div class="comment-author vcard">
+						<?php printf( '<cite class="fn">%s</cite>', get_comment_author() ); ?>
+					</div><!-- .comment-author -->
 
- 			<div class="comment-author-avatar">
- 				<?php echo get_avatar( $comment, 64 ); ?>
- 			</div>
-
+					<div class="comment-metadata">
+						<time datetime="<?php comment_time( 'c' ); ?>">
+								<?php printf( '%1$s', get_comment_date('d M Y \a\t g:i a') ); ?>
+						</time>
+						<a href="<?php echo esc_url( get_comment_link( $comment->comment_ID ) ); ?>">#</a>
+					</div><!-- .comment-metadata -->
+				</div><!-- .comment-meta -->
+			</div>
  			<div class="comment-content">
- 				<div class="comment-meta">
- 					<div class="comment-author vcard">
- 						<?php printf( '<cite class="fn">%s</cite>', get_comment_author() ); ?>
- 					</div><!-- .comment-author -->
-
- 					<div class="comment-metadata">
- 						<time datetime="<?php comment_time( 'c' ); ?>">
- 								<?php printf( '%1$s', get_comment_date('d M Y \a\t g:i a') ); ?>
- 						</time>
- 						<a href="<?php echo esc_url( get_comment_link( $comment->comment_ID ) ); ?>">#</a>
- 					</div><!-- .comment-metadata -->
-
- 					<?php if ( '0' == $comment->comment_approved ) : ?>
- 					<p class="comment-awaiting-moderation">Your comment is awaiting moderation.</p>
- 					<?php endif; ?>
- 				</div><!-- .comment-meta -->
+				<?php if ( '0' == $comment->comment_approved ) : ?>
+				<p class="comment-awaiting-moderation">Your comment is awaiting moderation.</p>
+				<?php endif; ?>
 
  				<?php comment_text(); ?>
 
@@ -157,7 +156,7 @@
  						'add_below'  => 'div-comment',
  						'depth'      => $depth,
  						'max_depth'  => $args['max_depth'],
- 						'reply_text' => 'Reply &rarr;'
+ 						'reply_text' => 'Reply'
  					) ) ); ?>
  				</div><!-- .reply -->
  			</div><!-- .comment-content -->

@@ -27,6 +27,7 @@
 }
 
 .entry-content {
+	width: 100%;
 	margin: 30px 0;
 }
 
@@ -42,11 +43,7 @@
 			color: $color__dark-grey;
 		}
 	}
-	.posted-on {
-		font-size: 14px;
-	}
 }
-
 
 /* Asides */
 
@@ -56,10 +53,65 @@
 }
 
 /* Comments */
+.comment-body {
+	display: inline-block;
+	padding: 10px;
+}
+.comment-list {
+	list-style: none;
+	margin-left: 0;
+	padding-left: 0;
+}
+
+.children {
+	margin: 20px 0 40px 50px ;
+	list-style: none;
+}
+
+.comment-author-avatar  {
+	margin-right: 15px;
+	img {
+		border-radius: 50%;
+	}
+}
+
+.comment-author {
+	cite {
+		text-transform: uppercase;
+		font-style: normal;
+		font-weight: 500;
+	}
+}
+
+.comment-user-info {
+	display: flex;
+}
+
+.comment-awaiting-moderation {
+	padding: 5px 10px;
+	background-color: rgba(197, 156, 108, 0.1);
+}
 
 .comment-content a {
 	word-wrap: break-word;
 }
+
 .bypostauthor {
 	display: block;
+}
+
+.comment-respond {
+	margin-top: 50px;
+}
+
+.comment-form-comment,
+.comment-form-author,
+.comment-form-email,
+.comment-form-url {
+	display: flex;
+	flex-direction: column;
+	margin: 0 0 5px;
+	@include tablet {
+		width: 70%;
+	}
 }
