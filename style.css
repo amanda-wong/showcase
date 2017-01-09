@@ -489,8 +489,8 @@ textarea {
         font-size: 2rem; } }
   .main-navigation .mobile-menu-button {
     position: absolute;
-    left: 5px;
-    top: 23px;
+    left: 48%;
+    bottom: -18px;
     font-size: 25px; }
     .main-navigation .mobile-menu-button:hover {
       cursor: pointer; }
@@ -1048,12 +1048,17 @@ object {
     line-height: 120px;
     opacity: 0.9; }
   .home .canvas p:last-child {
-    font-size: 15px;
+    font-size: 12px;
     letter-spacing: 11px;
     line-height: 20px;
-    margin: 0 auto;
-    padding: 10px 15px;
+    margin: 0 70px;
+    padding: 10px 5px;
     background-color: rgba(197, 156, 108, 0.6); }
+    @media (min-width: 1024px) {
+      .home .canvas p:last-child {
+        font-size: 15px;
+        letter-spacing: 11px;
+        line-height: 20px; } }
   @media (min-width: 600px) {
     .home .canvas p:first-child {
       font-size: 200px;

@@ -97,12 +97,18 @@
 		}
 
 	   p:last-child {
-		   font-size: 15px;
+		   font-size: 12px;
 		   letter-spacing: 11px;
 		   line-height: 20px;
-		   margin: 0 auto;
-		   padding: 10px 15px;
+		   margin: 0 70px;
+		   padding: 10px 5px;
 		   background-color: rgba(197, 156, 108, 0.6);
+
+		   @include desktop {
+			   font-size: 15px;
+			  letter-spacing: 11px;
+			  line-height: 20px;
+		   }
 	   }
 
 		@include tablet {
