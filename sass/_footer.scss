@@ -14,7 +14,7 @@ footer .site-info {
         width: 300px;
         display: flex;
         justify-content: center;
-        a {  // styles also exist in textWidget (Create mixin);
+        a {
             display: flex;
             justify-content: center;
             align-items: center;
@@ -23,15 +23,17 @@ footer .site-info {
             height: 15px;
             margin: 8px;
             border-radius: 50%;
-            border: 3px solid #000;
+            border: 3px solid #dcc3a7;
+			transition: all 0.3s;
             &:hover {
-                background-color: #000;
+                background-color: $color__gold;
+				border: 3px solid $color__gold;
                 i {
                     color: #fff;
                 }
             }
             i {
-                color: #000;
+                color: #dcc3a7;
 
             }
         }

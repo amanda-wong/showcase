@@ -650,13 +650,15 @@ footer .site-info {
       height: 15px;
       margin: 8px;
       border-radius: 50%;
-      border: 3px solid #000; }
+      border: 3px solid #dcc3a7;
+      transition: all 0.3s; }
       footer .site-info .social-icon-wrap a:hover {
-        background-color: #000; }
+        background-color: #c59c6c;
+        border: 3px solid #c59c6c; }
         footer .site-info .social-icon-wrap a:hover i {
           color: #fff; }
       footer .site-info .social-icon-wrap a i {
-        color: #000; }
+        color: #dcc3a7; }
   footer .site-info .copyright {
     color: #808080;
     font-size: 14px;
