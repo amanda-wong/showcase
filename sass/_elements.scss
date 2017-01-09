@@ -57,11 +57,14 @@ h3 {
 }
 
 blockquote, q {
-	quotes: "" "";
-
-	&:before,
-	&:after {
-		content: "";
+	font-style: italic;
+	display: flex;
+	padding: 1px 20px;
+	p {
+		margin-left: 30px;
+	}
+	&:before {
+		content: url("../assets/images/left-quotes-sign-32.png");
 	}
 }
 
@@ -87,6 +90,7 @@ ol {
 li > ul,
 li > ol {
 	margin-bottom: 0;
+	margin-left: $base__space-unit;
 }
 
 dt {
@@ -105,8 +109,4 @@ img {
 table {
 	margin: 0 0 $base__space-unit;
 	width: 100%;
-}
-
-time {
-	font-size: 14px;
 }

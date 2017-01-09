@@ -269,7 +269,13 @@ dfn, cite, em, i {
   font-style: italic; }
 
 blockquote {
-  margin: 0 1.5em; }
+  margin: 0 10px; }
+  @media (min-width: 600px) {
+    blockquote {
+      margin: 0 35px; } }
+  @media (min-width: 1024px) {
+    blockquote {
+      margin: 0 35px; } }
 
 address {
   margin: 0 0 1.5em; }
@@ -352,9 +358,14 @@ h3 {
   font-weight: 500; }
 
 blockquote, q {
-  quotes: "" ""; }
-  blockquote:before, blockquote:after, q:before, q:after {
-    content: ""; }
+  font-style: italic;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 1px 20px; }
+  blockquote p, q p {
+    margin-left: 30px; }
+  blockquote:before, q:before {
+    content: url("../assets/images/left-quotes-sign-32.png"); }
 
 hr {
   background-color: #ccc;
@@ -373,7 +384,8 @@ ol {
 
 li > ul,
 li > ol {
-  margin-bottom: 0; }
+  margin-bottom: 0;
+  margin-left: 1.5em; }
 
 dt {
   font-weight: bold; }
@@ -390,9 +402,6 @@ img {
 table {
   margin: 0 0 1.5em;
   width: 100%; }
-
-time {
-  font-size: 14px; }
 
 /*--------------------------------------------------------------
 # Forms
@@ -1067,9 +1076,6 @@ object {
 /* (3) Blog Archive Page */
 .blog .blog-content article:last-child {
   margin-bottom: 0; }
-
-.blog article img {
-  display: none; }
 
 /* (3.1) Single Blog Post Page */
 .entry-title a {

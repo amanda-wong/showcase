@@ -30,7 +30,15 @@ dfn, cite, em, i {
 }
 
 blockquote {
-	margin: 0 $base__space-unit;
+	margin: 0 10px;
+
+	@include tablet {
+		margin: 0 35px;
+	}
+
+	@include desktop {
+		margin: 0 35px;
+	}
 }
 
 address {
