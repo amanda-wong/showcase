@@ -26,12 +26,8 @@
 						<i class="fa fa-bars" aria-hidden="true"></i>
 					</a>
 					<div id="mobile-menu-container">
-						<div class="mobile-logo-container">
-							<a id="mobile-logo" href="/">Amanda Wong</a>
-							<a onclick="hideMenu()">
-								<i class="fa fa-times" aria-hidden="true"></i>
-							</a>
-						</div>
+						<i class="material-icons close-menu" onclick="hideMenu()">clear</i>
+						<!-- <i class="fa fa-times" aria-hidden="true" onclick="hideMenu()" ></i> -->
 						<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'mobile-menu' ) ); ?>
 					</div>
 					<a id="logo" href="/">Amanda Wong</a>

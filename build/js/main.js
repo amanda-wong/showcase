@@ -30,12 +30,21 @@ window.onresize = function() {
     hideMenu();
 };
 
+window.onload = function() {
+	hideMenu();
+};
+
 function showMenu() {
-    elMobileMenu.style.left = '0px';
+	document.body.style.overflowY = 'hidden';
+	elMobileMenu.style.left = '0px';
+
+
 }
 
 function hideMenu() {
-    elMobileMenu.style.left = '-250px';
+	document.body.style.overflowY = 'auto';
+    elMobileMenu.style.left = '-500px';
+
 }
 
 
