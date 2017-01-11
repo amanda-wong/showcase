@@ -41,6 +41,8 @@ function handleApiResponse(response) {
 		}
 	});
 
+	console.log(instaPosts);
+
 	//Limit post count to 12
 	instaPosts = instaPosts.slice(0,12);
 	instaPosts.forEach(function(el){
