@@ -126,7 +126,7 @@ add_filter('excerpt_more', 'new_excerpt_more');
 
 /** Increase size of excerpt to 30 characters **/
 function wpdocs_custom_excerpt_length( $length ) {
-    return 30;
+    return 50;
 }
 add_filter( 'excerpt_length', 'wpdocs_custom_excerpt_length', 999 );
 
