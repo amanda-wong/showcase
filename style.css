@@ -363,7 +363,7 @@ blockquote, q {
   display: flex;
   padding: 1px 20px; }
   blockquote p, q p {
-    margin-left: 30px; }
+    margin: 0 30px; }
   blockquote:before, q:before {
     content: url("../assets/images/left-quotes-sign-32.png"); }
 
