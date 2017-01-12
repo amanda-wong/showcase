@@ -22,11 +22,11 @@
 
 			<header id="masthead" class="site-header" role="banner">
 				<nav id="site-navigation" class="main-navigation" role="navigation">
-					<a class="mobile-menu-button" onclick="showMenu()">
+					<a class="mobile-menu-button">
 						<i class="fa fa-bars" aria-hidden="true"></i>
 					</a>
 					<div id="mobile-menu-container">
-						<i class="material-icons close-menu" onclick="hideMenu()">clear</i>
+						<i class="material-icons close-menu">clear</i>
 						<!-- <i class="fa fa-times" aria-hidden="true" onclick="hideMenu()" ></i> -->
 						<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'mobile-menu' ) ); ?>
 					</div>

@@ -144,11 +144,11 @@
 
 /* ---------------------Current page rules --------------------------------- */
 
-	#mobile-menu {          		// TODO: Mobile
+	#mobile-menu {
 		.current_page_item > a,
 		.current-menu-item > a,
 		.current_page_ancestor > a {
-			color: $color__gold;
+			color: $color__dark-grey;
 			&:active, &:focus {
 				color: $color__gold;
 			}
@@ -157,13 +157,13 @@
 
 /* ------------------------------- Mobile menu ---------------------------------*/
 #mobile-menu-container {
-	// width: 212px;
+	width: 100%;
 	position: fixed;
-	top: 0;
-	left: 0;
+	top: 0px;
+	left: -585px;
 	width: 100%;
 	height: 100%;
-	background-color: lighten(#dcc3a7, 15%);
+	background-color: darken(#E3E3E3,6%);
 	transition: all 0.3s ease;
 	z-index: 999;
 
@@ -183,7 +183,7 @@
 		right: 10px;
 		top: 10px;
 		font-size: 30px;
-		color: $color__gold;
+		color: #fff;
 		cursor: pointer;
 	}
 }

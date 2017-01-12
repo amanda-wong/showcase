@@ -22,20 +22,30 @@ window.onload = function() {
 };
 
 /* Show/Hide Mobile Menu */
-var elMobileMenu = document.getElementById('mobile-menu-container');
+
+var mobileMenu = document.getElementById('mobile-menu-container');
+var hamburgerMenu = document.querySelector('.mobile-menu-button');
+var closeMenu = document.querySelector('.close-menu');
+hamburgerMenu.addEventListener('click', function(){
+	showMenu();
+});
+closeMenu.addEventListener('click', function(){
+	hideMenu();
+});
 
 window.onresize = function() {
 	hideMenu();
 };
 
 function showMenu() {
-	elMobileMenu.style.left = '0px';
+	mobileMenu.style.left = '0px';
+	document.body.style.overflowY = 'hidden';
 }
 
 function hideMenu() {
-	elMobileMenu.style.left = '-250px';
+	document.body.style.overflowY = 'auto';
+	mobileMenu.style.left = '-585px';
 }
-
 
 // Footer copyright year
 var date = new Date();
