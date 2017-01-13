@@ -5,7 +5,7 @@
 
 .content-area {
     max-width: 1200px;
-    padding: 50px 20px;
+    padding: 30px 20px;
     margin: 0 auto;
     @include tablet {
         padding: 50px 30px;
@@ -47,8 +47,8 @@
 /* (1) Home Page */
 .home {
 	.main-navigation {
-		margin: 50px 30px 30px;
-	
+		margin: 30px 30px 30px;
+
 		@include desktop {
 			margin: 100px auto 20px;
 			max-width: 1000px;
@@ -65,10 +65,13 @@
 		position: relative;
 		.hp-hero-wrap {
 			opacity: 0.6;
-			height: 58vh;
+			height: 50vh;
 			background-image: url('../assets/images/homepage_hero.jpg');
 			background-size: cover;
 			background-position: center;
+			@include tablet {
+				height: 58vh;
+			}
 		}
 	}
 
@@ -81,27 +84,34 @@
 		text-transform: uppercase;
 		text-align: center;
 		font-weight: 700;
-		height: 58vh;
+		height: 50vh;
 		position: absolute;
 		top: 0;
 		left: 0;
 		bottom: 0;
 		right: 0;
 		color: #fff;
+		@include tablet {
+			height: 58vh;
+		}
 
 		p:first-child {
-			font-size: 110px;
+			font-size: 82px;
 			margin: 0 auto;
-			line-height: 120px;
+			line-height: 90px;
 			opacity: 0.9;
+			@include tablet {
+				font-size: 110px;
+				line-height: 120px;
+			}
 		}
 
 	   p:last-child {
 		   font-size: 12px;
 		   letter-spacing: 11px;
 		   line-height: 20px;
-		   margin: 0 70px;
-		   padding: 10px 5px;
+		   margin: 0 45px;
+		   padding: 5px 0px;
 		   background-color: rgba(197, 156, 108, 0.6);
 
 		   @include desktop {

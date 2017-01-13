@@ -666,10 +666,10 @@ footer .site-info {
       border-radius: 50%;
       border: 3px solid #dcc3a7;
       transition: all 0.3s; }
-      footer .site-info .social-icon-wrap a:hover {
+      footer .site-info .social-icon-wrap a:hover, footer .site-info .social-icon-wrap a:active {
         background-color: #c59c6c;
         border: 3px solid #c59c6c; }
-        footer .site-info .social-icon-wrap a:hover i {
+        footer .site-info .social-icon-wrap a:hover i, footer .site-info .social-icon-wrap a:active i {
           color: #fff; }
       footer .site-info .social-icon-wrap a i {
         color: #dcc3a7; }
@@ -987,7 +987,7 @@ object {
 /*(0)Page set up */
 .content-area {
   max-width: 1200px;
-  padding: 50px 20px;
+  padding: 30px 20px;
   margin: 0 auto; }
   @media (min-width: 600px) {
     .content-area {
@@ -1018,7 +1018,7 @@ object {
 
 /* (1) Home Page */
 .home .main-navigation {
-  margin: 50px 30px 30px; }
+  margin: 30px 30px 30px; }
   @media (min-width: 1024px) {
     .home .main-navigation {
       margin: 100px auto 20px;
@@ -1032,10 +1032,13 @@ object {
   position: relative; }
   .home .site-main .hp-hero-wrap {
     opacity: 0.6;
-    height: 58vh;
+    height: 50vh;
     background-image: url("../assets/images/homepage_hero.jpg");
     background-size: cover;
     background-position: center; }
+    @media (min-width: 600px) {
+      .home .site-main .hp-hero-wrap {
+        height: 58vh; } }
 
 .home .canvas {
   display: -ms-flexbox;
@@ -1049,24 +1052,31 @@ object {
   text-transform: uppercase;
   text-align: center;
   font-weight: 700;
-  height: 58vh;
+  height: 50vh;
   position: absolute;
   top: 0;
   left: 0;
   bottom: 0;
   right: 0;
   color: #fff; }
+  @media (min-width: 600px) {
+    .home .canvas {
+      height: 58vh; } }
   .home .canvas p:first-child {
-    font-size: 110px;
+    font-size: 82px;
     margin: 0 auto;
-    line-height: 120px;
+    line-height: 90px;
     opacity: 0.9; }
+    @media (min-width: 600px) {
+      .home .canvas p:first-child {
+        font-size: 110px;
+        line-height: 120px; } }
   .home .canvas p:last-child {
     font-size: 12px;
     letter-spacing: 11px;
     line-height: 20px;
-    margin: 0 70px;
-    padding: 10px 5px;
+    margin: 0 45px;
+    padding: 5px 0px;
     background-color: rgba(197, 156, 108, 0.6); }
     @media (min-width: 1024px) {
       .home .canvas p:last-child {
