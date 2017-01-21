@@ -158,6 +158,19 @@
 .blog {
 
 	.blog-content {
+		article {
+			@include desktop {
+				width: 80%;
+				margin: 0 auto 60px;
+			}
+			.entry-title {
+				margin-bottom: 0;
+			}
+			.posted-on {
+				font-size: 14px;
+			}
+		}
+
 		article:last-child{
 			margin-bottom: 0;
 		}
@@ -165,14 +178,18 @@
 }
 
 /* (3.1) Single Blog Post Page */
+.entry-header {
+	img {
+		width: 100%;
+	}
+	.posted-on {
+		font-size: 14px;
+	}
+}
+.img-link {
+	img {
+		width: 100%;
 
-.entry-title {
-	a {
-		transition: all 0.3s;
-		&:hover {
-			color: $color__gold;
-
-		}
 	}
 }
 

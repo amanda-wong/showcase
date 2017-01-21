@@ -33,29 +33,30 @@ a {
 h1, h2, h3, h4, h5 {
 	font-family: $font__roboto;
 	text-transform: uppercase;
+	font-weight: 500;
 }
 
 h1 {
-	font-weight: normal;
-	border-left: 5px solid $color__gold;
-	padding-left: 20px;
-	color: $color__light-grey;
-	font-size: 1.1rem;
+	color: $color__gold;
+	font-size: 1.5rem;
+
 }
 
 h2 {
 	font-size: 0.9rem;
-	font-weight: 500;
-	color: $color__dark-grey;
+	color: $color__gold;
 	@include desktop {
 		font-size: 1rem;
 	}
 }
 
 h3 {
-	font-weight: 500;
+	font-size: 0.9rem;
+	color: $color__dark-grey;
+	@include desktop {
+		font-size: 1rem;
+	}
 }
-
 blockquote, q {
 	font-style: italic;
 	display: flex;
