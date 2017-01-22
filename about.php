@@ -111,10 +111,6 @@
                     </div>
                 </div>
             </div>
-            <div class="download-resume">
-                <a>Download Resume</a>
-            </div>
-
         </section>
 	</main><!-- #main -->
 </div><!-- #primary -->
