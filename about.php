@@ -119,7 +119,6 @@
 	</main><!-- #main -->
 </div><!-- #primary -->
 <div class="instagram">
-	<h2> Being a human</h2>
 	<ul id="instagram-grid"></ul>
 	<div class="modal-background"> <!-- modal start (position:fixed)-->
 		<i id="close-icon" class="material-icons close-icon">clear</i>
