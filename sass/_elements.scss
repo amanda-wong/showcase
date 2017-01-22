@@ -53,9 +53,6 @@ h2 {
 h3 {
 	font-size: 0.9rem;
 	color: $color__dark-grey;
-	@include desktop {
-		font-size: 1rem;
-	}
 }
 blockquote, q {
 	font-style: italic;
