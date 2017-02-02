@@ -642,7 +642,7 @@ footer .site-info {
   -ms-flex-direction: column;
       flex-direction: column;
   padding: 20px 0; }
-  footer .site-info h2 {
+  footer .site-info h3 {
     font-weight: bold;
     margin-bottom: 5px;
     font-size: 0.8rem; }
