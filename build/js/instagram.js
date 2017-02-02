@@ -34,7 +34,7 @@ function handleApiResponse(response) {
 	var instaPosts = response.data;
 	var instagrid = jQuery(document.getElementById('instagram-grid'));
 
-	//Filter posts with tags amandaoutandabout
+	//Filter posts with the tag #amandaoutandabout
 	instaPosts = instaPosts.filter(function(el){
 		if(el.tags && el.tags.indexOf('amandaoutandabout') >= 0) {
 			return true;
