@@ -654,22 +654,35 @@ footer .site-info {
     -ms-flex-pack: center;
         justify-content: center; }
     footer .site-info .social-icon-wrap a {
+      font-size: 12px;
       display: -ms-flexbox;
       display: flex;
       -ms-flex-pack: center;
           justify-content: center;
       -ms-flex-align: center;
           align-items: center;
-      padding: 18px;
-      width: 15px;
-      height: 15px;
-      margin: 8px;
+      padding: 16px;
+      width: 10px;
+      height: 10px;
+      margin: 5px;
       border-radius: 50%;
-      border: 3px solid #dcc3a7;
-      transition: all 0.3s; }
+      transition: all 0.3s;
+      border: 2px solid #dcc3a7; }
+      @media (min-width: 600px) {
+        footer .site-info .social-icon-wrap a {
+          border: 3px solid #dcc3a7;
+          margin: 8px;
+          padding: 18px;
+          width: 15px;
+          height: 15px;
+          font-size: 14px; } }
       footer .site-info .social-icon-wrap a:hover, footer .site-info .social-icon-wrap a:active {
         background-color: #c59c6c;
-        border: 3px solid #c59c6c; }
+        border: 2px solid #c59c6c;
+        outline: none; }
+        @media (min-width: 600px) {
+          footer .site-info .social-icon-wrap a:hover, footer .site-info .social-icon-wrap a:active {
+            border: 3px solid #c59c6c; } }
         footer .site-info .social-icon-wrap a:hover i, footer .site-info .social-icon-wrap a:active i {
           color: #fff; }
       footer .site-info .social-icon-wrap a i {

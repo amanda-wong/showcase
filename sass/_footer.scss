@@ -16,19 +16,33 @@ footer .site-info {
         display: flex;
         justify-content: center;
         a {
+			font-size: 12px;
             display: flex;
             justify-content: center;
             align-items: center;
-            padding: 18px;
-            width: 15px;
-            height: 15px;
-            margin: 8px;
+            padding: 16px;
+            width: 10px;
+            height: 10px;
+            margin: 5px;
             border-radius: 50%;
-            border: 3px solid #dcc3a7;
 			transition: all 0.3s;
+			border: 2px solid #dcc3a7;
+			@include tablet {
+				border: 3px solid #dcc3a7;
+				margin: 8px;
+				padding: 18px;
+				width: 15px;
+				height: 15px;
+				font-size: 14px;
+			}
             &:hover, &:active {
                 background-color: $color__gold;
-				border: 3px solid $color__gold;
+				border: 2px solid $color__gold;
+				outline: none;
+				@include tablet {
+						border: 3px solid $color__gold;
+				}
+
                 i {
                     color: #fff;
                 }
@@ -39,7 +53,7 @@ footer .site-info {
             }
         }
     }
-	
+
     .copyright {
         color: #808080;
         font-size: 14px;
