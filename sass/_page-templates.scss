@@ -315,6 +315,24 @@
     }
 }
 
+.skills-container {
+	i {
+		visibility: hidden;
+		@include desktop {
+			visibility: visible;
+		}
+	}
+
+	p {
+		margin: 0 0 0 10px;
+		font-size: 12px;
+		@include desktop {
+			visibility: hidden;
+
+		}
+	}
+}
+
 
 //Download Resume
 .download-resume {     //TODO: Add resume

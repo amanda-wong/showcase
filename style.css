@@ -1232,6 +1232,19 @@ object {
       content: attr(data-percent);
       text-shadow: 1px 1px white; }
 
+.skills-container i {
+  visibility: hidden; }
+  @media (min-width: 1024px) {
+    .skills-container i {
+      visibility: visible; } }
+
+.skills-container p {
+  margin: 0 0 0 10px;
+  font-size: 12px; }
+  @media (min-width: 1024px) {
+    .skills-container p {
+      visibility: hidden; } }
+
 .download-resume {
   margin-top: 40px;
   text-align: center;
