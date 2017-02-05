@@ -114,8 +114,9 @@ function registerModalImageViewer() {
 			dateEl.innerText = fullDateCreated;
 
 			//Open and close modal
-			modalBackground.style.display = 'flex';
 			document.body.style.overflowY = 'hidden';  //Prevent scroll
+			modalBackground.style.display = 'flex';
+
 
 			var closeIconEl = document.getElementById('close-icon');
 			closeIconEl.addEventListener('click', function(){

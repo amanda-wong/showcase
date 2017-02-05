@@ -107,7 +107,7 @@
                         <i class="fa fa-info-circle" aria-hidden="true" title="Passion and willingness to learn"></i>  P++
                     </div>
                     <div class="skill-bar">
-                        <div class="skill-level" data-percent="100%"><p>Passion + willingness to learn</p></div>
+                        <div class="skill-level" data-percent="100%"><p id="infoIcon">Passion + willingness to learn</p></div>
                     </div>
                 </div>
             </div>
