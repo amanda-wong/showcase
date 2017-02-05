@@ -104,10 +104,12 @@
                 </div>
                 <div class="skill">
                     <div class="skill-label">
-                        <i class="fa fa-info-circle" aria-hidden="true" title="Passion and willingness to learn"></i>  P++
+                       	<i class="fa fa-info-circle" aria-hidden="true" title="Passion and willingness to learn"></i>
+						<div class="info-text">Passion and the willingness to learn</div>
+						P++
                     </div>
                     <div class="skill-bar">
-                        <div class="skill-level" data-percent="100%"><p id="infoIcon">Passion + willingness to learn</p></div>
+                        <div class="skill-level" data-percent="100%"></div>
                     </div>
                 </div>
             </div>

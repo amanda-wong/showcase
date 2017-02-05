@@ -1232,18 +1232,18 @@ object {
       content: attr(data-percent);
       text-shadow: 1px 1px white; }
 
-.skills-container i {
-  visibility: hidden; }
-  @media (min-width: 1024px) {
-    .skills-container i {
-      visibility: visible; } }
+.skills-container:last-child .skill {
+  position: relative; }
 
-.skills-container p {
-  margin: 0 0 0 10px;
-  font-size: 12px; }
-  @media (min-width: 1024px) {
-    .skills-container p {
-      visibility: hidden; } }
+.info-text {
+  padding: 5px 10px;
+  background-color: #696969;
+  color: #fff;
+  font-size: 14px;
+  position: absolute;
+  top: 40px;
+  left: 50px;
+  display: none; }
 
 .download-resume {
   margin-top: 40px;

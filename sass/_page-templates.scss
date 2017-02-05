@@ -315,24 +315,20 @@
     }
 }
 
-.skills-container {
-	i {
-		visibility: hidden;
-		@include desktop {
-			visibility: visible;
-		}
-	}
-
-	p {
-		margin: 0 0 0 10px;
-		font-size: 12px;
-		@include desktop {
-			visibility: hidden;
-
-		}
-	}
+.skills-container:last-child .skill {
+	position: relative;
 }
 
+.info-text {
+	padding: 5px 10px;
+	background-color: $color__dark-grey;
+	color: #fff;
+	font-size: 14px;
+	position: absolute;
+	top: 40px;
+	left: 50px;
+	display: none;
+}
 
 //Download Resume
 .download-resume {     //TODO: Add resume
