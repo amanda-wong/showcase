@@ -9,11 +9,33 @@
 		<?php get_header(); ?>
         <section class="canvas">
 			<h1>Hi Nice to meet you!</h1>
-            <div class="about-copy">
-				<p><?php echo CFS()->get( 'about_me' ); ?></p>
-            </div>
+            <div class="about-intro">
+				<div class="about-intro-text">
+					<p>I'm Amanda and I'm a Front-End Developer from Vancouver.</p>
+					<p>
+						I love taking a design, or even just
+						I love
+						My passion comes what you can get out of an idea. You
+					</p>
+				</div>
 
+				<img src="../wp-content/themes/showcase/build/assets/images/amanda.jpg" alt="amanda image"/>
+            </div>
+			<div class="random-facts">
+				<h2>Fun Facts</h2>
+				<ul>
+					<li>I love pasta and can eat mountains of it.</li>
+					<li>I am the all time biggest F.R.I.E.N.D.S fan.</li>
+					<li>I listen to nothing but electronic music.</li>
+					<li>I twirl my hair A LOT, and unknowlingly use it as mustache :{o</li>
+					<li>I have a weakness for live musicals.</li>
+					<li>I strive to use my dev skills one day to 1.) help Vancouver's homeless problem
+					 	and 2.) reduce the amount that goes into landfills.</li>
+				</ul>
+
+			</div>
             <div class="skills-container">
+				<h2>Technical Skills</h2>
                 <div class="skill">
                     <div class="skill-label">
                         HTML
@@ -113,6 +135,11 @@
                     </div>
                 </div>
             </div>
+			<a class="resume-link"
+				href="../wp-content/themes/showcase/build/assets/images/
+				Amanda Wong - Resume.pdf"
+				target="_blank"
+				title="Download Amanda Wong's resume in PDF">Download Resume</a>
         </section>
 	</main><!-- #main -->
 </div><!-- #primary -->

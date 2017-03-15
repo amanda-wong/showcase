@@ -1194,6 +1194,12 @@ object {
     color: #fff; }
 
 /* (4) About Page */
+.about-intro {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: justify;
+      justify-content: space-between; }
+
 .skills-container .skill:nth-child(odd) .skill-level {
   background: repeating-linear-gradient(45deg, rgba(197, 156, 108, 0.2), rgba(197, 156, 108, 0.2) 10px, rgba(197, 156, 108, 0.4) 10px, rgba(197, 156, 108, 0.4) 20px); }
 
@@ -1245,14 +1251,13 @@ object {
   left: 50px;
   display: none; }
 
-.download-resume {
-  margin-top: 40px;
-  text-align: center;
-  font-weight: 700; }
-  .download-resume a {
-    color: #696969; }
-    .download-resume a:hover {
-      font-weight: 500; }
+.resume-link {
+  margin-top: 30px;
+  font-weight: 500;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+      justify-content: center; }
 
 .instagram h2 {
   text-align: center; }

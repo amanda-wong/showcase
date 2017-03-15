@@ -257,6 +257,15 @@
 
 /* (4) About Page */
 
+//about intro
+.about-intro {
+	display: flex;
+	justify-content: space-between;
+	.about-intro-text{
+
+	}
+}
+
 //skill-bar-graph
 .skills-container {
     .skill:nth-child(odd) {
@@ -331,16 +340,11 @@
 }
 
 //Download Resume
-.download-resume {     //TODO: Add resume
-    margin-top: 40px;
-    text-align: center;
-    font-weight: 700;
-    a {
-        color: $color__dark-grey;
-        &:hover {
-            font-weight: 500;
-        }
-    }
+.resume-link {
+	margin-top: 30px;
+	font-weight: 500;
+	display: flex;
+	justify-content: center;
 }
 
 //Instagram Grid
@@ -374,10 +378,6 @@
 		@include desktop {
 			flex-basis: 16.6666666667%;
 		}
-	}
-
-	.insta-img {
-
 	}
 }
 
