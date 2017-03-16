@@ -1206,11 +1206,11 @@ object {
 
 @media (min-width: 600px) {
   .about-info .about-intro {
-    width: 70%; } }
+    width: 90%; } }
 
 @media (min-width: 600px) {
   .about-info .random-facts {
-    margin-top: 60px; } }
+    margin-top: 50px; } }
 
 .about-info .random-facts .fact-list {
   margin: 0; }

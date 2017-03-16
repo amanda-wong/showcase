@@ -266,13 +266,13 @@
 
 	.about-intro {
 		@include tablet {
-			width: 70%;
+			width: 90%;
 		}
 	}
 
 	.random-facts {
 		@include tablet {
-			margin-top: 60px;
+			margin-top: 50px;
 		}
 		.fact-list {
 			margin: 0;
