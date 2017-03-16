@@ -8,32 +8,36 @@
 	<main id="main" class="site-main" role="main">
 		<?php get_header(); ?>
         <section class="canvas">
-			<h1>Hi Nice to meet you!</h1>
-            <div class="about-intro">
-				<div class="about-intro-text">
-					<p>I'm Amanda and I'm a Front-End Developer from Vancouver.</p>
+			<h1>Hi! I'm Amanda, It's nice to meet you!</h1>
+            <div class="about-info">
+				<div class="about-intro">
 					<p>
-						I love taking a design, or even just
-						I love
-						My passion comes what you can get out of an idea. You
+						I enjoy bringing designs to life, filling in all the
+						intricacies that makes an impressionable piece.
+						My passion for web development comes from a love of design,
+						complex problems and creativity. On my spare time you’ll find
+						me fishing, camping, snowboarding or working on my side project.
 					</p>
+					<div class="random-facts">
+						<h2>Random Facts</h2>
+						<ul class="fact-list">
+							<li>I love pasta and can eat mountains of it.</li>
+							<li>I am the all time biggest F.R.I.E.N.D.S fan.</li>
+							<li>I listen to nothing but electronic music.</li>
+							<li>I twirl my hair A LOT and unintentionally use it as a mustache.</li>
+							<li>I never considered myself a gamer until I played Skyrim.</li>
+							<li>I strive to be a full-stack web developer one day.</li>
+							<li>I truly feel guilty if I don't compost or recycle.</li>
+						</ul>
+					</div>
 				</div>
 
-				<img src="../wp-content/themes/showcase/build/assets/images/amanda.jpg" alt="amanda image"/>
+				<div class="amanda-image-wrap">
+					<img src="../wp-content/themes/showcase/build/assets/images/amanda.jpg"
+						class="about-image" alt="amanda image"/>
+				</div>
             </div>
-			<div class="random-facts">
-				<h2>Fun Facts</h2>
-				<ul>
-					<li>I love pasta and can eat mountains of it.</li>
-					<li>I am the all time biggest F.R.I.E.N.D.S fan.</li>
-					<li>I listen to nothing but electronic music.</li>
-					<li>I twirl my hair A LOT, and unknowlingly use it as mustache :{o</li>
-					<li>I have a weakness for live musicals.</li>
-					<li>I strive to use my dev skills one day to 1.) help Vancouver's homeless problem
-					 	and 2.) reduce the amount that goes into landfills.</li>
-				</ul>
 
-			</div>
             <div class="skills-container">
 				<h2>Technical Skills</h2>
                 <div class="skill">
@@ -89,15 +93,15 @@
                         JavaScript
                     </div>
                     <div class="skill-bar">
-                        <div class="skill-level" data-percent="25%"></div>
+                        <div class="skill-level" data-percent="25.1%"></div>
                     </div>
                 </div>
                 <div class="skill">
                     <div class="skill-label">
-                        SQL/PosgreSQL
+                        PosgreSQL
                     </div>
                     <div class="skill-bar">
-                        <div class="skill-level" data-percent="25%"></div>
+                        <div class="skill-level" data-percent="20%"></div>
                     </div>
                 </div>
                 <div class="skill">

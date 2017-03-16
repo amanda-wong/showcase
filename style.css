@@ -327,6 +327,9 @@ body {
   font-family: "roboto", sans-serif;
   font-size: 16px;
   color: #696969; }
+  @media (min-width: 600px) {
+    body .canvas {
+      font-size: 0.9rem; } }
   @media (min-width: 1024px) {
     body .canvas {
       max-width: 1200px; } }
@@ -1194,11 +1197,22 @@ object {
     color: #fff; }
 
 /* (4) About Page */
-.about-intro {
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-pack: justify;
-      justify-content: space-between; }
+@media (min-width: 600px) {
+  .about-info {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: justify;
+        justify-content: space-between; } }
+
+@media (min-width: 600px) {
+  .about-info .about-intro {
+    width: 70%; } }
+
+.about-info .about-image {
+  margin-left: 50px; }
+
+.random-facts .fact-list {
+  margin: 0 0 30px 10px; }
 
 .skills-container .skill:nth-child(odd) .skill-level {
   background: repeating-linear-gradient(45deg, rgba(197, 156, 108, 0.2), rgba(197, 156, 108, 0.2) 10px, rgba(197, 156, 108, 0.4) 10px, rgba(197, 156, 108, 0.4) 20px); }

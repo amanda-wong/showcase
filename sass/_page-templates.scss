@@ -258,11 +258,30 @@
 /* (4) About Page */
 
 //about intro
-.about-intro {
-	display: flex;
-	justify-content: space-between;
-	.about-intro-text{
+.about-info {
+	@include tablet {
+		display: flex;
+		justify-content: space-between;
+	}
 
+	.about-intro {
+		@include tablet {
+			width: 70%;
+		}
+	}
+
+	.about-image {
+		margin-left: 50px;
+		// @include tablet {
+		// 	margin: 0 0 0 ;
+		// }
+	}
+}
+
+//random facts
+.random-facts {
+	.fact-list {
+		margin: 0 0 30px 10px;
 	}
 }
 
