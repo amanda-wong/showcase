@@ -257,7 +257,7 @@
 
 /* (4) About Page */
 
-//about intro
+//about info
 .about-info {
 	@include tablet {
 		display: flex;
@@ -270,23 +270,34 @@
 		}
 	}
 
-	.about-image {
-		margin-left: 50px;
-		// @include tablet {
-		// 	margin: 0 0 0 ;
-		// }
+	.random-facts {
+		@include tablet {
+			margin-top: 60px;
+		}
+		.fact-list {
+			margin: 0;
+		}
+	}
+
+	.amanda-image-wrap {
+		width: 80%;
+		margin: 0 auto 30px;
+		@include tablet {
+			width: 50%;
+			margin: 0;
+		}
 	}
 }
 
-//random facts
-.random-facts {
-	.fact-list {
-		margin: 0 0 30px 10px;
-	}
-}
+
 
 //skill-bar-graph
 .skills-container {
+	h2 {
+		@include tablet {
+			margin-top: 0;
+		}
+	}
     .skill:nth-child(odd) {
         .skill-level {
             background: repeating-linear-gradient(
