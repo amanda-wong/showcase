@@ -8,15 +8,17 @@
 	<main id="main" class="site-main" role="main">
 		<?php get_header(); ?>
         <section class="canvas">
-			<h1>Hi! I'm Amanda, It's nice to meet you!</h1>
+			<h1>Hi! I'm Amanda, it's nice to meet you!</h1>
             <div class="about-info">
 				<div class="about-intro">
 					<p>
-						I enjoy bringing designs to life, filling in all the
-						intricacies that makes an impressionable piece.
-						My passion for web development comes from a love of design,
-						complex problems and creativity. On my spare time you’ll find
-						me fishing, camping, snowboarding or working on my side project.
+						I'm a front-end developer based in Vancouver who enjoys bringing
+						designs to life with solid code and creative solutions.
+						My passion for web development stems from my love for design and interest
+					 	in complex problems. When I'm not coding away, you’ll find
+						me fishing, snowboarding, eating sushi, or working on my side project.
+						If you have an idea or a project you'd like to share,
+						let's <strong><a href="/contact">connect</a></strong>.
 					</p>
 					<div class="random-facts">
 						<h2>Random Facts</h2>

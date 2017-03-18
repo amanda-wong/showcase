@@ -1197,31 +1197,38 @@ object {
     color: #fff; }
 
 /* (4) About Page */
-@media (min-width: 600px) {
-  .about-info {
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-pack: justify;
-        justify-content: space-between; } }
-
-@media (min-width: 600px) {
-  .about-info .about-intro {
-    width: 90%; } }
-
-@media (min-width: 600px) {
-  .about-info .random-facts {
-    margin-top: 50px; } }
-
-.about-info .random-facts .fact-list {
-  margin: 0; }
-
-.about-info .amanda-image-wrap {
-  width: 80%;
-  margin: 0 auto 30px; }
+.about-info {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column; }
   @media (min-width: 600px) {
-    .about-info .amanda-image-wrap {
-      width: 50%;
-      margin: 0; } }
+    .about-info {
+      -ms-flex-direction: row;
+          flex-direction: row;
+      -ms-flex-pack: justify;
+          justify-content: space-between; } }
+  @media (min-width: 600px) {
+    .about-info .about-intro {
+      width: 100%; } }
+  @media (min-width: 600px) {
+    .about-info .random-facts {
+      margin-bottom: 30px; } }
+  @media (min-width: 1024px) {
+    .about-info .random-facts {
+      margin-top: 70px; } }
+  .about-info .random-facts .fact-list {
+    margin: 0px; }
+  .about-info .amanda-image-wrap {
+    width: 70%;
+    margin: 0 auto 30px; }
+    @media (min-width: 600px) {
+      .about-info .amanda-image-wrap {
+        width: 85%;
+        margin: 0; } }
+    @media (min-width: 1024px) {
+      .about-info .amanda-image-wrap {
+        width: 75%; } }
 
 @media (min-width: 600px) {
   .skills-container h2 {
