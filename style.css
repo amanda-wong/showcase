@@ -1213,10 +1213,10 @@ object {
       width: 100%; } }
   @media (min-width: 600px) {
     .about-info .random-facts {
-      margin-bottom: 30px; } }
+      margin-bottom: 10px; } }
   @media (min-width: 1024px) {
     .about-info .random-facts {
-      margin-top: 70px; } }
+      margin-top: 35px; } }
   .about-info .random-facts .fact-list {
     margin: 0px; }
   .about-info .amanda-image-wrap {
@@ -1228,9 +1228,9 @@ object {
         margin: 0; } }
     @media (min-width: 1024px) {
       .about-info .amanda-image-wrap {
-        width: 75%; } }
+        width: 50%; } }
 
-@media (min-width: 600px) {
+@media (min-width: 1024px) {
   .skills-container h2 {
     margin-top: 0; } }
 
