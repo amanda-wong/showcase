@@ -83,18 +83,18 @@
                 </div>
                 <div class="skill">
                     <div class="skill-label">
-                        WordPress
+                        JavaScript
                     </div>
                     <div class="skill-bar">
-                        <div class="skill-level" data-percent="30%"></div>
+                        <div class="skill-level" data-percent="35%"></div>
                     </div>
                 </div>
                 <div class="skill">
                     <div class="skill-label">
-                        JavaScript
+                        WordPress
                     </div>
                     <div class="skill-bar">
-                        <div class="skill-level" data-percent="25.1%"></div>
+                        <div class="skill-level" data-percent="30%"></div>
                     </div>
                 </div>
                 <div class="skill">
