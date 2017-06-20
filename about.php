@@ -28,7 +28,7 @@
 							<li>I listen to nothing but electronic music.</li>
 							<li>I twirl my hair A LOT and unintentionally use it as a mustache.</li>
 							<li>I never considered myself a gamer until I played Skyrim.</li>
-							<li>I aim to be a full-stack web developer one day.</li>
+							<li>I strive to be a full-stack web developer.</li>
 						</ul>
 					</div>
 				</div>
