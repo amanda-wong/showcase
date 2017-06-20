@@ -12,11 +12,11 @@
             <div class="about-info">
 				<div class="about-intro">
 					<p>
-						I'm a front-end developer based in Vancouver who enjoys bringing
-						designs to life with solid code and creative solutions.
-						My passion for web development stems from my love for design and interest
-					 	in complex problems. When I'm not coding away, you’ll find
-						me fishing, snowboarding, eating sushi, or working on my side project.
+						I'm a Front End Developer based in Vancouver who enjoys bringing
+						designs to life with solid clean code and creative solutions.
+						My passion for development stems from my love for design and
+						complex problems. When I'm not coding away, you’ll find
+						me fishing, snowboarding, golfing, eating sushi, or working on my side project.
 						If you have an idea or a project you'd like to share,
 						let's <strong><a href="/contact">connect</a></strong>.
 					</p>
