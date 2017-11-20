@@ -1257,10 +1257,6 @@ object {
   .skill svg {
     width: 80px;
     height: 80px; }
-    @media (min-width: 600px) {
-      .skill svg {
-        width: 90px;
-        height: 90px; } }
 
 .info-text {
   padding: 5px 10px;

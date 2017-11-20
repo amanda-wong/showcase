@@ -319,11 +319,6 @@
 	svg {
 		width: 80px;
 		height: 80px;
-		@include tablet {
-			width: 90px;
-			height: 90px;
-		}
-
 	}
 }
 
