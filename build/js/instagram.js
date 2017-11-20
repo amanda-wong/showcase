@@ -1,4 +1,4 @@
-// Instagram Ajax call and modal script
+	// Instagram Ajax call and modal script
 var modalBackground = document.querySelector('.modal-background');
 var modalInner = document.querySelector('.modal-inner');
 

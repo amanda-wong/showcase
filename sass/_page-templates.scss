@@ -278,7 +278,7 @@
 			margin-bottom: 10px;
 		}
 		@include desktop {
-			margin-top: 35px;
+			margin-top: 60px;
 		}
 		.fact-list {
 			margin: 0px;
@@ -298,72 +298,40 @@
 	}
 }
 
-//skill-bar-graph
-.skills-container {
-	h2 {
+.skill-row-container {
+	display: flex;
+	justify-content: space-around;
+	flex-wrap: wrap;
+	margin-top: 30px;
+}
+
+.skill {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	width: 33%;
+	font-weight: bold;
+	margin-bottom: 15px;
+	@include tablet {
+		width: 20%;
+	}
+	svg {
+		width: 80px;
+		height: 80px;
+		@include tablet {
+			width: 90px;
+			height: 90px;
+		}
+
 		@include desktop {
-			margin-top: 0;
+			width: 100px;
+			height: 100px;
 		}
 	}
-    .skill:nth-child(odd) {
-        .skill-level {
-            background: repeating-linear-gradient(
-              45deg,
-              rgba(197, 156, 108, 0.2),
-              rgba(197, 156, 108, 0.2) 10px,
-              rgba(197, 156, 108, 0.4) 10px,
-              rgba(197, 156, 108, 0.4) 20px
-            );
-        }
-    }
-    .skill:nth-child(even) {
-        .skill-level {
-            background: repeating-linear-gradient(
-              45deg,
-			  rgba(61,61,61, 0.2),
-              rgba(61,61,61,0.2) 10px,
-              rgba(61,61,61, 0.1) 10px,
-              rgba(61,61,61, 0.1) 20px
-            );
-        }
-    }
-}
-.skill {
-    display: flex;
-    margin-bottom: 10px;
 }
 
-.skill-label {
-    background-color: #fff;
-    padding: 5px 10px 5px 0;
-    text-align: right;
-    min-width: 115px;
-    z-index: 1;
-}
-.skill-bar {
-    background-color: lighten(#e6e6e6, 6%);
-    display: flex;
-    width: 100%;
 
-    .skill-level {
-        display: flex;
-        align-items: center;
-        width: 0%;
-        position: relative;
-        transition: width 2s ease-in-out;
-        &:after {
-            position: absolute;
-            right: 10px;
-            color: #000;
-            content: attr(data-percent);
-            text-shadow: 1px 1px rgba(255,255,255,255.5);
-        }
-    }
-}
-
-.skills-container:last-child .skill {
-	position: relative;
-}
 
 .info-text {
 	padding: 5px 10px;
