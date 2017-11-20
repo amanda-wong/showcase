@@ -19,12 +19,6 @@
 						<a href="https://www.linkedin.com/in/missamandawong" target="_blank" title="LinkedIn">
 		                    <i class="fa fa-linkedin" aria-hidden="true"></i>
 		                </a>
-		                <a href="https://www.facebook.com/amanda.wong.184" target="_blank" title="Facebook">
-		                    <i class="fa fa-facebook" aria-hidden="true"></i>
-		                </a>
-		                <a href="https://twitter.com/missamandawong" target="_blank" title="Twitter">
-		                    <i class="fa fa-twitter" aria-hidden="true"></i>
-		                </a>
 		                <a href="https://www.instagram.com/missamandawong/" target="_blank" title="Instagram">
 		                    <i class="fa fa-instagram" aria-hidden="true"></i>
 		                </a>
